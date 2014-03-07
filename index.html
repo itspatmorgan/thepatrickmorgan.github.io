@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet" href="stylesheets/styles.css">
 
-	<!-- Font -->
+	<!-- Google Font -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
 </head>
@@ -26,15 +26,20 @@
 	<div class="nav_bar">
 		<h3>PM</h3>
 	</div>
-	<!-- Primary Page Layout -->
 
+	<!-- Primary Page Layout / SKELETON GRID IN PLACE-->
 	<div class="container">
+
+		<!-- HEADER ROW -->
 		<div class="sixteen columns" id="header">
-			<h1>PATRICK <span style="font-weight: 300;font-size: 48px">Morgan</span></h1>
-			<h5>Web Developer | Brand Strategist | Improviser</h5>
+			<div class="ten columns offset-by-three">
+				<h1>PATRICK <span style="font-weight: 300;font-size: 48px">MORGAN</span></h1>
+				<h5>Web Developer | Brand Strategist | Improviser</h5>
+			</div>
 			<hr />
 		</div>
 
+		<!-- ABOUT ME, SKILLS, FIND ME ROW -->
 		<div class="row" id="row_1">
 			<div class="one-third column">
 				<div>
@@ -43,18 +48,24 @@
 					<hr />
 				</div>
 				<div class="row">
-					<p class="two columns">
-						Call Me<br/>
-						From<br/>
-						Live<br/>
-						Speak<br/>
-					</p>
-					<p class="three columns">
-						Pat<br/>
-						Pennsylvania<br/>
-						Harlem, NYC<br/>
-						English | Spanish<br/>
-					</p>
+					<ul>
+						<li>
+							<p class="about">Call Me</p>
+							<p class="about answer1">Pat</p>
+						</li>
+						<li>
+							<p class="about">From</p>
+							<p class="about answer2">Pennsylvania</p>
+						</li>
+						<li>
+							<p class="about">Live in</p>
+							<p class="about answer3">Harlem, NYC</p>
+						</li>
+						<li>
+							<p class="about">Speak</p>
+							<p class="about answer4">English | Spanish</p>
+						</li>
+					</ul>
 				</div>
 				<div class="row">
 					<ul class="square">
@@ -72,78 +83,95 @@
 					<img class="icons" src="assets/other_icons/skills_icon.png">
 					<hr />
 				</div>
-				<div class="two columns">
-					<ul id="skill_list">
-						<li>HTML/CSS</li>
-						<li>Ruby</li>
-						<li>Rails</li>
-						<li>Git</li>
-						<li>Rspec</li>
-						<li>Javascript</li>
-						<li>Backbone.js</li>
-						<li>jQuery</li>
-						<li>Postgresql</li>
-						<li>APIs</li>
-					</ul>
-				</div>
-				<div class="three columns">
-					<ul>
-						<li><div class="skills" style="width:100%"></div></li>
-						<li><div class="skills" style="width:90%"></div></li>
-						<li><div class="skills" style="width:80%"></div></li>
-						<li><div class="skills" style="width:85%"></div></li>
-						<li><div class="skills" style="width:40%"></div></li>
-						<li><div class="skills" style="width:55%"></div></li>
-						<li><div class="skills" style="width:60%"></div></li>
-						<li><div class="skills" style="width:70%"></div></li>
-						<li><div class="skills" style="width:30%"></div></li>
-						<li><div class="skills" style="width:85%"></div></li>
-					</ul>
+				<div class="row">
+					<div class="two columns alpha">
+						<ul id="skill_list">
+							<li>HTML/CSS</li>
+							<li>Ruby</li>
+							<li>Rails</li>
+							<li>Git</li>
+							<li>Rspec</li>
+							<li>Javascript</li>
+							<li>Backbone.js</li>
+							<li>jQuery</li>
+							<li>Postgresql</li>
+							<li>APIs</li>
+						</ul>
+					</div>
+					<div class="three columns alpha">
+						<ul>
+							<li><div class="skills" style="width:100%"></div></li>
+							<li><div class="skills" style="width:90%"></div></li>
+							<li><div class="skills" style="width:80%"></div></li>
+							<li><div class="skills" style="width:85%"></div></li>
+							<li><div class="skills" style="width:40%"></div></li>
+							<li><div class="skills" style="width:55%"></div></li>
+							<li><div class="skills" style="width:60%"></div></li>
+							<li><div class="skills" style="width:70%"></div></li>
+							<li><div class="skills" style="width:30%"></div></li>
+							<li><div class="skills" style="width:85%"></div></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="one-third column">
 				<h3>FIND ME</h3>
 				<img class="icons" src="assets/foundation_icons/fi-magnifying-glass.svg">
 				<hr />
-				<ul>
-					<li>
-						<img class="icons find" src="assets/foundation_icons/fi-telephone.svg">
-						814.932.5342
-					</li>
-					<li>
-						<img class="icons find" src="assets/other_icons/portfolio_icon.gif">
-						www.patrickmorgan.me
-					</li>
-					<li>
-						<img class="icons find" src="assets/foundation_icons/fi-mail.svg">
-						pamorgan12@gmail.com
-					</li>
-					<li>
-						<img class="icons find" src="assets/other_icons/angellist_icon.png">
-						angel.co/patrickmmorgan
-					</li>
-					<li>
-						<img class="icons find" src="assets/foundation_icons/fi-social-github.svg">
-						github.com/patrickmmorgan
-					</li>
-					<li>
-						<img class="icons find" src="assets/foundation_icons/fi-social-linkedin.svg">
-						linkedin.com/in/patrickmmorgan
-					</li>
-				</ul>
+				<div class="row">
+					<ul>
+						<li>
+							<img class="icons find" src="assets/foundation_icons/fi-telephone.svg">
+							<p class="contact_info">814.932.5342</p>
+						</li>
+						<li>
+							<img class="icons find" src="assets/foundation_icons/fi-mail.svg">
+							<p class="contact_info">pamorgan12@gmail.com</p>
+						</li>
+						<li>
+							<img class="icons find" src="assets/other_icons/portfolio_icon.gif">
+							<p class="contact_info">
+								<a href="#">PDF Resume</a>
+							</p>
+						</li>
+						<li>
+							<img class="icons find" src="assets/other_icons/angellist_icon.png">
+							<p class="contact_info">
+								<a href="http://angel.co/patrickmmorgan" target="blank">AngelList</a>
+							</p>
+						</li>
+						<li>
+							<img class="icons find" src="assets/foundation_icons/fi-social-github.svg">
+							<p class="contact_info">
+								<a href="http://github.com/patrickmmorgan" target="blank">Github</a>
+							</p>
+						</li>
+						<li>
+							<img class="icons find" src="assets/foundation_icons/fi-social-linkedin.svg">
+							<p class="contact_info">
+								<a href="http://linkedin.com/in/patrickmmorgan" target="blank">Linkedin</a>
+							</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
+
+		<!-- EXPERIENCE AND PICTURE ROW -->
 		<div class="row" id="row_2">
-			<div class="one-third column picture">
+			<!-- PICTURE -->
+			<div class="one-third column alpha picture">
 				<img class="scale-with-grid" src="assets/profile_pic.jpg">
 			</div>
+
+			<!-- EXPERIENCE -->
 			<div class="two-thirds column">
 				<div>
 					<h3>EXPERIENCE</h3>
 					<img class="icons" src="assets/other_icons/experience_icon.png" style="width:6%">
 					<hr>
 				</div>
-				<div class="five columns">
+				<div class="five columns alpha">
 					<h3>General Assembly</h3>
 					<p>2014-2013</p>
 					<ul class="square">
@@ -152,7 +180,7 @@
 						<li>Do you need some dummy text? *sigh* Of course you do.</li>
 					</ul>
 				</div>
-				<div class="five columns">
+				<div class="five columns alpha">
 					<h3>Leo Burnett</h3>
 					<p>2013-2012</p>
 					<ul class="square">
@@ -163,30 +191,51 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- DEV PROJECTS -->
 		<div class="row" id="row_3">
-			<div class="sixteen columns">
-				<h3>DEV PROJECTS</h3>
-				<img class="icons" src="assets/other_icons/tools-icon.png" style="width:5%">
-				<hr />
-				<div class="five columns picture">
-					<img class="scale-with-grid" src="assets/periodic_table_thumb.png">
+			<div class="sixteen columns alpha">
+				<div>
+					<h3>DEV PROJECTS</h3>
+					<img class="icons" src="assets/other_icons/tools-icon.png" style="width:5%">
+					<hr />
 				</div>
-				<div class="five columns picture">
-					<img class="scale-with-grid" src="assets/atlas_thumb.png">
+				<div class="row">
+					<div class="eight columns alpha picture">
+						<a href="http://periodic-table-of-echonest.herokuapp.com" target="blank"><img class="scale-with-grid" src="assets/periodic_table_thumb.png"></a>
+					</div>
+					<div class="eight columns alpha">
+						<p>Anything happening in here?</p>
+					</div>
 				</div>
-				<div class="five columns picture">
-					<img class="scale-with-grid" src="assets/live_from_ny_thumb.png">
+				<div class="row">
+					<div class="eight columns alpha">
+						<p>Anything happening in here?</p>
+					</div>
+					<div class="eight columns alpha picture">
+						<a href="http://watch-atlas.herokuapp.com" target="blank"><img class="scale-with-grid" src="assets/atlas_thumb.png"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="eight columns alpha picture">
+						<a href="http://live-from-ny.herokuapp.com/users/sign_in" target="blank"><img class="scale-with-grid" src="assets/live_from_ny_thumb.png"></a>
+					</div>
+					<div class="eight columns alpha" style="background:grey">
+						<p>Anything happening in here?</p>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- EDUCATION -->
 		<div class="row" id="row_4">
-			<div class="two-thirds column">
+			<div class="two-thirds column alpha">
 				<div>
 					<h3>EDUCATION</h3>
 					<img class="icons" src="assets/other_icons/education_icon.png" style="width:6%">
 					<hr>
 				</div>
-				<div class="five columns">
+				<div class="five columns alpha">
 					<h3>The Second City</h3>
 					<p>2013</p>
 					<ul class="square">
@@ -195,7 +244,7 @@
 						<li>Do you need some dummy text? *sigh* Of course you do.</li>
 					</ul>
 				</div>
-				<div class="five columns">
+				<div class="five columns alpha">
 					<h3>Davidson College</h3>
 					<p>2012</p>
 					<ul class="square">
@@ -205,13 +254,19 @@
 					</ul>
 				</div>
 			</div>
+			<!-- PICTURE -->
 			<div class="one-third column picture">
 				<img class="scale-with-grid" src="assets/profile_pic.jpg">
 			</div>
 		</div>
 
-	</div><!-- container -->
+		<!-- FINAL DIVIDER -->
+		<div class="sixteen columns alpha">
+			<hr/>
+		</div>
+	</div>
 
+	<!-- BOTTOM BAR -->
 	<div class="nav_bar bottom"></div>
 
 </body>

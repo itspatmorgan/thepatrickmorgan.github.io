@@ -12,11 +12,17 @@ p, ul, li {
   font-family: 'Century';
 }
 
+.picture {
+  padding-top: 8px;
+}
+
+/* TOP AND BOTTOM BARS */
 .nav_bar {
   background: #D8D8D8;
   height: 40px;
   width: 100%;
   position: absolute;
+  opacity: 0.5;
 }
 .nav_bar h3 {
   margin-left: 10px;
@@ -26,31 +32,29 @@ p, ul, li {
   position: relative;
 }
 
-.picture {
-  padding-top: 8px;
-}
-
+/* HEADER */
 #header {
   margin-top: 70px;
   text-align: center;
 }
 #header h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  margin-right: 50px;
 }
 #header h5 {
   font-family: 'Century';
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  margin-right: -90px;
+  margin-top: -10px;
 }
 
-
-
+/* SKILLS */
 #skill_list {
   margin: 0;
   padding: 0;
 }
-
 .skills {
   height: 10px;
   width: 100%;
@@ -58,6 +62,7 @@ p, ul, li {
   display: inline-block;
 }
 
+/* FIND ME */
 .icons {
   width: 12%;
   float: right;
@@ -65,6 +70,27 @@ p, ul, li {
 .icons.find {
   width: 8%;
   float: none;
+  margin-bottom: -5px;
+}
+.contact_info {
+  display: inline;
+  margin-left: 25px;
 }
 
+/* ABOUT ME */
 
+.about {
+  display: inline;
+}
+.about.answer1 {
+  margin-left: 56px;
+}
+.about.answer2 {
+  margin-left: 72px;
+}
+.about.answer3 {
+  margin-left: 60px;
+}
+.about.answer4 {
+  margin-left: 65px;
+}
