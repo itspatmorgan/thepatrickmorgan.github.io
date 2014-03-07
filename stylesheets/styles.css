@@ -1,0 +1,16 @@
+body {
+  background-image: url('../assets/background_pattern.png');
+}
+
+.picture {
+  padding-top: 8px;
+}
+
+#header {
+  margin-top: 40px;
+  text-align: center;
+}
+
+p {
+  font-family: century;
+}
