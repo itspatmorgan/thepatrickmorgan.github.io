@@ -14,13 +14,16 @@ p, ul, li {
 
 .nav_bar {
   background: #D8D8D8;
-  opacity: .5;
   height: 40px;
   width: 100%;
   position: absolute;
 }
 .nav_bar h3 {
   margin-left: 10px;
+}
+.nav_bar.bottom {
+  bottom: 0;
+  position: relative;
 }
 
 .picture {
