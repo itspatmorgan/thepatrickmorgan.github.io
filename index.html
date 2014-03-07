@@ -17,101 +17,196 @@
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet" href="stylesheets/styles.css">
 
+	<!-- Font -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
+	<div class="nav_bar">
+		<h3>PM</h3>
+	</div>
 	<!-- Primary Page Layout -->
 
 	<div class="container">
 		<div class="sixteen columns" id="header">
-			<h1 class="remove-bottom">PATRICK Morgan</h1>
+			<h1>PATRICK <span style="font-weight: 300;font-size: 48px">Morgan</span></h1>
 			<h5>Web Developer | Brand Strategist | Improviser</h5>
 			<hr />
 		</div>
+
 		<div class="row" id="row_1">
 			<div class="one-third column">
-				<h3>ABOUT ME</h3>
-				<hr />
-				<p>Cardigan cupidatat aliqua blog, ullamco hashtag mixtape Intelligentsia freegan Portland chia chambray Vice aliquip flexitarian. XOXO wolf nulla vegan, distillery laborum veniam. Yr sartorial actually, ad bespoke laboris mollit cliche organic. Cardigan flannel ex, meggings polaroid odio chambray velit salvia Cosby sweater actually photo booth skateboard. Carles adipisicing pop-up art party forage wolf.Elit Marfa photo booth incididunt. Sunt in officia, ennui mixtape ullamco id YOLO bitters.</p>
+				<div>
+					<h3>ABOUT ME</h3>
+					<img class="icons" src="assets/other_icons/about_me_icon.png">
+					<hr />
+				</div>
+				<div class="row">
+					<p class="two columns">
+						Call Me<br/>
+						From<br/>
+						Live<br/>
+						Speak<br/>
+					</p>
+					<p class="three columns">
+						Pat<br/>
+						Pennsylvania<br/>
+						Harlem, NYC<br/>
+						English | Spanish<br/>
+					</p>
+				</div>
+				<div class="row">
+					<ul class="square">
+						<li>Had a run-in with tear gas</li>
+						<li>Sang acappella for 7 years</li>
+						<li>Coached at a CrossFit gym</li>
+						<li>Studied abroad in Chile and Spain</li>
+						<li>Project Euler problems are my jam</li>
+					</ul>
+				</div>
 			</div>
 			<div class="one-third column">
-				<h3>SKILLS</h3>
-				<hr />
-				<p>I bet you still use Helvetica too…</p>
-				<ul class="square">
-					<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-					<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-					<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-				</ul>
+				<div>
+					<h3>SKILLS</h3>
+					<img class="icons" src="assets/other_icons/skills_icon.png">
+					<hr />
+				</div>
+				<div class="two columns">
+					<ul id="skill_list">
+						<li>HTML/CSS</li>
+						<li>Ruby</li>
+						<li>Rails</li>
+						<li>Git</li>
+						<li>Rspec</li>
+						<li>Javascript</li>
+						<li>Backbone.js</li>
+						<li>jQuery</li>
+						<li>Postgresql</li>
+						<li>APIs</li>
+					</ul>
+				</div>
+				<div class="three columns">
+					<ul>
+						<li><div class="skills" style="width:100%"></div></li>
+						<li><div class="skills" style="width:90%"></div></li>
+						<li><div class="skills" style="width:80%"></div></li>
+						<li><div class="skills" style="width:85%"></div></li>
+						<li><div class="skills" style="width:40%"></div></li>
+						<li><div class="skills" style="width:55%"></div></li>
+						<li><div class="skills" style="width:60%"></div></li>
+						<li><div class="skills" style="width:70%"></div></li>
+						<li><div class="skills" style="width:30%"></div></li>
+						<li><div class="skills" style="width:85%"></div></li>
+					</ul>
+				</div>
 			</div>
 			<div class="one-third column">
 				<h3>FIND ME</h3>
+				<img class="icons" src="assets/foundation_icons/fi-magnifying-glass.svg">
 				<hr />
 				<ul>
-					<li>814.932.5342</li>
-					<li>www.patrickmorgan.me</li>
-					<li>pamorgan12@gmail.com</li>
-					<li>angle.co/patrickmmorgan</li>
-					<li>github.com/patrickmmorgan</li>
-					<li>linkedin.com/in/patrickmmorgan</li>
+					<li>
+						<img class="icons find" src="assets/foundation_icons/fi-telephone.svg">
+						814.932.5342
+					</li>
+					<li>
+						<img class="icons find" src="assets/other_icons/portfolio_icon.gif">
+						www.patrickmorgan.me
+					</li>
+					<li>
+						<img class="icons find" src="assets/foundation_icons/fi-mail.svg">
+						pamorgan12@gmail.com
+					</li>
+					<li>
+						<img class="icons find" src="assets/other_icons/angellist_icon.png">
+						angel.co/patrickmmorgan
+					</li>
+					<li>
+						<img class="icons find" src="assets/foundation_icons/fi-social-github.svg">
+						github.com/patrickmmorgan
+					</li>
+					<li>
+						<img class="icons find" src="assets/foundation_icons/fi-social-linkedin.svg">
+						linkedin.com/in/patrickmmorgan
+					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="row" id="row_2">
 			<div class="one-third column picture">
-				<img src="assets/profile_pic.jpg" width="100%">
+				<img class="scale-with-grid" src="assets/profile_pic.jpg">
 			</div>
 			<div class="two-thirds column">
 				<div>
 					<h3>EXPERIENCE</h3>
+					<img class="icons" src="assets/other_icons/experience_icon.png" style="width:6%">
 					<hr>
 				</div>
 				<div class="five columns">
 					<h3>General Assembly</h3>
-					<p>I bet you still use Helvetica too…</p>
+					<p>2014-2013</p>
 					<ul class="square">
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
 					</ul>
 				</div>
 				<div class="five columns">
 					<h3>Leo Burnett</h3>
-					<p>I bet you still use Helvetica too…</p>
+					<p>2013-2012</p>
 					<ul class="square">
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
 					</ul>
 				</div>
 			</div>
+		</div>
 		<div class="row" id="row_3">
+			<div class="sixteen columns">
+				<h3>DEV PROJECTS</h3>
+				<img class="icons" src="assets/other_icons/tools-icon.png" style="width:5%">
+				<hr />
+				<div class="five columns picture">
+					<img class="scale-with-grid" src="assets/periodic_table_thumb.png">
+				</div>
+				<div class="five columns picture">
+					<img class="scale-with-grid" src="assets/atlas_thumb.png">
+				</div>
+				<div class="five columns picture">
+					<img class="scale-with-grid" src="assets/live_from_ny_thumb.png">
+				</div>
+			</div>
+		</div>
+		<div class="row" id="row_4">
 			<div class="two-thirds column">
 				<div>
 					<h3>EDUCATION</h3>
+					<img class="icons" src="assets/other_icons/education_icon.png" style="width:6%">
 					<hr>
 				</div>
 				<div class="five columns">
 					<h3>The Second City</h3>
-					<p>I bet you still use Helvetica too…</p>
+					<p>2013</p>
 					<ul class="square">
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
 					</ul>
 				</div>
 				<div class="five columns">
 					<h3>Davidson College</h3>
-					<p>I bet you still use Helvetica too…</p>
+					<p>2012</p>
 					<ul class="square">
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
-						<li><strong>Do you need some dummy text? *sigh* Of course you do.</strong></li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
+						<li>Do you need some dummy text? *sigh* Of course you do.</li>
 					</ul>
 				</div>
 			</div>
 			<div class="one-third column picture">
-				<img src="assets/profile_pic.jpg" width="100%">
+				<img class="scale-with-grid" src="assets/profile_pic.jpg">
 			</div>
 		</div>
 
