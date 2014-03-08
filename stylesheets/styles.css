@@ -2,16 +2,15 @@ body {
   background-image: url('../assets/background_pattern.png');
 }
 
+/* FONT BASICS */
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   display: inline;
 }
-
 p, ul, li, h4 {
   font-family: 'Century';
 }
-
 .sub_head {
   color: #71C6CD;
   font-weight: bold;
@@ -56,15 +55,13 @@ p, ul, li, h4 {
 }
 
 /* SKILLS */
-#skill_list {
-  margin: 0;
-  padding: 0;
-}
 .skills {
   height: 10px;
-  width: 100%;
   background: #71C6CD;
   display: inline-block;
+}
+.skill_title {
+  display: inline;
 }
 
 /* FIND ME */
