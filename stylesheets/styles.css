@@ -55,13 +55,16 @@ p, ul, li, h4 {
 }
 
 /* SKILLS */
-.skills {
+.skills_list p {
+  display: inline;
+}
+.skills_list li {
+  margin-bottom: 0
+}
+.skills_list div {
   height: 10px;
   background: #71C6CD;
   display: inline-block;
-}
-.skill_title {
-  display: inline;
 }
 
 /* FIND ME */
