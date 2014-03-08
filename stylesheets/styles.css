@@ -38,7 +38,7 @@ p, ul, li, h4 {
 
 /* HEADER */
 #header {
-  margin-top: 70px;
+  margin-top: 100px;
   text-align: center;
 }
 #header h1 {
@@ -100,9 +100,18 @@ p, ul, li, h4 {
   margin-left: 65px;
 }
 
-.project_link {
-  text-decoration: none;
-}
 .project_link a {
   color: white;
+  float: right;
+  margin-right: 25px;
+}
+
+.experience p {
+  margin-bottom: 0;
+}
+.experience ul {
+  margin-top: 10px;
+}
+.experience hr {
+  margin-bottom: 10px;
 }
