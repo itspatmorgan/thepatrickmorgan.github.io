@@ -8,8 +8,13 @@ h3 {
   display: inline;
 }
 
-p, ul, li {
+p, ul, li, h4 {
   font-family: 'Century';
+}
+
+.sub_head {
+  color: #71C6CD;
+  font-weight: bold;
 }
 
 .picture {
