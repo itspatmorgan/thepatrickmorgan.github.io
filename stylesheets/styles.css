@@ -96,3 +96,10 @@ p, ul, li, h4 {
 .about.answer4 {
   margin-left: 65px;
 }
+
+.project_link {
+  text-decoration: none;
+}
+.project_link a {
+  color: white;
+}

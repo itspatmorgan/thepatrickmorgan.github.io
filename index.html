@@ -163,7 +163,7 @@
 							</p>
 						</li>
 						<li>
-							<img class="icons find" src="assets/other_icons/angellist_icon.png">
+							<img class="icons find" src="assets/other_icons/angel.png">
 							<p class="contact_info">
 								<a href="http://angel.co/patrickmmorgan" target="blank">AngelList</a>
 							</p>
@@ -241,9 +241,9 @@
 					    <img class="scale-with-grid" src="assets/periodic_table_thumb.png" alt="slide 1" />
 					    <div class="orbit-caption">
 					    	The Periodic Table of Echonest
-					      <a href="http://periodic-table-of-echonest.herokuapp.com" target="blank">
+					      <a class="project_link" href="http://periodic-table-of-echonest.herokuapp.com" target="blank">
 					      	Heroku Site</a>
-					      <a href="http://github.com/patrickmmorgan" target="blank">
+					      <a class="project_link" href="http://github.com/patrickmmorgan" target="blank">
 					      	Code on Github</a>
 					    </div>
 					  </li>
@@ -251,9 +251,9 @@
 					    <img class="scale-with-grid" src="assets/atlas_thumb.png" alt="slide 2" />
 					    <div class="orbit-caption">
 					    	Watch Atlas
-					      <a href="http://watch-atlas.herokuapp.com" target="blank">
+					      <a class="project_link" href="http://watch-atlas.herokuapp.com" target="blank">
 					      	Heroku Site</a>
-					      <a href="http://github.com/patrickmmorgan" target="blank">
+					      <a class="project_link" href="http://github.com/patrickmmorgan" target="blank">
 					      	Code on Github</a>
 					    </div>
 					  </li>
@@ -261,9 +261,9 @@
 					    <img class="scale-with-grid" src="assets/live_from_ny_thumb.png" alt="slide 3" />
 					    <div class="orbit-caption">
 					    	Live From New York
-					      <a href="http://live-from-ny.herokuapp.com" target="blank">
+					      <a class="project_link" href="http://live-from-ny.herokuapp.com" target="blank">
 					      	Heroku Site</a>
-					      <a href="http://github.com/patrickmmorgan" target="blank">
+					      <a class="project_link" href="http://github.com/patrickmmorgan" target="blank">
 					      	Code on Github</a>
 					    </div>
 					  </li>
@@ -314,14 +314,25 @@
 	<!-- BOTTOM BAR -->
 	<div class="nav_bar bottom"></div>
 	
-	
+
 	<script src="js/jquery.js"></script>
 	<script src="js/foundation.js"></script>
 	<script src="js/foundation.orbit.js"></script>
 
 	<script>
 		$(document).ready(function(){
-			$(document).foundation();
+			$(document).foundation(
+				'orbit', {
+					 animation: 'slide',
+			     timer_speed: 1000,
+			     pause_on_hover: true,
+			     animation_speed: 1000,
+			     navigation_arrows: true,
+			     bullets: true,
+			     slide_number: false,
+			     timer: false,
+				}
+			);
 		});
 	</script>
 </body>
