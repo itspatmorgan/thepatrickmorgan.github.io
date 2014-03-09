@@ -8,9 +8,11 @@ h3 {
   font-weight: 300;
   display: inline;
 }
+
 p, ul, li, h4, figcaption {
   font-family: 'Century';
 }
+
 .sub_head {
   color: #71C6CD;
   font-weight: bold;
@@ -31,6 +33,7 @@ figcaption {
   width: 100%;
   position: absolute;
   opacity: 0.5;
+  z-index: 1;
 }
 .nav_bar h3 {
   margin-left: 10px;
@@ -38,11 +41,18 @@ figcaption {
 .nav_bar.bottom {
   bottom: 0;
   position: relative;
+  margin-top: 100px;
+}
+.nav_links {
+  margin-right: 10px;
+  display: inline-block;
+  float: right;
 }
 
 /* HEADER */
 #header {
   margin-top: 85px;
+  margin-bottom: 30px;
   text-align: center;
 }
 #header h1 {
@@ -59,11 +69,8 @@ figcaption {
 }
 
 /* SKILLS */
-.skills_list p {
-  display: inline;
-}
 .skills_list li {
-  margin-bottom: 0
+  margin-bottom: 2px;
 }
 .skills_list div {
   height: 10px;
@@ -87,7 +94,6 @@ figcaption {
 }
 
 /* ABOUT ME */
-
 .about {
   display: inline;
 }
@@ -103,13 +109,13 @@ figcaption {
 .about.answer4 {
   margin-left: 65px;
 }
-
 .project_link a {
   color: white;
   float: right;
   margin-right: 25px;
 }
 
+/* EXPERIENCE */
 .experience p {
   margin-bottom: 0;
 }
@@ -118,4 +124,9 @@ figcaption {
 }
 .experience hr {
   margin-bottom: 10px;
+}
+
+/*ABOUT*/
+#about {
+  margin-top: 50px;
 }

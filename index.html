@@ -28,6 +28,10 @@
 
 	<div class="nav_bar">
 		<h3>PM</h3>
+		<div class="nav_links"><a href="#education">EDUCATION</a></div>
+		<div class="nav_links"><a href="#projects">PROJECTS</a></div>
+		<div class="nav_links"><a href="#experience">EXPERIENCE</a></div>
+		<div class="nav_links"><a href="#about">ABOUT ME</a></div>
 	</div>
 
 	<!-- Primary Page Layout / SKELETON GRID IN PLACE-->
@@ -42,8 +46,33 @@
 			<hr />
 		</div>
 
-		<!-- ABOUT ME, SKILLS, FIND ME ROW -->
+		<!-- LANDING PAGE -->
 		<div class="row">
+			<!-- PROFILE PICTURE -->
+			<div class="one-third column alpha picture">
+				<figure>
+					<img class="scale-with-grid" src="assets/profile_pic.jpg">
+					<figcaption>Makeshift tux for the win!</figcaption>
+				</figure>
+			</div>
+
+			<!-- WELCOME TO THE SITE-->
+			<div class="two-thirds column omega experience">
+				<div>
+					<h3>HELLO</h3>
+					<img class="icons" src="assets/foundation_icons/fi-comment-quotes.svg" style="width:6%">
+					<hr>
+				</div>
+				<div class="two-thirds column alpha">
+					<h4>I'm Pat.</h4>
+					<h5 class="sub_head">A junior full-stack web developer currently based in NYC</h5>
+					<p></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- ABOUT ME, SKILLS, FIND ME -->
+		<div class="row" id="about">
 			<div class="one-third column">
 				<!-- ABOUT ME COLUMN -->
 				<div>
@@ -93,72 +122,46 @@
 				</div>
 
 				<div class="row">
-					<ul class="skills_list">
-						<li>
-							<p>Ruby</p>
-							<div style="width:40%;margin-left:90px"></div>
-						</li>
-						<li>
-							<p>Rails</p>
-							<div style="width:35%;margin-left:93px"></div>
-						</li>
-						<li>
-							<p>Sinatra</p>
-							<div style="width:40%;margin-left:74px"></div>
-						</li>
-						<li>
-							<p>Rspec</p>
-							<div style="width:25%;margin-left:87px"></div>
-						</li>
-						<li>
-							<p>Javascript</p>
-							<div style="width:40%;margin-left:57px"></div>
-						</li>
-						<li>
-							<p>jQuery(UI)</p>
-							<div style="width:40%;margin-left:46px"></div>
-						</li>
-						<li>
-							<p>Backbone.js</p>
-							<div style="width:35%;margin-left:78px"></div>
-						</li>
-						<li>
-							<p>D3.js</p>
-							<div style="width:43%;margin-left:57px"></div>
-						</li>
-						<li>
-							<p>Node.js</p>
-							<div style="width:30%;margin-left:90px"></div>
-						</li>
-						<li>
-							<p>HTML/CSS</p>
-							<div style="width:50%;margin-left:50px"></div>
-						</li>
-						<li>
-							<p>Bootstrap</p>
-							<div style="width:45%;margin-left:48px"></div>
-						</li>
-						<li>
-							<p>Foundation</p>
-							<div style="width:45%;margin-left:48px"></div>
-						</li>
-						<li>
-							<p>Postgresql</p>
-							<div style="width:44%;margin-left:53px"></div>
-						</li>
-						<li>
-							<p>MongoDB</p>
-							<div style="width:27%;margin-left:57px"></div>
-						</li>
-						<li>
-							<p>Git</p>
-							<div style="width:38%;margin-left:92px"></div>
-						</li>
-						<li>
-							<p>APIs</p>
-							<div style="width:50%;margin-left:104px"></div>
-						</li>
-					</ul>
+					<div class="two columns alpha">
+						<ul class="skills_list">
+							<li>Ruby</li>
+							<li>Rails</li>
+							<li>Sinatra</li>
+							<li>Rspec</li>
+							<li>Javascript</li>
+							<li>jQuery(UI)</li>
+							<li>Backbone.js</li>
+							<li>D3.js</li>
+							<li>Node.js</li>
+							<li>HTML/CSS</li>
+							<li>Bootstrap</li>
+							<li>Foundation</li>
+							<li>Postgresql</li>
+							<li>MongoDB</li>
+							<li>Git</li>
+							<li>APIs</li>
+						</ul>
+					</div>
+					<div class="three columns omega">
+						<ul class="skills_list">
+							<li><div style="width:90%"></div></li>
+							<li><div style="width:95%"></div></li>
+							<li><div style="width:90%"></div></li>
+							<li><div style="width:95%"></div></li>
+							<li><div style="width:90%"></div></li>
+							<li><div style="width:90%"></div></li>
+							<li><div style="width:95%"></div></li>
+							<li><div style="width:93%"></div></li>
+							<li><div style="width:90%"></div></li>
+							<li><div style="width:90%"></div></li>
+							<li><div style="width:95%"></div></li>
+							<li><div style="width:95%"></div></li>
+							<li><div style="width:94%"></div></li>
+							<li><div style="width:97%"></div></li>
+							<li><div style="width:98%"></div></li>
+							<li><div style="width:90%"></div></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
@@ -209,8 +212,8 @@
 			</div>
 		</div>
 
-		<!-- EXPERIENCE AND PICTURE ROW -->
-		<div class="row" style="height:625px">
+		<!-- EXPERIENCE -->
+		<div class="row" id="experience">
 			<!-- PICTURE -->
 			<div class="one-third column alpha picture">
 				<figure>
@@ -219,7 +222,7 @@
 				</figure>
 			</div>
 
-			<!-- EXPERIENCE SECTION-->
+			<!-- RESUME INFO -->
 			<div class="two-thirds column omega experience">
 				<div>
 					<h3>EXPERIENCE</h3>
@@ -254,7 +257,7 @@
 		</div>
 
 		<!-- DEV PROJECTS -->
-		<div class="row" style="height:650px">
+		<div class="row" id="projects">
 			<div class="sixteen columns alpha">
 				<div>
 					<h3>DEV PROJECTS</h3>
@@ -299,7 +302,7 @@
 		</div>
 
 		<!-- EDUCATION -->
-		<div class="row">
+		<div class="row" id="education">
 			<div class="two-thirds column alpha">
 				<div>
 					<h3>EDUCATION</h3>
@@ -329,13 +332,13 @@
 			<div class="one-third column picture">
 				<figure>
 					<img class="scale-with-grid" src="assets/davgentleman.jpg">
-					<figcaption>Guess I missed the memo</figcaption>
+					<figcaption>...Except maybe a website</figcaption>
 				</figure>
 			</div>
 		</div>
 
 		<!-- FINAL DIVIDER -->
-		<div class="sixteen columns alpha">
+		<div class="sixteen columns alpha" id="final_divider">
 			<hr/>
 		</div>
 	</div>
@@ -343,7 +346,6 @@
 	<!-- BOTTOM BAR -->
 	<div class="nav_bar bottom"></div>
 	
-
 	<script src="js/jquery.js"></script>
 	<script src="js/foundation.js"></script>
 	<script src="js/foundation.orbit.js"></script>
@@ -362,6 +364,21 @@
 			     timer: false,
 				}
 			);
+
+
+			$('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top - 50
+		        }, 1000);
+		        return false;
+		      }
+	    	}
+	  	});
 		});
 	</script>
 </body>
