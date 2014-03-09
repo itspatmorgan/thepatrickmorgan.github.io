@@ -8,12 +8,16 @@ h3 {
   font-weight: 300;
   display: inline;
 }
-p, ul, li, h4 {
+p, ul, li, h4, figcaption {
   font-family: 'Century';
 }
 .sub_head {
   color: #71C6CD;
   font-weight: bold;
+}
+
+figcaption {
+  text-align: center;
 }
 
 .picture {
@@ -38,7 +42,7 @@ p, ul, li, h4 {
 
 /* HEADER */
 #header {
-  margin-top: 100px;
+  margin-top: 85px;
   text-align: center;
 }
 #header h1 {
