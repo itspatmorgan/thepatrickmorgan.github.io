@@ -39,7 +39,6 @@
 
 	<!-- MAIN LAYOUT / SKELETON GRID -->
 	<div class="container">
-
 		<!-- HEADER -->
 		<div class="sixteen columns" id="header">
 			<div class="ten columns offset-by-three">
@@ -50,7 +49,7 @@
 		</div>
 
 		<!-- WELCOME -->
-		<div class="row main" id="welcome">
+		<div class="row main remove-bottom" id="welcome">
 			<!-- PROFILE PICTURE -->
 			<div class="one-third column picture">
 				<figure>
@@ -69,14 +68,15 @@
 					<h4>I'm Pat.</h4>
 					<h5 class="sub_head">A junior full-stack web developer currently based in NYC</h5>
 					<p></p>
+					<p>Swag fingerstache adipisicing Banksy, pug mumblecore Shoreditch. Locavore VHS labore, brunch sint cillum Pinterest cliche vero narwhal ad eiusmod tempor cornhole Echo Park. Cardigan authentic paleo, mumblecore viral art party mixtape occaecat pug cray anim fashion axe direct trade. Readymade Williamsburg Marfa, selfies church-key bicycle rights shabby chic Pinterest farm-to-table non lomo Cosby sweater. Retro asymmetrical 8-bit, McSweeney's Terry Richardson assumenda squid Brooklyn nisi Wes Anderson letterpress. Vice YOLO Wes Anderson enim. Mixtape adipisicing Pinterest distillery hoodie.</p>
 				</div>
 			</div>
-			<div class="sixteen columns"><hr/></div>
+			<div class="sixteen columns divider"><hr/></div>
 		</div>
 
 		<!-- ABOUT ME -->
 		<div class="row main" id="about">
-			<div id="aboutme" >
+			<div id="about_positioning" >
 				<div class="one-third column">
 					<!-- ABOUT ME COLUMN -->
 					<div>
@@ -108,7 +108,7 @@
 
 					<div class="row">
 						<ul class="square">
-							<li>Had a run-in with tear gas</li>
+							<li>Have had one run-in with tear gas</li>
 							<li>Sang acappella for 7 years</li>
 							<li>Coached at a CrossFit gym</li>
 							<li>Studied abroad in Chile and Spain</li>
@@ -148,21 +148,21 @@
 						<div class="three columns omega">
 							<ul class="skills_list">
 								<li><div style="width:90%"></div></li>
+								<li><div style="width:86%"></div></li>
+								<li><div style="width:82%"></div></li>
+								<li><div style="width:65%"></div></li>
+								<li><div style="width:80%"></div></li>
+								<li><div style="width:70%"></div></li>
+								<li><div style="width:80%"></div></li>
+								<li><div style="width:69%"></div></li>
+								<li><div style="width:62%"></div></li>
 								<li><div style="width:95%"></div></li>
+								<li><div style="width:84%"></div></li>
+								<li><div style="width:85%"></div></li>
+								<li><div style="width:80%"></div></li>
+								<li><div style="width:55%"></div></li>
 								<li><div style="width:90%"></div></li>
-								<li><div style="width:95%"></div></li>
-								<li><div style="width:90%"></div></li>
-								<li><div style="width:90%"></div></li>
-								<li><div style="width:95%"></div></li>
-								<li><div style="width:93%"></div></li>
-								<li><div style="width:90%"></div></li>
-								<li><div style="width:90%"></div></li>
-								<li><div style="width:95%"></div></li>
-								<li><div style="width:95%"></div></li>
-								<li><div style="width:94%"></div></li>
-								<li><div style="width:97%"></div></li>
-								<li><div style="width:98%"></div></li>
-								<li><div style="width:90%"></div></li>
+								<li><div style="width:83%"></div></li>
 							</ul>
 						</div>
 					</div>
@@ -212,13 +212,13 @@
 						</ul>
 					</div>
 				</div>
-				<div class="sixteen columns"><hr/></div>
+				<div class="sixteen columns divider"><hr/></div>
 			</div>
 		</div>
 
 		<!-- EXPERIENCE -->
 		<div class="row main remove-bottom" id="experience">
-			<div id="exp">
+			<div id="experience_positioning">
 				<!-- PICTURE -->
 				<div class="one-third column picture">
 					<figure>
@@ -258,22 +258,21 @@
 						</ul>
 					</div>
 				</div>
-				<div class="sixteen columns">
-					<hr/>
-				</div>
+				<div class="sixteen columns divider"><hr/></div>
 			</div>
 		</div>
 
 		<!-- DEV PROJECTS -->
 		<div class="row main remove-bottom" id="projects">
-			<div id="dev">
-				<div class="sixteen columns alpha">
+			<div id="projects_positioning">
+				<!-- Orbit Slider -->
+				<div class="sixteen columns">
 					<div>
 						<h3>DEV PROJECTS</h3>
 						<img class="icons" src="assets/other_icons/tools-icon.png" style="width:5%">
 						<hr />
 					</div>
-					<div class="fourteen columns offset-by-one">
+					<div class="twelve columns offset-by-two">
 						<ul class="example-orbit" data-orbit>
 						  <li>
 						    <img class="scale-with-grid" src="assets/periodic_table_thumb.png" alt="slide 1" />
@@ -291,7 +290,7 @@
 						    	Watch Atlas
 						      <a href="http://watch-atlas.herokuapp.com" target="blank">
 						      	Heroku Site</a>
-						      <a href="https://github.com/patrickmmorgan" target="blank">
+						      <a href="https://github.com/patrickmmorgan/watch_atlas" target="blank">
 						      	Code on Github</a>
 						    </div>
 						  </li>
@@ -308,15 +307,13 @@
 						</ul>
 					</div>
 				</div>
-				<div class="sixteen columns">
-					<hr/>
-				</div>
+				<div class="sixteen columns divider"><hr/></div>
 			</div>
 		</div>
 
 		<!-- EDUCATION -->
 		<div class="row main remove-bottom" id="education">
-			<div id="ed">
+			<div id="education_positioning">
 				<div class="two-thirds column alpha">
 					<div>
 						<h3>EDUCATION</h3>
@@ -346,15 +343,11 @@
 				<div class="one-third column picture">
 					<figure>
 						<img class="scale-with-grid" src="assets/davgentleman.jpg">
-						<figcaption>...Except maybe a website</figcaption>
+						<figcaption>...except maybe a website</figcaption>
 					</figure>
 				</div>
+				<div class="sixteen columns alpha divider"><hr/></div>
 			</div>
-		</div>
-
-		<!-- FINAL DIVIDER -->
-		<div class="sixteen columns alpha" id="final_divider">
-			<hr/>
 		</div>
 	</div>
 
@@ -365,37 +358,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/foundation.js"></script>
 	<script src="js/foundation.orbit.js"></script>
+	<script src="js/onload.js"></script>
 
-	<script>
-		$(document).ready(function(){
-			$(document).foundation(
-				'orbit', {
-					 animation: 'slide',
-			     timer_speed: 1000,
-			     pause_on_hover: true,
-			     animation_speed: 1000,
-			     navigation_arrows: true,
-			     bullets: true,
-			     slide_number: false,
-			     timer: false,
-				}
-			);
-
-
-			$('a[href*=#]:not([href=#])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html,body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000);
-		        return false;
-		      }
-	    	}
-	  	});
-		});
-	</script>
 </body>
 </html>
