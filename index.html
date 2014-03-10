@@ -24,20 +24,23 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body id="top">
 	<!-- NAV BAR -->
 	<div class="nav_bar">
 		<h3>PM</h3>
-		<div class="nav_links"><a href="#education">EDUCATION</a></div>
-		<div class="nav_links"><a href="#projects">PROJECTS</a></div>
-		<div class="nav_links"><a href="#experience">EXPERIENCE</a></div>
-		<div class="nav_links"><a href="#about">ABOUT ME</a></div>
+		<ul>
+			<li class="nav_links"><a href="#education">EDUCATION</a></li>
+			<li class="nav_links"><a href="#projects">PROJECTS</a></li>
+			<li class="nav_links"><a href="#experience">EXPERIENCE</a></li>
+			<li class="nav_links"><a href="#about">ABOUT ME</a></li>
+			<li class="nav_links"><a href="#top">WELCOME</a></li>
+		</ul>
 	</div>
 
 	<!-- MAIN LAYOUT / SKELETON GRID -->
 	<div class="container">
 
-		<!-- HEADER ROW -->
+		<!-- HEADER -->
 		<div class="sixteen columns" id="header">
 			<div class="ten columns offset-by-three">
 				<h1>PATRICK <span style="font-weight: 300;font-size: 48px">MORGAN</span></h1>
@@ -46,17 +49,17 @@
 			<hr />
 		</div>
 
-		<!-- LANDING PAGE -->
-		<div class="row">
+		<!-- WELCOME -->
+		<div class="row main" id="welcome">
 			<!-- PROFILE PICTURE -->
-			<div class="one-third column alpha picture">
+			<div class="one-third column picture">
 				<figure>
 					<img class="scale-with-grid" src="assets/profile_pic.jpg">
 					<figcaption>Makeshift tux for the win!</figcaption>
 				</figure>
 			</div>
-			<!-- WELCOME TO THE SITE-->
-			<div class="two-thirds column omega experience">
+			<!-- HELLO -->
+			<div class="two-thirds column">
 				<div>
 					<h3>HELLO</h3>
 					<img class="icons" src="assets/foundation_icons/fi-comment-quotes.svg" style="width:6%">
@@ -68,271 +71,284 @@
 					<p></p>
 				</div>
 			</div>
+			<div class="sixteen columns"><hr/></div>
 		</div>
 
-		<!-- ABOUT ME, SKILLS, FIND ME -->
-		<div class="row" id="about">
-			<div class="one-third column">
-				<!-- ABOUT ME COLUMN -->
-				<div>
-					<h3>ABOUT ME</h3>
-					<img class="icons" src="assets/other_icons/about_me_icon.png">
-					<hr />
-				</div>
+		<!-- ABOUT ME -->
+		<div class="row main" id="about">
+			<div id="aboutme" >
+				<div class="one-third column">
+					<!-- ABOUT ME COLUMN -->
+					<div>
+						<h3>ABOUT ME</h3>
+						<img class="icons" src="assets/other_icons/about_me_icon.png">
+						<hr />
+					</div>
 
-				<div class="row">
-					<ul>
-						<li>
-							<p class="about">Call Me</p>
-							<p class="about answer1">Pat</p>
-						</li>
-						<li>
-							<p class="about">From</p>
-							<p class="about answer2">Pennsylvania</p>
-						</li>
-						<li>
-							<p class="about">Live in</p>
-							<p class="about answer3">Harlem, NYC</p>
-						</li>
-						<li>
-							<p class="about">Speak</p>
-							<p class="about answer4">English | Spanish</p>
-						</li>
-					</ul>
-				</div>
-
-				<div class="row">
-					<ul class="square">
-						<li>Had a run-in with tear gas</li>
-						<li>Sang acappella for 7 years</li>
-						<li>Coached at a CrossFit gym</li>
-						<li>Studied abroad in Chile and Spain</li>
-						<li>Project Euler problems are my jam</li>
-					</ul>
-				</div>
-			</div>
-
-			<!-- SKILLS COLUMN -->
-			<div class="one-third column">
-				<div>
-					<h3>SKILLS</h3>
-					<img class="icons" src="assets/other_icons/skills_icon.png">
-					<hr />
-				</div>
-
-				<div class="row">
-					<div class="two columns alpha">
-						<ul class="skills_list">
-							<li>Ruby</li>
-							<li>Rails</li>
-							<li>Sinatra</li>
-							<li>Rspec</li>
-							<li>Javascript</li>
-							<li>jQuery(UI)</li>
-							<li>Backbone.js</li>
-							<li>D3.js</li>
-							<li>Node.js</li>
-							<li>HTML/CSS</li>
-							<li>Bootstrap</li>
-							<li>Foundation</li>
-							<li>Postgresql</li>
-							<li>MongoDB</li>
-							<li>Git</li>
-							<li>APIs</li>
+					<div class="row">
+						<ul>
+							<li>
+								<p class="about">Call Me</p>
+								<p class="about answer1">Pat</p>
+							</li>
+							<li>
+								<p class="about">From</p>
+								<p class="about answer2">Pennsylvania</p>
+							</li>
+							<li>
+								<p class="about">Live in</p>
+								<p class="about answer3">Harlem, NYC</p>
+							</li>
+							<li>
+								<p class="about">Speak</p>
+								<p class="about answer4">English | Spanish</p>
+							</li>
 						</ul>
 					</div>
-					<div class="three columns omega">
-						<ul class="skills_list">
-							<li><div style="width:90%"></div></li>
-							<li><div style="width:95%"></div></li>
-							<li><div style="width:90%"></div></li>
-							<li><div style="width:95%"></div></li>
-							<li><div style="width:90%"></div></li>
-							<li><div style="width:90%"></div></li>
-							<li><div style="width:95%"></div></li>
-							<li><div style="width:93%"></div></li>
-							<li><div style="width:90%"></div></li>
-							<li><div style="width:90%"></div></li>
-							<li><div style="width:95%"></div></li>
-							<li><div style="width:95%"></div></li>
-							<li><div style="width:94%"></div></li>
-							<li><div style="width:97%"></div></li>
-							<li><div style="width:98%"></div></li>
-							<li><div style="width:90%"></div></li>
+
+					<div class="row">
+						<ul class="square">
+							<li>Had a run-in with tear gas</li>
+							<li>Sang acappella for 7 years</li>
+							<li>Coached at a CrossFit gym</li>
+							<li>Studied abroad in Chile and Spain</li>
+							<li>Project Euler problems are my jam</li>
 						</ul>
 					</div>
 				</div>
-			</div>
+				<!-- SKILLS COLUMN -->
+				<div class="one-third column">
+					<div>
+						<h3>SKILLS</h3>
+						<img class="icons" src="assets/other_icons/skills_icon.png">
+						<hr />
+					</div>
 
-			<!-- FIND ME COLUMN -->
-			<div class="one-third column">
-				<div>
-					<h3>FIND ME</h3>
-					<img class="icons" src="assets/foundation_icons/fi-magnifying-glass.svg">
-					<hr />
+					<div class="row">
+						<div class="two columns alpha">
+							<ul class="skills_list">
+								<li>Ruby</li>
+								<li>Rails</li>
+								<li>Sinatra</li>
+								<li>Rspec</li>
+								<li>Javascript</li>
+								<li>jQuery(UI)</li>
+								<li>Backbone.js</li>
+								<li>D3.js</li>
+								<li>Node.js</li>
+								<li>HTML/CSS</li>
+								<li>Bootstrap</li>
+								<li>Foundation</li>
+								<li>Postgresql</li>
+								<li>MongoDB</li>
+								<li>Git</li>
+								<li>APIs</li>
+							</ul>
+						</div>
+						<div class="three columns omega">
+							<ul class="skills_list">
+								<li><div style="width:90%"></div></li>
+								<li><div style="width:95%"></div></li>
+								<li><div style="width:90%"></div></li>
+								<li><div style="width:95%"></div></li>
+								<li><div style="width:90%"></div></li>
+								<li><div style="width:90%"></div></li>
+								<li><div style="width:95%"></div></li>
+								<li><div style="width:93%"></div></li>
+								<li><div style="width:90%"></div></li>
+								<li><div style="width:90%"></div></li>
+								<li><div style="width:95%"></div></li>
+								<li><div style="width:95%"></div></li>
+								<li><div style="width:94%"></div></li>
+								<li><div style="width:97%"></div></li>
+								<li><div style="width:98%"></div></li>
+								<li><div style="width:90%"></div></li>
+							</ul>
+						</div>
+					</div>
 				</div>
+				<!-- FIND ME COLUMN -->
+				<div class="one-third column">
+					<div>
+						<h3>FIND ME</h3>
+						<img class="icons" src="assets/foundation_icons/fi-magnifying-glass.svg">
+						<hr />
+					</div>
 
-				<div class="row">
-					<ul>
-						<li>
-							<img class="icons find" src="assets/foundation_icons/fi-telephone.svg">
-							<p class="contact_info">814.932.5342</p>
-						</li>
-						<li>
-							<img class="icons find" src="assets/foundation_icons/fi-mail.svg">
-							<p class="contact_info">pamorgan12@gmail.com</p>
-						</li>
-						<li>
-							<img class="icons find" src="assets/foundation_icons/fi-social-dropbox.svg">
-							<p class="contact_info">
-								<a href="https://dl.dropboxusercontent.com/u/79176454/patrick_morgan_resume_v2.pdf" target="blank">PDF Resume</a>
-							</p>
-						</li>
-						<li>
-							<img class="icons find" src="assets/other_icons/angel.png">
-							<p class="contact_info">
-								<a href="http://angel.co/patrickmmorgan" target="blank">AngelList</a>
-							</p>
-						</li>
-						<li>
-							<img class="icons find" src="assets/foundation_icons/fi-social-github.svg">
-							<p class="contact_info">
-								<a href="http://github.com/patrickmmorgan" target="blank">Github</a>
-							</p>
-						</li>
-						<li>
-							<img class="icons find" src="assets/foundation_icons/fi-social-linkedin.svg">
-							<p class="contact_info">
-								<a href="http://linkedin.com/in/patrickmmorgan" target="blank">Linkedin</a>
-							</p>
-						</li>
-					</ul>
+					<div class="row">
+						<ul>
+							<li>
+								<img class="icons find" src="assets/foundation_icons/fi-telephone.svg">
+								<p class="contact_info">814.932.5342</p>
+							</li>
+							<li>
+								<img class="icons find" src="assets/foundation_icons/fi-mail.svg">
+								<p class="contact_info">pamorgan12@gmail.com</p>
+							</li>
+							<li>
+								<img class="icons find" src="assets/foundation_icons/fi-social-dropbox.svg">
+								<p class="contact_info">
+									<a href="https://dl.dropboxusercontent.com/u/79176454/patrick_morgan_resume_v2.pdf" target="blank">PDF Resume</a>
+								</p>
+							</li>
+							<li>
+								<img class="icons find" src="assets/other_icons/angel.png">
+								<p class="contact_info">
+									<a href="http://angel.co/patrickmmorgan" target="blank">AngelList</a>
+								</p>
+							</li>
+							<li>
+								<img class="icons find" src="assets/foundation_icons/fi-social-github.svg">
+								<p class="contact_info">
+									<a href="http://github.com/patrickmmorgan" target="blank">Github</a>
+								</p>
+							</li>
+							<li>
+								<img class="icons find" src="assets/foundation_icons/fi-social-linkedin.svg">
+								<p class="contact_info">
+									<a href="http://linkedin.com/in/patrickmmorgan" target="blank">Linkedin</a>
+								</p>
+							</li>
+						</ul>
+					</div>
 				</div>
+				<div class="sixteen columns"><hr/></div>
 			</div>
 		</div>
 
 		<!-- EXPERIENCE -->
-		<div class="row" id="experience">
-			<!-- PICTURE -->
-			<div class="one-third column alpha picture">
-				<figure>
-					<img class="scale-with-grid" src="assets/experience_pic.jpg">
-					<figcaption>Leo Burnett Chicago</figcaption>
-				</figure>
-			</div>
-
-			<!-- RESUME INFO -->
-			<div class="two-thirds column omega experience">
-				<div>
-					<h3>EXPERIENCE</h3>
-					<img class="icons" src="assets/other_icons/experience_icon.png" style="width:6%">
-					<hr>
+		<div class="row main remove-bottom" id="experience">
+			<div id="exp">
+				<!-- PICTURE -->
+				<div class="one-third column picture">
+					<figure>
+						<img class="scale-with-grid" src="assets/experience_pic.jpg">
+						<figcaption>Leo Burnett Chicago</figcaption>
+					</figure>
 				</div>
-				<div class="two-thirds column alpha">
-					<h4>General Assemb.ly</h4>
-					<p>2014-2013</p>
-					<p class="sub_head">Student in 3 month intensive web development bootcamp</p>
-					<ul class="square">
-						<li>You can learn a lot by coding 12 hours a day, every day</li>
-						<li>'Nuff said</li>
-					</ul>
+				<!-- RESUME INFO -->
+				<div class="two-thirds column omega resume">
+					<div>
+						<h3>EXPERIENCE</h3>
+						<img class="icons" src="assets/other_icons/experience_icon.png" style="width:6%">
+						<hr>
+					</div>
+					<div class="two-thirds column alpha">
+						<h4>General Assemb.ly</h4>
+						<p>2014-2013</p>
+						<p class="sub_head">Student in 3 month intensive web development bootcamp</p>
+						<ul class="square">
+							<li>You can learn a lot by coding 12 hours a day, every day</li>
+							<li>'Nuff said</li>
+						</ul>
+					</div>
+					<div class="two-thirds column omega">
+						<h4>Leo Burnett</h4>
+						<p>2013-2012</p>
+						<p class="sub_head">Junior Strategist</p>
+						<ul class="square">
+							<li>Selected to work on Fortune 500 brands like Esurance, MillerCoors, Sprint and Fifth Third Bank</li>
+							<li>Developed strategy for Esurance's sponsorship of the US Open (tennis)</li>
+							<li>Developed strategy for Esurance's sponsorship of Star Trek Into Darkness</li>
+							<li>Developed the Esurance DriveSafe program (teen safe driving)</li>
+							<li>Wrote the challenger strategy POV that resulted in Esurance's current ads</li>
+							<li>Pitched a campaign for Sprint to the President and operating board of the agency</li>
+							<li>Helped MillerCoors revive Hamm's Beer, a legacy brand</li>
+							<li>Pitched a campaign for Fifth Third's partnership with Stand Up 2 Cancer</li>
+						</ul>
+					</div>
 				</div>
-				<div class="two-thirds column omega">
-					<h4>Leo Burnett</h4>
-					<p>2013-2012</p>
-					<p class="sub_head">Junior Strategist</p>
-					<ul class="square">
-						<li>Selected to work on Fortune 500 brands like Esurance, MillerCoors, Sprint and Fifth Third Bank</li>
-						<li>Developed strategy for Esurance's sponsorship of the US Open (tennis)</li>
-						<li>Developed strategy for Esurance's sponsorship of Star Trek Into Darkness</li>
-						<li>Developed the Esurance DriveSafe program (teen safe driving)</li>
-						<li>Wrote the challenger strategy POV that resulted in Esurance's current ads</li>
-						<li>Pitched a campaign for Sprint to the President and operating board of the agency</li>
-						<li>Helped MillerCoors revive Hamm's Beer, a legacy brand</li>
-						<li>Pitched a campaign for Fifth Third's partnership with Stand Up 2 Cancer</li>
-					</ul>
+				<div class="sixteen columns">
+					<hr/>
 				</div>
 			</div>
 		</div>
 
 		<!-- DEV PROJECTS -->
-		<div class="row" id="projects">
-			<div class="sixteen columns alpha">
-				<div>
-					<h3>DEV PROJECTS</h3>
-					<img class="icons" src="assets/other_icons/tools-icon.png" style="width:5%">
-					<hr />
+		<div class="row main remove-bottom" id="projects">
+			<div id="dev">
+				<div class="sixteen columns alpha">
+					<div>
+						<h3>DEV PROJECTS</h3>
+						<img class="icons" src="assets/other_icons/tools-icon.png" style="width:5%">
+						<hr />
+					</div>
+					<div class="fourteen columns offset-by-one">
+						<ul class="example-orbit" data-orbit>
+						  <li>
+						    <img class="scale-with-grid" src="assets/periodic_table_thumb.png" alt="slide 1" />
+						    <div class="orbit-caption project_link">
+						    	The Periodic Table of Echonest
+						      <a href="http://periodic-table-of-echonest.herokuapp.com" target="blank">
+						      	Heroku Site</a>
+						      <a href="https://github.com/patrickmmorgan/periodic_table_of_echonest" target="blank">
+						      	Code on Github</a>
+						    </div>
+						  </li>
+						  <li>
+						    <img class="scale-with-grid" src="assets/atlas_thumb.png" alt="slide 2" />
+						    <div class="orbit-caption project_link">
+						    	Watch Atlas
+						      <a href="http://watch-atlas.herokuapp.com" target="blank">
+						      	Heroku Site</a>
+						      <a href="https://github.com/patrickmmorgan" target="blank">
+						      	Code on Github</a>
+						    </div>
+						  </li>
+						  <li>
+						    <img class="scale-with-grid" src="assets/LiveFromNY_thumb.png" alt="slide 3" />
+						    <div class="orbit-caption project_link">
+						    	Live From New York
+						      <a href="http://live-from-ny.herokuapp.com" target="blank">
+						      	Heroku Site</a>
+						      <a href="https://github.com/patrickmmorgan/live_from_ny" target="blank">
+						      	Code on Github</a>
+						    </div>
+						  </li>
+						</ul>
+					</div>
 				</div>
-				<div class="fourteen columns offset-by-one">
-					<ul class="example-orbit" data-orbit>
-					  <li>
-					    <img class="scale-with-grid" src="assets/periodic_table_thumb.png" alt="slide 1" />
-					    <div class="orbit-caption project_link">
-					    	The Periodic Table of Echonest
-					      <a href="http://periodic-table-of-echonest.herokuapp.com" target="blank">
-					      	Heroku Site</a>
-					      <a href="https://github.com/patrickmmorgan/periodic_table_of_echonest" target="blank">
-					      	Code on Github</a>
-					    </div>
-					  </li>
-					  <li>
-					    <img class="scale-with-grid" src="assets/atlas_thumb.png" alt="slide 2" />
-					    <div class="orbit-caption project_link">
-					    	Watch Atlas
-					      <a href="http://watch-atlas.herokuapp.com" target="blank">
-					      	Heroku Site</a>
-					      <a href="https://github.com/patrickmmorgan" target="blank">
-					      	Code on Github</a>
-					    </div>
-					  </li>
-					  <li>
-					    <img class="scale-with-grid" src="assets/LiveFromNY_thumb.png" alt="slide 3" />
-					    <div class="orbit-caption project_link">
-					    	Live From New York
-					      <a href="http://live-from-ny.herokuapp.com" target="blank">
-					      	Heroku Site</a>
-					      <a href="https://github.com/patrickmmorgan/live_from_ny" target="blank">
-					      	Code on Github</a>
-					    </div>
-					  </li>
-					</ul>
+				<div class="sixteen columns">
+					<hr/>
 				</div>
 			</div>
 		</div>
 
 		<!-- EDUCATION -->
-		<div class="row" id="education">
-			<div class="two-thirds column alpha">
-				<div>
-					<h3>EDUCATION</h3>
-					<img class="icons" src="assets/other_icons/education_icon.png" style="width:6%">
-					<hr>
+		<div class="row main remove-bottom" id="education">
+			<div id="ed">
+				<div class="two-thirds column alpha">
+					<div>
+						<h3>EDUCATION</h3>
+						<img class="icons" src="assets/other_icons/education_icon.png" style="width:6%">
+						<hr>
+					</div>
+					<div class="five columns alpha">
+						<h4>The Second City [Chicago]</h4>
+						<p>2013</p>
+						<p class="sub_head">Certificate in Improv Comedy</p>
+						<ul class="square">
+							<li>Graduate of the Training Center Improvisation program</li>
+							<li>Student in the Music Improv Conservatory</li>
+						</ul>
+					</div>
+					<div class="five columns omega">
+						<h4>Davidson College</h4>
+						<p>2012</p>
+						<p class="sub_head">BA Political Science, Spanish Minor</p>
+						<ul class="square">
+							<li>President of 'Androgyny', Davidson's first co-ed a cappella group</li>
+							<li>One of five nominated for best collegiate actor in a musical by the Metrolina Theatre Association (Into the Woods, 2011)</li>
+						</ul>
+					</div>
 				</div>
-				<div class="five columns alpha">
-					<h4>The Second City [Chicago]</h4>
-					<p>2013</p>
-					<p class="sub_head">Certificate in Improv Comedy</p>
-					<ul class="square">
-						<li>Graduate of the Training Center Improvisation program</li>
-						<li>Student in the Music Improv Conservatory</li>
-					</ul>
+				<!-- PICTURE -->
+				<div class="one-third column picture">
+					<figure>
+						<img class="scale-with-grid" src="assets/davgentleman.jpg">
+						<figcaption>...Except maybe a website</figcaption>
+					</figure>
 				</div>
-				<div class="five columns omega">
-					<h4>Davidson College</h4>
-					<p>2012</p>
-					<p class="sub_head">BA Political Science, Spanish Minor</p>
-					<ul class="square">
-						<li>President of 'Androgyny', Davidson's first co-ed a cappella group</li>
-						<li>One of five nominated for best collegiate actor in a musical by the Metrolina Theatre Association (Into the Woods, 2011)</li>
-					</ul>
-				</div>
-			</div>
-			<!-- PICTURE -->
-			<div class="one-third column picture">
-				<figure>
-					<img class="scale-with-grid" src="assets/davgentleman.jpg">
-					<figcaption>...Except maybe a website</figcaption>
-				</figure>
 			</div>
 		</div>
 
@@ -345,6 +361,7 @@
 	<!-- BOTTOM BAR -->
 	<div class="nav_bar bottom"></div>
 	
+	<!-- JAVASCRIPT -->
 	<script src="js/jquery.js"></script>
 	<script src="js/foundation.js"></script>
 	<script src="js/foundation.orbit.js"></script>
@@ -372,7 +389,7 @@
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		      if (target.length) {
 		        $('html,body').animate({
-		          scrollTop: target.offset().top - 50
+		          scrollTop: target.offset().top
 		        }, 1000);
 		        return false;
 		      }
