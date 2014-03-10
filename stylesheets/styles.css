@@ -162,3 +162,6 @@ figcaption {
 .resume hr {
   margin-bottom: 10px;
 }
+#sub_list {
+  font-size: 95%;
+}
