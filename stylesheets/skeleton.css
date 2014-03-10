@@ -76,7 +76,7 @@
 
     /* Note: Design for a width of 768px */
 
-/*    @media only screen and (min-width: 768px) and (max-width: 959px) {
+    @media only screen and (min-width: 0px) and (max-width: 959px) {
         .container                                  { width: 768px; }
         .container .column,
         .container .columns                         { margin-left: 10px; margin-right: 10px;  }
@@ -122,7 +122,6 @@
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
     }
-*/
 
 /*  #Mobile (Portrait)
 ================================================== */
@@ -152,10 +151,10 @@
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column  { width: 300px; }
+        .container .two-thirds.column  { width: 300px; }*/
 
         /* Offsets */
-        .container .offset-by-one,
+/*        .container .offset-by-one,
         .container .offset-by-two,
         .container .offset-by-three,
         .container .offset-by-four,
@@ -170,14 +169,14 @@
         .container .offset-by-thirteen,
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
-    }
-*/
+    }*/
+
 /* #Mobile (Landscape)
 ================================================== */
 
     /* Note: Design for a width of 480px */
 
-/*    @media only screen and (min-width: 480px) and (max-width: 767px) {
+/*   @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 420px; }
         .container .columns,
         .container .column { margin: 0; }
