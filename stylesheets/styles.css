@@ -7,6 +7,17 @@ body {
   padding-bottom: 50px;
 }
 
+/*Padding for Scrolling*/
+#aboutme {
+  padding-top: 60px;
+}
+#exp {
+  padding-top: 20px;
+}
+#dev {
+  padding-top: 15px;
+}
+
 /* FONTS */
 h3 {
   font-family: 'Lato', sans-serif;
@@ -32,9 +43,9 @@ figcaption {
   text-align: center;
 }
 
-/* TOP AND BOTTOM BARS */
+/* TOP BAR, BOTTOM BAR, LAST DIVIDER */
 .nav_bar {
-  background: #D8D8D8;
+  background: #EFEFEF;
   height: 40px;
   width: 100%;
   position: fixed;
@@ -86,6 +97,29 @@ figcaption {
     margin-top: -10px;
   }
 
+/* ABOUT ME */
+.about {
+  display: inline;
+  padding-top: 30px;
+}
+  .about.answer1 {
+    margin-left: 56px;
+  }
+  .about.answer2 {
+    margin-left: 72px;
+  }
+  .about.answer3 {
+    margin-left: 60px;
+  }
+  .about.answer4 {
+    margin-left: 65px;
+  }
+  .project_link a {
+    color: white;
+    float: right;
+    margin-right: 25px;
+  }
+
 /* SKILLS */
 .skills_list li {
   margin-bottom: 2px;
@@ -111,41 +145,7 @@ figcaption {
     margin-left: 25px;
   }
 
-/* ABOUT ME */
-.about {
-  display: inline;
-  padding-top: 30px;
-}
-  .about.answer1 {
-    margin-left: 56px;
-  }
-  .about.answer2 {
-    margin-left: 72px;
-  }
-  .about.answer3 {
-    margin-left: 60px;
-  }
-  .about.answer4 {
-    margin-left: 65px;
-  }
-  .project_link a {
-    color: white;
-    float: right;
-    margin-right: 25px;
-  }
-
-/*Padding for Scrolling*/
-#aboutme {
-  padding-top: 60px;
-}
-#exp {
-  padding-top: 20px;
-}
-#dev {
-  padding-top: 15px;
-}
-
-/* FORMAT EXPERIENCE DETAILS */
+/* EXPERIENCE DETAILS */
 .resume p {
   margin-bottom: 0;
 }
