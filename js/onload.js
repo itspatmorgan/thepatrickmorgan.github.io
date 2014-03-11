@@ -29,5 +29,6 @@ $(document).ready(function(){
   });
 
   // Fade in profile picture for more graceful loading //
-  $('#profile_pic').hide().fadeIn(3000);
+  $("#profile_pic").hide();
+  $("#profile_pic").bind("load", function () { $(this).fadeIn(3000); });
 });
