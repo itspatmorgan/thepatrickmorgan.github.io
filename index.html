@@ -28,13 +28,15 @@
 	<!-- NAV BAR -->
 	<div class="nav_bar">
 		<h3>PM</h3>
-		<ul class="menu">
-			<li><a href="#top">WELCOME</a></li>
-			<li><a href="#about">ABOUT ME</a></li>
-			<li><a href="#experience">EXPERIENCE</a></li>
-			<li><a href="#projects">PROJECTS</a></li>
-			<li><a href="#education">EDUCATION</a></li>
-		</ul>
+		<div class="menu">
+			<ul>
+				<li><a href="#top">WELCOME</a></li>
+				<li><a href="#about">ABOUT ME</a></li>
+				<li><a href="#experience">EXPERIENCE</a></li>
+				<li><a href="#projects">PROJECTS</a></li>
+				<li><a href="#education">EDUCATION</a></li>
+			</ul>
+		</div>
 	</div>
 
 	<!-- MAIN LAYOUT / SKELETON GRID -->
@@ -53,7 +55,7 @@
 			<!-- PROFILE PICTURE -->
 			<div class="one-third column picture">
 				<figure>
-					<img class="scale-with-grid" src="assets/pics/ga_headshot.png">
+					<img class="scale-with-grid" id="profile_pic" src="assets/pics/ga_headshot.png">
 					<figcaption>GA Headshot</figcaption>
 				</figure>
 			</div>
@@ -367,5 +369,10 @@
 	<script src="js/foundation.orbit.js"></script>
 	<script src="js/onload.js"></script>
 
+	<script> 
+		$("#profile_pic").bind("load", function() { 
+			$(this).fadeIn(3000); 
+		});
+	</script>
 </body>
 </html>
