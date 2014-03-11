@@ -56,7 +56,7 @@
 			<div class="one-third column picture">
 				<figure>
 					<img class="scale-with-grid" id="profile_pic" src="assets/pics/ga_headshot.png">
-					<figcaption>GA Headshot</figcaption>
+					<figcaption id="profile_pic_caption">GA Headshot</figcaption>
 				</figure>
 			</div>
 			<!-- HELLO -->
@@ -370,8 +370,10 @@
 	<script src="js/onload.js"></script>
 	<script>
 		$("#profile_pic").hide();
+		$("#profile_pic_caption").hide();
 		$("#profile_pic").bind("load", function(){ 
 			$(this).fadeIn(3000); 
+			$("#profile_pic_caption").fadeIn(3000);
 		});
 	</script>
 </body>
