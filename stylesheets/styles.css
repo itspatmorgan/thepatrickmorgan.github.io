@@ -67,6 +67,7 @@ figcaption {
 .menu {
   float: right;
   margin-top: 8px;
+  position: relative;
 }
 .menu li {
   display: inline;
