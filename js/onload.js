@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // Set up Foundation Orbit // 
   $(document).foundation(
     'orbit', {
        animation: 'slide',
@@ -12,7 +13,7 @@ $(document).ready(function(){
     }
   );
 
-
+  // Smooth Scrolling from nav bar links //
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
@@ -27,5 +28,6 @@ $(document).ready(function(){
     }
   });
 
+  // Fade in profile picture for more graceful loading //
   $('#profile_pic').hide().fadeIn(3000);
 });
