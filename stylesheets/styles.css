@@ -66,8 +66,9 @@ figcaption {
 /* MENU ITEMS IN TOP BAR */
 .menu {
   float: right;
-  margin-top: 8px;
-  position: relative;
+  margin-top: -25px;
+  position: absolute;
+  right: 0;
 }
 .menu li {
   display: inline;
