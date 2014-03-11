@@ -368,5 +368,11 @@
 	<script src="js/foundation.js"></script>
 	<script src="js/foundation.orbit.js"></script>
 	<script src="js/onload.js"></script>
+	<script>
+		$("#profile_pic").hide();
+		$("#profile_pic").bind("load", function(){ 
+			$(this).fadeIn(3000); 
+		});
+	</script>
 </body>
 </html>
