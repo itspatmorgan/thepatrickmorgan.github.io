@@ -26,4 +26,6 @@ $(document).ready(function(){
       }
     }
   });
+
+  $('#profile_pic').hide().fadeIn(3000);
 });
