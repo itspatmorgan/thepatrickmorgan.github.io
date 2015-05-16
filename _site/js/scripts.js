@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  // Set up Foundation Orbit // 
+  // Set up Foundation Orbit //
   $(document).foundation(
     'orbit', {
        animation: 'slide',
@@ -28,13 +28,3 @@ $(document).ready(function(){
     }
   });
 });
-
-// POTENTIAL CODE FOR FADING IN PICTURE // 
-// <script>
-//  $("#profile_pic").hide();
-//  $("#profile_pic_caption").hide();
-//  $("#profile_pic").bind("load", function(){ 
-//    $(this).fadeIn(3000); 
-//    $("#profile_pic_caption").fadeIn(3000);
-//  });
-// </script>

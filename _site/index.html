@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Patrick Morgan</title>
     <meta name="viewport" content="width=device-width">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css">
-
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   </head>
 
-  <body id="top">
-
+  <body>
     <!-- NAV BAR -->
-<div class="nav_bar">
+<div class="nav">
 	<h3>PM</h3>
 	<div class="menu">
 		<ul>
 			<li><a href="#top">WELCOME</a></li>
 			<li><a href="#about">ABOUT ME</a></li>
 			<li><a href="#experience">EXPERIENCE</a></li>
-			<li><a href="#projects">PROJECTS</a></li>
 			<li><a href="#education">EDUCATION</a></li>
 		</ul>
 	</div>
 </div>
 
-    <!-- MAIN LAYOUT / SKELETON GRID -->
-<div class="container">
-  
+
+    <!-- MAIN CONTENT AREA -->
+    <div id="page-content">
+      <!-- MAIN LAYOUT / SKELETON GRID -->
+<div class="container" id="top">
+
   <!-- HEADER -->
   <div class="sixteen columns" id="header">
     <div class="sixteen columns">
@@ -48,8 +47,8 @@
     <!-- PROFILE PICTURE -->
     <div class="one-third column picture">
       <figure>
-        <img class="scale-with-grid" id="profile_pic" src="assets/pics/headshot_small.png">
-        <figcaption id="profile_pic_caption">GA Headshot</figcaption>
+        <img class="scale-with-grid" id="profile-pic" src="assets/pics/headshot_small.png">
+        <figcaption id="profile-pic-caption">GA Headshot</figcaption>
       </figure>
     </div>
 
@@ -63,7 +62,7 @@
 
       <div class="two-thirds column alpha">
         <h4>I'm Pat</h4>
-        <h5 class="sub_head">A frontend developer for AmEx based in NYC</h5>
+        <h5 class="sub-head">A frontend developer for AmEx based in NYC</h5>
         <p></p>
         <p>Okay, you caught me. I like to make things. Like this site, for instance.</p>
         <p>I like making things so much that I chose to leave my job as a brand strategist and dive into the wonderful world of code. Because, at the end of the day, my ideas aren't of much use to anyone if they never make it out of my notebook. So take a look around, drop me a line, and let's get back to the making.</p>
@@ -75,7 +74,7 @@
 
   <!-- ABOUT ME -->
   <div class="row main" id="about">
-    <div id="about_positioning" >
+    <div id="about-positioning" >
       <div class="one-third column">
         <!-- ABOUT ME COLUMN -->
         <div>
@@ -129,7 +128,7 @@
 
         <div class="row">
           <div class="two columns alpha">
-            <ul class="skills_list">
+            <ul class="skills-list">
               <li>Ruby</li>
               <li>Rails</li>
               <li>Sinatra</li>
@@ -149,7 +148,7 @@
             </ul>
           </div>
           <div class="three columns omega">
-            <ul class="skills_list">
+            <ul class="skills-list">
               <li><div style="width:90%"></div></li>
               <li><div style="width:85%"></div></li>
               <li><div style="width:80%"></div></li>
@@ -170,6 +169,7 @@
           </div>
         </div>
       </div>
+
       <!-- FIND ME COLUMN -->
       <div class="one-third column">
         <div>
@@ -182,46 +182,48 @@
           <ul>
             <li>
               <img class="icons find" src="assets/foundation_icons/fi-telephone.svg">
-              <p class="contact_info">814.932.5342</p>
+              <p class="contact-info">814.932.5342</p>
             </li>
             <li>
               <img class="icons find" src="assets/foundation_icons/fi-mail.svg">
-              <p class="contact_info">pamorgan12@gmail.com</p>
+              <p class="contact-info">pamorgan12@gmail.com</p>
             </li>
             <li>
               <img class="icons find" src="assets/foundation_icons/fi-social-dropbox.svg">
-              <p class="contact_info">
+              <p class="contact-info">
                 <a href="https://dl.dropboxusercontent.com/u/79176454/pat_morgan_resume.pdf" target="blank">PDF Resume</a>
               </p>
             </li>
             <li>
               <img class="icons find" src="assets/other_icons/angel.png">
-              <p class="contact_info">
+              <p class="contact-info">
                 <a href="http://angel.co/patrickmmorgan" target="blank">AngelList</a>
               </p>
             </li>
             <li>
               <img class="icons find" src="assets/foundation_icons/fi-social-github.svg">
-              <p class="contact_info">
+              <p class="contact-info">
                 <a href="http://github.com/patrickmmorgan" target="blank">Github</a>
               </p>
             </li>
             <li>
               <img class="icons find" src="assets/foundation_icons/fi-social-linkedin.svg">
-              <p class="contact_info">
+              <p class="contact-info">
                 <a href="http://linkedin.com/in/patrickmmorgan" target="blank">Linkedin</a>
               </p>
             </li>
           </ul>
         </div>
       </div>
+
       <div class="sixteen columns divider"><hr/></div>
     </div>
   </div>
 
   <!-- EXPERIENCE -->
   <div class="row main remove-bottom" id="experience">
-    <div id="experience_positioning">
+    <div id="experience-positioning">
+
       <!-- PICTURE -->
       <div class="one-third column picture">
         <figure>
@@ -229,6 +231,7 @@
           <figcaption>Leo Burnett Chicago</figcaption>
         </figure>
       </div>
+
       <!-- RESUME INFO -->
       <div class="two-thirds column omega resume">
         <div>
@@ -240,7 +243,7 @@
         <div class="two-thirds column alpha">
           <h4>General Assemb.ly</h4>
           <p>2014-2013</p>
-          <p class="sub_head">Student in 3 month intensive web development bootcamp</p>
+          <p class="sub-head">Student in 3 month intensive web development bootcamp</p>
           <ul class="square">
             <li>You can learn a lot by coding 12 hours a day, every day</li>
             <li>'Nuff said</li>
@@ -250,11 +253,11 @@
         <div class="two-thirds column omega">
           <h4>Leo Burnett</h4>
           <p>2013-2012</p>
-          <p class="sub_head">Junior Strategist</p>
+          <p class="sub-head">Junior Strategist</p>
           <ul class="square">
             <li>Chosen to work on Fortune 500 brands - Esurance, MillerCoors, Sprint + Fifth Third Bank</li>
             <li>Lead strategist on:
-              <ul class="circle" id="sub_list">
+              <ul class="circle" id="sub-list">
                 <li>Esurance's sponsorship of the US Open (tennis)</li>
                 <li>Esurance's sponsorship of Star Trek Into Darkness</li>
                 <li>The Esurance DriveSafe program (teen safe driving)</li>
@@ -271,63 +274,9 @@
     </div>
   </div>
 
-  <!-- DEV PROJECTS -->
-  <div class="row main remove-bottom" id="projects">
-    <div id="projects_positioning">
-      <!-- Orbit Slider -->
-      <div class="sixteen columns">
-        <div>
-          <h3>DEV PROJECTS</h3>
-          <img class="icons" src="assets/other_icons/tools-icon.png" style="width:5%">
-          <hr />
-        </div>
-
-        <div class="twelve columns offset-by-two">
-          <ul class="example-orbit" data-orbit>
-            <li>
-              <img class="scale-with-grid" src="assets/projects/periodic_table_thumb.png" alt="slide 1">
-
-              <div class="orbit-caption project_link">
-                The Periodic Table of Echonest
-                <a href="http://periodic-table-of-echonest.herokuapp.com" target="blank">
-                  See the site</a>
-                <a href="https://github.com/patrickmmorgan/periodic_table_of_echonest" target="blank">
-                  See the code</a>
-              </div>
-            </li>
-            <li>
-              <img class="scale-with-grid" src="assets/projects/atlas_thumb.png" alt="slide 2">
-
-              <div class="orbit-caption project_link">
-                Watch Atlas
-                <a href="http://watch-atlas.herokuapp.com" target="blank">
-                  See the site</a>
-                <a href="https://github.com/patrickmmorgan/watch_atlas" target="blank">
-                  See the code</a>
-              </div>
-            </li>
-            <li>
-              <img class="scale-with-grid" src="assets/projects/LiveFromNY_thumb.png" alt="slide 3">
-
-              <div class="orbit-caption project_link">
-                Live From New York
-                <a href="http://live-from-ny.herokuapp.com" target="blank">
-                  See the site</a>
-                <a href="https://github.com/patrickmmorgan/live_from_ny" target="blank">
-                  See the code</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="sixteen columns divider"><hr/></div>
-    </div>
-  </div>
-
   <!-- EDUCATION -->
   <div class="row main remove-bottom" id="education">
-    <div id="education_positioning">
+    <div id="education-positioning">
       <div class="two-thirds column alpha">
         <div>
           <h3>EDUCATION</h3>
@@ -338,7 +287,7 @@
         <div class="five columns alpha">
           <h4>The Second City [Chicago]</h4>
           <p>2013</p>
-          <p class="sub_head">Certificate in Improv Comedy</p>
+          <p class="sub-head">Certificate in Improv Comedy</p>
           <ul class="square">
             <li>Graduate of the Training Center Improvisation program</li>
             <li>Student in the Music Improv Conservatory</li>
@@ -348,7 +297,7 @@
         <div class="five columns omega">
           <h4>Davidson College</h4>
           <p>2012</p>
-          <p class="sub_head">BA Political Science, Spanish Minor</p>
+          <p class="sub-head">BA Political Science, Spanish Minor</p>
           <ul class="square">
             <li>President of 'Androgyny', Davidson's first co-ed a cappella group</li>
             <li>One of five nominated for best collegiate actor in a musical by the Metrolina Theatre Association (Into the Woods, 2011)</li>
@@ -369,15 +318,15 @@
   </div>
 </div>
 
-<!-- BOTTOM BAR -->
-<div class="nav_bar bottom"></div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+<div class="nav bottom"></div>
 
 
     <!-- JAVASCRIPT -->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/foundation.js"></script>
-    <script src="/js/foundation.orbit.js"></script>
-    <script src="/js/onload.js"></script>
-
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
