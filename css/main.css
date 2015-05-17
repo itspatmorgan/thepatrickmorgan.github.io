@@ -320,6 +320,9 @@ table {
 td, th {
   padding: 0; }
 
+/* ------------------------------ *\
+  #VARIABLES
+\* ------------------------------ */
 /*
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
@@ -990,6 +993,24 @@ label span, legend span {
   visibility: hidden;
   width: 0;
   height: 0; }
+
+/* ------------------------------ *\
+  #VARIABLES
+\* ------------------------------ */
+/* ------------------------------ *\
+  #SEMANTIC.GS
+\* ------------------------------ */
+/* ------------------------------ *\
+  #GRID
+\* ------------------------------ */
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
 
 * {
   box-sizing: border-box; }
