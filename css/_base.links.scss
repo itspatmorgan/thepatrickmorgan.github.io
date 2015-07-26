@@ -1,0 +1,15 @@
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #1EAEDB;
+
+  &:hover {
+    color: #0FA0CE;
+  }
+}
+
+.project-link a {
+  color: white;
+  float: right;
+  margin-right: 25px;
+}

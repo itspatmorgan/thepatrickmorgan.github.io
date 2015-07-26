@@ -1,0 +1,90 @@
+.main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sub-head {
+  color: #71C6CD;
+  font-weight: bold;
+}
+
+/* HEADER */
+#header {
+  margin-top: 85px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+/* ABOUT ME */
+.about {
+  display: inline;
+  padding-top: 30px;
+}
+
+.about.answer1 {
+  margin-left: 56px;
+}
+
+.about.answer2 {
+  margin-left: 72px;
+}
+
+.about.answer3 {
+  margin-left: 60px;
+}
+
+.about.answer4 {
+  margin-left: 65px;
+}
+
+/* FIND ME */
+.icons {
+  width: 12%;
+  float: right;
+}
+
+.icons.find {
+  width: 8%;
+  float: none;
+  margin-bottom: -5px;
+}
+
+.contact-info {
+  display: inline;
+  margin-left: 25px;
+}
+
+/* EXPERIENCE DETAILS */
+.resume p {
+  margin-bottom: 0;
+}
+
+.resume ul {
+  margin-top: 10px;
+}
+
+.resume li {
+  margin-bottom: 8px;
+}
+
+.resume hr {
+  margin-bottom: 10px;
+}
+
+#sub-list {
+  font-size: 95%;
+}
+
+/*Padding for Scrolling*/
+#about-positioning {
+  padding-top: 60px;
+}
+
+#experience-positioning {
+  padding-top: 20px;
+}
+
+#education-positioning .divider {
+  margin-bottom: 100px;
+}
