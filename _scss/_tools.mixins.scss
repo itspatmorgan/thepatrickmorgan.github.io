@@ -2,42 +2,19 @@
   #MIXINS
 \* ------------------------------ */
 
-/*
- * #MEDIA QUERY ABSTRACTION
- */
+// MEDIA QUERY ABSTRACTIONS
+
 @mixin mq($point) {
-  @if $point == baby-bear {
-    @media (max-width: 600px)  { @content; }
+  // Larger than mobile
+  @if $point == medium {
+    @media (min-width: 400px) { @content; }
   }
-  @else if $point == mama-bear {
-    @media (max-width: 1250px) { @content; }
+  // Larger than phablet (also point when grid becomes active)
+  @else if $point == large {
+    @media (min-width: 550px) { @content; }
   }
-  @else if $point == papa-bear {
-    @media (max-width: 1600px) { @content; }
+  // Larger than tablet
+  @else if $point == x-large {
+    @media (min-width: 750px) { @content; }
   }
 }
-
-/* Media Queries from Skeleton
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
