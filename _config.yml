@@ -2,3 +2,6 @@ name: PMM - Personal Site
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+sass:
+  sass_dir: ./_scss
+  style: compressed
