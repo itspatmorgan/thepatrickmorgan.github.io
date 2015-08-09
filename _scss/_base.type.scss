@@ -1,5 +1,7 @@
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*\
+    #Typography
+\*------------------------------------*/
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -14,7 +16,7 @@ h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@include mq (large) {
   h1 { font-size: 5.0rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
@@ -28,29 +30,28 @@ p {
   margin-bottom: 2.5rem;
 }
 
-p,
-ul,
-li,
-h4,
-figcaption {
-  font-family: 'Century';
-}
-
-#header h1 {
-  font-size: 70px;
-  font-family: 'Lato', sans-serif;
+.logo {
+  font-family: Maven Pro;
   font-weight: 700;
-  margin-right: 50px;
 }
 
-h3 {
+.header-text {
   font-family: 'Lato', sans-serif;
-  display: inline;
 }
 
-#header h5 {
+.header-text--lg {
+  font-weight: 700;
+  font-size: 70px;
+}
+
+.header-text--sm {
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.header-secondary {
   font-family: 'Century';
-  padding-bottom: 30px;
-  margin-right: -90px;
   margin-top: -10px;
+  margin-right: -90px;
+  padding-bottom: 30px;
 }

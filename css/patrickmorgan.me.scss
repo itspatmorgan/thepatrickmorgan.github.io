@@ -55,18 +55,15 @@
 @import "_base.type.scss";
 @import "_base.links.scss";
 @import "_base.lists.scss";
-@import "_base.forms.scss";
 @import "_base.buttons.scss";
-@import "_base.fig-pic-code.scss";
+@import "_base.figures-pictures.scss";
 @import "_base.rules.scss";
-@import "_base.tables.scss";
 
 // #OBJECTS
 @import "_objects.grid.scss";
 
 // #COMPONENTS
-@import "_base.scss";
-@import "_components.nav.scss";
+@import "_components.card.scss";
 
 // #TRUMPS
 @import "_trumps.utilities.scss";

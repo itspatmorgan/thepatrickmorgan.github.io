@@ -1,8 +1,11 @@
-/* Rules
+/* Pictures and Figures
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border-width: 0;
-  border-top: 1px solid #E1E1E1;
+
+.picture {
+  width: 100%;
+  border-radius: 10px;
+}
+
+figcaption {
+  text-align: center;
 }
