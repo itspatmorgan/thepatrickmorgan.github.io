@@ -13,11 +13,18 @@
     <link rel="stylesheet" href="/css/patrickmorgan.me.css">
   </head>
 
-  <body>
+  <body class="brand-color-primary">
+  
+    <!-- Header -->
+    {% include header.html %}
+
     <!-- MAIN CONTENT AREA -->
     <div id="page-content">
       {{ content }}
-    </div>
+    </div> 
+
+    <!-- Footer -->
+    {% include footer.html %}
 
     <!-- JAVASCRIPT -->
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>

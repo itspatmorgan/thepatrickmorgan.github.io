@@ -46,8 +46,13 @@ gulp.task('sass', function () {
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/css'))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('css'));
+        .pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task('css-to-site', function() {
+    gulp.src('css/*')
+        .pipe(gulp.dest('_site/css'));
+        browserSync.reload();
 });
 
 /**
@@ -55,8 +60,8 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*.html', '_includes/*.html'], ['jekyll-rebuild']);
+    gulp.watch('_scss/*.scss', ['sass', 'css-to-site']);
+    gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**

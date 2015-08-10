@@ -5,6 +5,7 @@
 .container {
   position: relative;
   width: 100%;
+  height: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
@@ -46,43 +47,18 @@
   #Class based grid
 \* ------------------------------ */
 
-@include mq(large) {
-  .span-1 {
-    width: 4.66666666667%;
-  }
-  .span-2 {
-    width: 13.3333333333%;
-  }
-  .span-3 {
-    width: 22%;
-  }
-  .span-4 {
-    width: 30.6666666667%;
-  }
-  .span-5 {
-    width: 39.3333333333%;
-  }
-  .span-6 {
-    width: 48%;
-  }
-  .span-7 {
-    width: 56.6666666667%;
-  }
-  .span-8 {
-    width: 65.3333333333%;
-  }
-  .span-9 {
-    width: 74.0%;
-  }
-  .span-10 {
-    width: 82.6666666667%;
-  }
-  .span-11 {
-    width: 91.3333333333%;
-  }
-  .span-12 {
-    width: 100%; 
-    margin-left: 0;
-  }
+@include mq(x-large) {
+   .span-1 { width: 4.66666666667%; }
+   .span-2 { width: 13.3333333333%; }
+   .span-3 { width: 22%; }
+   .span-4 { width: 30.6666666667%; }
+   .span-5 { width: 39.3333333333%; }
+   .span-6 { width: 48%; }
+   .span-7 { width: 56.6666666667%; }
+   .span-8 { width: 65.3333333333%; }
+   .span-9 { width: 74%; }
+  .span-10 { width: 82.6666666667%; }
+  .span-11 { width: 91.3333333333%; }
+  .span-12 { width: 100%; margin-left: 0; }
 }
 
