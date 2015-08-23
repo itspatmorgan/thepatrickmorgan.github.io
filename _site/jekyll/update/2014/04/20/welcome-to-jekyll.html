@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="page page--home">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,19 +7,38 @@
     <meta name="viewport" content="width=device-width">
     
     <!-- Font -->
-    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:400,700" rel="stylesheet" type="text/css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/patrickmorgan.css">
   </head>
 
-  <body class="site-theme">
-  
+  <body>
+
     <!-- Header -->
-    <header>
-  <div class="header-wrapper">
-    <div class="header-title">
-      <span class="site-title">&ltpatrickmorgan&#47&gt</span>
+    <header class="page-head">
+  <div class="container">
+    <div class="row">
+      <div class="site-title column span-5">
+        <a href="/" class="site-title__link">&ltpatrickmorgan&#47&gt</a>
+      </div>
+
+      <nav class="site-nav column span-7">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">About Me</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Projects</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Blog</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Resume</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </header>
@@ -49,9 +68,20 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
     </div> 
 
     <!-- Footer -->
-    <footer>
-  <div class="footer-wrapper">
-    Some Text
+    <footer class="page-foot">
+  <div class="container">
+    <div class="row">
+      <div class="column span-8">
+        <p>
+          Patrick Morgan
+          <br>
+          814.932.5342 | <a href="mailto:pamorgan12@gmail.com" class="link--light">pamorgan12@gmail.com</a>
+        </p>
+      </div>
+      <div class="column span-4">
+        Some Stuff
+      </div>
+    </div>
   </div>
 </footer>
 

@@ -2,16 +2,10 @@
     #Links
 \*------------------------------------*/
 
-a {
-  color: #1EAEDB;
+.link--light {
+  color: $text-light--primary;
 
   &:hover {
-    color: #0FA0CE;
+    color: $text-light--secondary;
   }
-}
-
-.project-link a {
-  color: white;
-  float: right;
-  margin-right: 25px;
 }

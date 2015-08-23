@@ -1,15 +1,67 @@
 header {
   position: relative;
-  
-  right: 0;
-  left: 0;
 
-  height: 128px;
-  
-  padding-right: 16px;
-  padding-left: 16px;
+  margin-bottom: 50px;
 }
 
-.site-theme header {
-  background-color: $brand-color;
+.page-head .container {
+  border-bottom: 5px solid $brand-color;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include mq(x-large) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.site-title {
+  text-align:  center;
+
+  @include mq(x-large) {
+    text-align: left;
+  }
+}
+
+.site-title__link {
+  font-family: "Maven Pro";
+  font-size: 35px;
+
+  color: $text-dark--primary;
+  text-decoration: none;
+}
+
+.site-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  @include mq(x-large) {
+    float: right;
+  }
+}
+
+.site-nav__item {
+  display: inline-block;;
+
+  padding: 15px;
+
+  &:last-child {
+    @include mq(x-large) {
+      padding-right: 0;
+    }
+  }
+}
+
+.site-nav__link {
+  display: block;
+  text-decoration: none;
+  color: $text-dark--secondary;
+
+  &:hover {
+    color: $brand-accent--dark;
+  }
 }

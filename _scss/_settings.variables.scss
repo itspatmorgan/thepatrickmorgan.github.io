@@ -22,7 +22,7 @@ $black: rgba(0, 0, 0, 1);
   $grey--light: rgba(0, 0, 0, .12);
 
 $white: rgba(255, 255, 255, 1);
-  $white--light: gba(255, 255, 255, .7);
+  $white--light: rgba(255, 255, 255, .7);
 
 
 
@@ -52,7 +52,7 @@ $text-light--secondary: $white--light;
 
 // Font Sizing & Weights
 $font-size--default: 1em;
-$line-height--default: 1;
+$line-height--default: 1.25;
 
 $font-weight--default: 400;
 $font-weight--bold: 700;

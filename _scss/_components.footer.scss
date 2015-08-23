@@ -1,13 +1,14 @@
 footer {
   position: relative;
-  
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  height: 100px;
+  width: 100%;
 }
 
-.site-theme footer {
-  background-color: $brand-color--light;
+.page-foot {
+  padding: 70px 0;
+
+  background-color: $brand-color;
+
+  border-top: 5px solid $brand-color--dark;
+
+  color: $text-light--primary;
 }

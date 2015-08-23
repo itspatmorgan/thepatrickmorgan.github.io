@@ -6,33 +6,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight--default;
 }
 
-.header-title {
-  font-size: 24px;
-  color: $text-light--primary;
-  font-weight: $font-weight--default;
-  line-height: 1.5;
-  white-space: nowrap;
-}
-
-.site-title {
-  font-family: Maven Pro;
-  font-weight: $font-weight--bold;
-}
-
-.header-text--lg {
-  font-weight: $font-weight--bold;
-  font-size: 70px;
-}
-
-.header-text--sm {
-  font-weight: $font-weight--default;
-  font-size: 48px;
-}
-
-.header-secondary {
-  font-family: 'Century';
-}
-
 p {
+  margin: 0;
   margin-bottom: .5em;
+  line-height: 1.75;
+  font-size: $font-size--default;
+}
+
+aside {
+  text-align: right;
 }
