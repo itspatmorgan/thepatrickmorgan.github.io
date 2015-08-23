@@ -1,5 +1,6 @@
-/* Page Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*\
+    #Page Level Styles
+\*------------------------------------*/
 
 html {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
@@ -10,18 +11,21 @@ body {
   background-color: $body-color;
   overflow: hidden;
 
-  font-size: $font-size-default;
-  font-weight: $font-weight-default;
-  
-  line-height: $line-height-default;
-  color: $font-color-default;
+  font-size: $font-size--default;
+  font-weight: $font-weight--default;
+  line-height: $line-height--default;
+
+  color: $text-dark--primary;
 
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 #page-content {
+  min-height: 650px;
+
   margin-top: 20px;
+  margin-bottom: 30px;
 
   @include mq(large) {
     margin-top: 40px;

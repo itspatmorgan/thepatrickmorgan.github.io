@@ -3,13 +3,15 @@
 \* ------------------------------ */
 
 // Presentational Color Variables
+// ------------------------------
+
 $teal-100: #b2dfdb;
 $teal-500: #009688;
 $teal-800: #00695c;
 
 $accent-100: #a7ffeb;
 $accent-400: #1de9b6;
-$accent-700: #00bfa5
+$accent-700: #00bfa5;
 
 $paper: #f9f9f9;
 
@@ -22,17 +24,25 @@ $black: rgba(0, 0, 0, 1);
 $white: rgba(255, 255, 255, 1);
   $white--light: gba(255, 255, 255, .7);
 
+
+
 // Semantic Functional Variables
+// -----------------------------
+
+// Background Color
 $body-color: $paper;
 
+// Brand Colors
 $brand-color: $teal-500;
 $brand-color--light: $teal-100;
 $brand-color--dark: $teal-800;
 
+// Accent Colors
 $brand-accent: $accent-400;
 $brand-accent--light: $accent-100;
 $brand-accent--dark: $accent-700;
 
+// Text Colors
 $text-dark--primary: $black--light;
 $text-dark--secondary: $grey--dark;
 $text-dark--tertiary: $grey;
@@ -40,9 +50,13 @@ $text-dark--tertiary: $grey;
 $text-light--primary: $white;
 $text-light--secondary: $white--light;
 
-$font-size: 1em;
-$line-height: 1;
+// Font Sizing & Weights
+$font-size--default: 1em;
+$line-height--default: 1;
 
 $font-weight--default: 400;
 $font-weight--bold: 700;
+
+// Borders
+$border--default: 1px solid $grey--light;
 
