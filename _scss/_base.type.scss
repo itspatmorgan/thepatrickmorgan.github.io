@@ -3,35 +3,36 @@
 \*------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-weight-default;
+  font-weight: $font-weight--default;
 }
 
 .header-title {
   font-size: 24px;
-  color: $font-color-light;
-  font-weight: $font-weight-default;
+  color: $text-dark--primary;
+  font-weight: $font-weight--default;
   line-height: 1.5;
   white-space: nowrap;
 }
 
 .site-title {
   font-family: Maven Pro;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight--bold;
 }
 
 .header-text--lg {
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight--bold;
   font-size: 70px;
 }
 
 .header-text--sm {
-  font-weight: $font-weight-default;
+  font-weight: $font-weight--default;
   font-size: 48px;
 }
 
 .header-secondary {
   font-family: 'Century';
-  margin-top: -10px;
-  margin-right: -90px;
-  padding-bottom: 30px;
+}
+
+p {
+  margin-bottom: .5em;
 }

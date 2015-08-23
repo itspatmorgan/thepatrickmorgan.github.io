@@ -2,20 +2,47 @@
   #VARIABLES
 \* ------------------------------ */
 
-$aqua: #71c6cd;
-$grey: #efefef;
-$paper: #f9f9f9;
-$white: #fff;
-$black: #212121;
+// Presentational Color Variables
+$teal-100: #b2dfdb;
+$teal-500: #009688;
+$teal-800: #00695c;
 
+$accent-100: #a7ffeb;
+$accent-400: #1de9b6;
+$accent-700: #00bfa5
+
+$paper: #f9f9f9;
+
+$black: rgba(0, 0, 0, 1);
+  $black--light: rgba(0, 0, 0, .87);
+  $grey--dark: rgba(0, 0, 0, .54);
+  $grey: rgba(0, 0, 0, .30);
+  $grey--light: rgba(0, 0, 0, .12);
+
+$white: rgba(255, 255, 255, 1);
+  $white--light: gba(255, 255, 255, .7);
+
+// Semantic Functional Variables
 $body-color: $paper;
 
-$font-color-default: $black;
-$font-color-light: $white;
+$brand-color: $teal-500;
+$brand-color--light: $teal-100;
+$brand-color--dark: $teal-800;
 
-$font-size-default: 1em;
-$font-weight-default: 400;
-$font-weight-bold: 700;
-$line-height-default: 1em;
+$brand-accent: $accent-400;
+$brand-accent--light: $accent-100;
+$brand-accent--dark: $accent-700;
 
-$brand-color-primary: $aqua;
+$text-dark--primary: $black--light;
+$text-dark--secondary: $grey--dark;
+$text-dark--tertiary: $grey;
+
+$text-light--primary: $white;
+$text-light--secondary: $white--light;
+
+$font-size: 1em;
+$line-height: 1;
+
+$font-weight--default: 400;
+$font-weight--bold: 700;
+
