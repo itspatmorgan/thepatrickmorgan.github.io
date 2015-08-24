@@ -54,13 +54,13 @@
 @import "_base.page.scss";
 @import "_base.type.scss";
 @import "_base.links.scss";
-@import "_base.lists.scss";
-@import "_base.buttons.scss";
-@import "_base.figures-pictures.scss";
 @import "_base.rules.scss";
 
 // #OBJECTS
 @import "_objects.grid.scss";
+
+// #ELEMENTS
+@import "_elements.icons.scss";
 
 // #COMPONENTS
 @import "_components.article.scss";

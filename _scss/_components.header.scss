@@ -30,6 +30,13 @@ header {
 
   color: $text-dark--primary;
   text-decoration: none;
+
+  transition: all 0.7s ease;
+}
+
+.site-title__link:hover {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 20px $text-dark--primary;
 }
 
 .site-nav__list {
@@ -61,10 +68,32 @@ header {
   text-decoration: none;
   color: $text-dark--secondary;
   padding-bottom: 5px;
-  border-bottom: 1px solid transparent;
+  
+  transition: color .3s;
+  transform: translateZ(0);
 
   &:hover {
-    color: $brand-accent--dark;
-    border-bottom-color: $brand-accent--dark;
+    color: $brand-accent;
   }
+}
+
+.site-nav__link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 50%;
+  bottom: 0;
+  left: 50%;
+
+  height: 2px;
+
+  background-color: $brand-accent;
+  transition-property: left, right;
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+}
+
+.site-nav__link:hover:after {
+  right: 0;
+  left: 0;
 }

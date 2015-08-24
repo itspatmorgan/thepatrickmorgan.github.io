@@ -7,6 +7,7 @@ footer {
   padding: 70px 0;
 
   background-color: $brand-color;
+  background: linear-gradient(45deg, $brand-color 0%, $brand-color--light 100%);
 
   border-top: 5px solid $brand-color--dark;
 

@@ -5,13 +5,11 @@
 // Presentational Color Variables
 // ------------------------------
 
-$teal-100: #b2dfdb;
-$teal-500: #009688;
-$teal-800: #00695c;
+$bluegrey-200: #B0BEC5;
+$bluegrey-500: #607D8B;
+$bluegrey-800: #37474F;
 
-$accent-100: #a7ffeb;
-$accent-400: #1de9b6;
-$accent-700: #00bfa5;
+$lightblue-400: #29B6F6;
 
 $paper: #f9f9f9;
 
@@ -33,14 +31,12 @@ $white: rgba(255, 255, 255, 1);
 $body-color: $paper;
 
 // Brand Colors
-$brand-color: $teal-500;
-$brand-color--light: $teal-100;
-$brand-color--dark: $teal-800;
+$brand-color: $bluegrey-500;
+$brand-color--light: $bluegrey-200;
+$brand-color--dark: $bluegrey-800;
 
-// Accent Colors
-$brand-accent: $accent-400;
-$brand-accent--light: $accent-100;
-$brand-accent--dark: $accent-700;
+// Accent Color
+$brand-accent: $lightblue-400;
 
 // Text Colors
 $text-dark--primary: $black--light;
