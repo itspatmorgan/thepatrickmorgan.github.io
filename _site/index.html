@@ -15,96 +15,71 @@
 
   <body>
 
-    <!-- Header -->
-    <header class="page-head">
-  <div class="container">
-    <div class="row">
-      <div class="site-title column span-5">
-        <a href="/" class="site-title__link">&ltpatrickmorgan&#47&gt</a>
-      </div>
+    <!-- Main Content Area -->
+    <main id="page-content">
+      <section class="hero hero--half hero--white">
+  <div class="hero__content">
+    <!-- <div class="site-title">
+      <a href="/" class="site-title__link">&ltpatrickmorgan&#47&gt</a>
+    </div> -->
 
-      <nav class="site-nav column span-7">
-        <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">About Me</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Projects</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Blog</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-
-
-    <!-- MAIN CONTENT AREA -->
-    <div id="page-content">
-      <!-- MAIN LAYOUT / SKELETON GRID -->
-<div class="container">
-
-  <!-- WELCOME -->
-  <div class="row">
-
-    <!-- SECONDARY CONTENT -->
-    <aside class="column span-3">
-      <p>
-        some descriptive text
-        <br>
-        { month/day/year }
-      </p>
-    </aside>
-
-    <!-- MAIN CONTENT -->
-    <main class="article column span-9">
-      <h1 class="article__title">HELLO</h1>
-      <h3 class="article__desc">A frontend developer for AmEx based in NYC</h3>
-      <hr class="article__divider">
+    <article class="article">
+      <h1 class="article__title">Hello, I'm Patrick</h1>
+      
       <div class="article__body">
         <p>Okay, you caught me. I like to make things. Like this site, for instance.</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi earum fuga, ullam rem provident unde mollitia nobis blanditiis veritatis asperiores quisquam cum cupiditate nam! Optio dolore consequatur doloribus impedit, similique.</p>
       </div>
-    </main>
+    </article>
+
+    <article class="site-nav">
+      <ul class="list list--horizontal">
+        <li class="list__item">
+          <a href="#" class="list__link">Github</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="list__link">jsFiddle</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="list__link">LinkedIn</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="list__link">Resume</a>
+        </li>
+      </ul>
+    </article>
   </div>
-</div>
+</section>
 
-    </div> 
+<section class="hero hero--half hero--bluegrey">
+  <div class="hero__content">
+    <div class="list-block">
+      <h2>Contact Info</h2>
+      
+      <ul class="list list--stacked">
+        <li class="list__item">814.932.5342</li>
+        <li class="list__item">
+          <a href="mailto:pamorgan12@gmail.com" class="link--light">pamorgan12@gmail.com</a>
+        </li>
+      </ul>  
+    </div>
+    
+    <div class="list-block">
+      <h2>Projects</h2>
 
-    <!-- Footer -->
-    <footer class="page-foot">
-  <div class="container">
-    <div class="row">
-      <div class="column span-8">
-        <p>
-          Patrick Morgan
-          <br>
-          814.932.5342 | <a href="mailto:pamorgan12@gmail.com" class="link--light">pamorgan12@gmail.com</a>
-        </p>
-      </div>
-      <div class="column span-4">
-        <a href="#">
-          <i class="icon icon--social medium"></i>
-        </a>
-        <a href="#">
-          <i class="icon icon--social github"></i>
-        </a>
-        <a href="#">
-          <i class="icon icon--social linkedin"></i>
-        </a>
-      </div>
+      <ul class="list list--stacked">
+        <li class="list__item">Project 1</li>
+        <li class="list__item">Project 2</li>
+        <li class="list__item">Project 3</li>
+      </ul>
     </div>
   </div>
-</footer>
+</section>
 
+    </main> 
 
-    <!-- JAVASCRIPT -->
+    <!-- Javascript -->
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="/js/scripts.js"></script>

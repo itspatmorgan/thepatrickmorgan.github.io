@@ -1,7 +1,12 @@
-name: PMM - Personal Site
+# Site Settings
+title: Patrick Morgan
+email: pamorgan12@gmail.com
+description: "Personal site for Patrick Morgan"
+baseurl: ""
+url: "http:patrickmorgan.me"
+
+# Build Settings
 markdown: redcarpet
-highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+highlighter: pygments
 sass:
-  sass_dir: ./_scss
   style: compressed

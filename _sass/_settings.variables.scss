@@ -1,0 +1,57 @@
+/* ------------------------------ *\
+  VARIABLES
+\* ------------------------------ */
+
+// Presentational Color Variables
+// ------------------------------
+
+$bluegrey-200: #B0BEC5;
+$bluegrey-500: #607D8B;
+$bluegrey-800: #37474F;
+
+$lightblue-400: #29B6F6;
+
+$paper: #f9f9f9;
+
+$black: rgba(0, 0, 0, 1);
+$black--light: rgba(0, 0, 0, .87);
+$grey--dark: rgba(0, 0, 0, .54);
+$grey: rgba(0, 0, 0, .30);
+$grey--light: rgba(0, 0, 0, .12);
+
+$white: rgba(255, 255, 255, 1);
+$white--light: rgba(255, 255, 255, .7);
+
+
+
+// Semantic Functional Variables
+// -----------------------------
+
+// Background Color
+$body-color: $paper;
+
+// Brand Colors
+$brand-color: $bluegrey-500;
+$brand-color--light: $bluegrey-200;
+$brand-color--dark: $bluegrey-800;
+
+// Accent Color
+$brand-accent: $lightblue-400;
+
+// Text Colors
+$text-dark--primary: $black--light;
+$text-dark--secondary: $grey--dark;
+$text-dark--tertiary: $grey;
+
+$text-light--primary: $white;
+$text-light--secondary: $white--light;
+
+// Font Sizing & Weights
+$font-size--default: 1em;
+$line-height--default: 1.25;
+
+$font-weight--default: 400;
+$font-weight--bold: 700;
+
+// Borders
+$border--default: 1px solid $grey--light;

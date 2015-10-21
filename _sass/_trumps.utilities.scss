@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+
+/**
+ * Clearfix Class
+ */
+ 
+.u-clearfix {
+  @include clearfix();
+}
+
+
+
+/**
+ * Show/Hide
+ */
+
+.u-hide {
+  display: none !important;
+}
+
+.u-show {
+  display: block !important;
+}
+
+
+
+/**
+ * Full Width
+ */
+ 
+.u-full-width {
+  width: 100%;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+}
+
+
+/**
+ * Floats
+ */
+
+.u-float-right {
+  float: right;
+}
+
+.u-float-left {
+  float: left;
+}

@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #Links
+\*------------------------------------*/
+
+.link--light {
+  color: $text-light--primary;
+
+  &:hover {
+    color: $text-light--secondary;
+  }
+}
+
+a {
+  text-decoration: none;
+}
