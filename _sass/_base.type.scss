@@ -4,6 +4,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight--default;
+  margin: 0;
 }
 
 p {
@@ -12,3 +13,28 @@ p {
   line-height: 1.75;
   font-size: $font-size--default;
 }
+
+.text--black {
+  color: $black;
+}
+
+.text--dark-alpha87 {
+  color: $text-dark--primary
+}
+
+.text--dark-alpha54 {
+  color: $text-dark--secondary;
+}
+
+.text--dark-alpha30 {
+  color: $text-dark--tertiary;
+}
+
+.text--light {
+  color: $text-light--primary;
+}
+
+.text--light-alpha70 {
+  color: $text-light--secondary;
+}
+

@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    #Article
+\*------------------------------------*/
+
+.hero {
+  display: flex;
+
+  -webkit-align-items: center;
+          align-items: center;
+
+  -webkit-justify-content: center;
+          justify-content: center;
+
+  -webkit-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  
+  position: relative;
+  float: left;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+// Widths
+.hero--half {
+  width: 50%;
+}
+
+.hero--full {
+  width: 100%;
+}
+
+// Colors
+.hero--white {
+  background-color: $white;
+}
+
+.hero--bluegrey {
+  background-color: $bluegrey-200;
+}
+
+
+// Hero content
+.hero__content {
+  display: block;
+  position: relative;
+  width: 75%;
+  max-width: 400px;
+  height: auto;
+}
+
+.hero__title {
+  font-size: 3.5em;
+  margin-bottom: 25px;
+}
+
+.article__body {
+  text-align: justify;
+  text-justify: inter-word;
+}

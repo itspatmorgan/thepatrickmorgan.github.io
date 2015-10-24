@@ -5,6 +5,7 @@
 }
 
 .list--horizontal {
+
   .list__item { 
     display: inline-block;
     padding-left: 15px;
@@ -14,9 +15,14 @@
       padding-left: 0;
     }
   }
+
+  .list__link {
+    display: inline-block;
+  }
 }
 
 .list--stacked {
+
   .list__item { 
     display: block; 
     padding-top: 10px;
@@ -26,39 +32,8 @@
       padding-bottom: 0;
     }
   }
-}
 
-.list__link {
-  display: block;
-  text-decoration: none;
-  color: $text-dark--secondary;
-  padding-bottom: 5px;
-  
-  transition: color .3s;
-  transform: translateZ(0);
-
-  &:hover {
-    color: $brand-accent;
+  .list__link {
+    display: block;
   }
-}
-
-.list__link:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 50%;
-  bottom: 0;
-  left: 50%;
-
-  height: 2px;
-
-  background-color: $brand-accent;
-  transition-property: left, right;
-  transition-duration: .3s;
-  transition-timing-function: ease-out;
-}
-
-.list__link:hover:after {
-  right: 0;
-  left: 0;
 }
