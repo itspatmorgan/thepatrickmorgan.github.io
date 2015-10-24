@@ -1,15 +1,20 @@
+/*------------------------------------*\
+    #List
+\*------------------------------------*/
+
 .list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+// Horizontal List
 .list--horizontal {
+  justify-content: space-between;
 
   .list__item { 
-    display: inline-block;
     padding-left: 15px;
-    padding-right: 15px;
 
     &:first-child {
       padding-left: 0;
@@ -21,12 +26,13 @@
   }
 }
 
+// Stacked List
 .list--stacked {
+  justify-content: flex-start;
 
   .list__item { 
-    display: block; 
-    padding-top: 10px;
-    padding-botom: 10px;
+    width: 100%;
+    padding-bottom: 10px;
 
     &:last-child {
       padding-bottom: 0;

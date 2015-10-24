@@ -11,6 +11,9 @@ $bluegrey-800: #37474F;
 
 $lightblue-400: #29B6F6;
 
+$teal-500: #009688;
+$grey-400: #BDBDBD;
+
 $paper: #f9f9f9;
 
 $black: rgba(0, 0, 0, 1);
@@ -36,7 +39,7 @@ $brand-color--light: $bluegrey-200;
 $brand-color--dark: $bluegrey-800;
 
 // Accent Color
-$brand-accent: $lightblue-400;
+$brand-accent: $teal-500;
 
 // Text Colors
 $text-dark--primary: $black--light;
@@ -55,3 +58,4 @@ $font-weight--bold: 700;
 
 // Borders
 $border--default: 1px solid $grey--light;
+$border-radius--default: 5px;
