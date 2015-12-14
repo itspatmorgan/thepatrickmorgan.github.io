@@ -5,11 +5,13 @@
 html {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
-  height: auto;
-
-  @include mq(large) {
-    height: 100%;
-  }
+  // height: auto;
+  
+  height: 100%;
+  
+  // @include mq(large) {
+  //   height: 100%;
+  // }
 }
 
 body {
