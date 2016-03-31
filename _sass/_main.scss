@@ -1,0 +1,66 @@
+.hero {
+  background: $body-bg;
+  padding: 70px 0 90px;
+}
+
+.hero--dark {
+  color: #fff;
+}
+
+.hero--dark-blue {
+  background-color: #0F1629;
+}
+
+.hero--white {
+  background-color: $body-bg;
+}
+
+.hero--pattern {
+  background-image: url("../img/congruent_outline.png");
+}
+
+.title-group {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.content-block {
+  background-color: $body-bg;
+  padding: 40px 20px 50px 20px;
+}
+
+.content-block--sm {
+  padding: 20px;
+}
+
+.header-name {
+  letter-spacing: .5px;
+}
+
+.header-title {
+  letter-spacing: 1px;
+}
+
+.u-text {
+  &--thin {
+    font-weight: 300;
+  }
+  &--normal {
+    font-weight: 400;
+  }
+  &--bold {
+    font-weight: 700;
+  }
+  &--thick {
+    font-weight: 800;
+  }
+}
+
+.piece {
+  width: 100%;
+
+  border-radius: 5px;
+  box-shadow: 0 0 20px #ccc;
+}
+
+

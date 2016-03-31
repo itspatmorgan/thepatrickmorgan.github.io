@@ -1,27 +1,63 @@
 ---
 ---
 
-@import 
-  "settings.variables",
+/*------------------------------------*\
+  Components from Bootstrap 4
+\*------------------------------------*/
 
-  "tools.mixins",
+// Core variables and mixins
+@import "vendor/variables";
+@import "vendor/mixins";
 
-  "generic.normalize",
-  "generic.box-sizing",
+// Reset and dependencies
+@import "vendor/normalize";
+@import "vendor/print";
 
-  "base.page",
-  "base.type",
+// Core CSS
+@import "vendor/reboot";
+@import "vendor/type";
+@import "vendor/images";
+@import "vendor/code";
+@import "vendor/grid";
+@import "vendor/tables";
+@import "vendor/forms";
+@import "vendor/buttons";
 
-  "objects.grid",
+// Components
+@import "vendor/animation";
+@import "vendor/dropdown";
+@import "vendor/button-group";
+@import "vendor/input-group";
+@import "vendor/custom-forms";
+@import "vendor/nav";
+@import "vendor/navbar";
+@import "vendor/card";
+@import "vendor/breadcrumb";
+@import "vendor/pagination";
+@import "vendor/pager";
+@import "vendor/labels";
+@import "vendor/jumbotron";
+@import "vendor/alert";
+@import "vendor/progress";
+@import "vendor/media";
+@import "vendor/list-group";
+@import "vendor/responsive-embed";
+@import "vendor/close";
 
-  "elements.icons",
-  "elements.links",
-  "elements.lists",
-  "elements.headers",
-  "elements.rules",
+// Components w/ JavaScript
+@import "vendor/modal";
+@import "vendor/tooltip";
+@import "vendor/popover";
+@import "vendor/carousel";
 
-  "components.hero",
-  "components.article",
-  "components.tile",
+// Utility classes
+@import "vendor/utilities";
+@import "vendor/utilities-background";
+@import "vendor/utilities-spacing";
+@import "vendor/utilities-responsive";
 
-  "trumps.utilities";
+/*------------------------------------*\
+  My Overrides & Components
+\*------------------------------------*/
+
+@import "main";
