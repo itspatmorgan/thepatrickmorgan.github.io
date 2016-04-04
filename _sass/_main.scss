@@ -1,60 +1,163 @@
-.hero {
-  background: $body-bg;
-  padding: 70px 0 90px;
+/*------------------------------------*\
+    #GRID
+\*------------------------------------*/
+
+.container {
+  max-width: 970px;
 }
 
-.hero--dark {
-  color: #fff;
+
+
+/*------------------------------------*\
+    #SITE-BRAND
+\*------------------------------------*/
+
+.site-voice {
+  background-image: url("../assets/img/congruent_outline.png");
+  padding: 30px 0;
+  border-top: 3px solid rgb(90, 90, 90);
+  border-bottom: 3px solid rgb(90, 90, 90);
 }
 
-.hero--dark-blue {
-  background-color: #0F1629;
-}
 
-.hero--white {
-  background-color: $body-bg;
-}
 
-.hero--pattern {
-  background-image: url("../img/congruent_outline.png");
-}
+/*------------------------------------*\
+    #HEADER-GROUP
+\*------------------------------------*/
 
-.title-group {
-  display: inline-block;
+.header-group {
+  padding-bottom: 15px;
   text-transform: uppercase;
+
+  @include mq(x-large) {
+    display: inline-block;
+  }
 }
+
+  .header-group--contained {
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 20px;
+  }
+
+
+
+/*------------------------------------*\
+    #HEADER-TEXT
+\*------------------------------------*/
+
+.header-text {
+  margin: 0;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+  .header-text--primary {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .5px;
+
+    @include mq(medium) {
+      font-size: 30px;
+    }
+  }
+
+  .header-text--secondary {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    @include mq(medium) {
+      font-size: 16px;
+    }
+  }
+
+
+
+/*------------------------------------*\
+    #HERO-UNIT
+\*------------------------------------*/
+
+.hero {
+  background-color: #fff;
+  padding: 30px 0;
+
+  @include mq(medium) {
+    padding: 70px 0;
+  }
+}
+
+  .hero--dark {
+    color: #fff;
+  }
+
+  .hero--dark-blue {
+    background-color: #0F1629;
+  }
+
+  .hero.welcome-img {
+    height: 300px;
+    
+    @include mq(medium) {
+      height: 400px;
+    }
+
+    @include mq(large) {
+      height: 500px;
+    }
+  }
+
+
+
+/*------------------------------------*\
+    #CONTENT-BLOCK
+\*------------------------------------*/
+
+.welcome-img {
+  background-image: url("../assets/img/pat-lean-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  @include mq(medium) {
+    background-position-y: -100px;
+  }
+
+  @include mq(large) {
+    background-position-y: -150px;
+  }
+
+  @include mq(x-large) {
+    background-position-y: -200px;
+  }
+}
+
+
+
+/*------------------------------------*\
+    #CONTENT-BLOCK
+\*------------------------------------*/
 
 .content-block {
-  background-color: $body-bg;
+  display: inline-block;
   padding: 40px 20px 50px 20px;
 }
 
-.content-block--sm {
-  padding: 20px;
-}
+  .content-block--contained {
+    background-color: #fff;
+  }
 
-.header-name {
-  letter-spacing: .5px;
-}
+  .content-block--sm {
+    padding: 20px 0;
+  }
 
-.header-title {
-  letter-spacing: 1px;
-}
 
-.u-text {
-  &--thin {
-    font-weight: 300;
-  }
-  &--normal {
-    font-weight: 400;
-  }
-  &--bold {
-    font-weight: 700;
-  }
-  &--thick {
-    font-weight: 800;
-  }
-}
+
+/*------------------------------------*\
+    #PROJECT
+\*------------------------------------*/
 
 .piece {
   width: 100%;
@@ -62,5 +165,3 @@
   border-radius: 5px;
   box-shadow: 0 0 20px #ccc;
 }
-
-
