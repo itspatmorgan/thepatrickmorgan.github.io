@@ -442,7 +442,7 @@ th {
   }
 }
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .container {
     width: 80%;
   }
@@ -525,52 +525,42 @@ th {
     margin-left: 8.66666666667%;
   }
 
-  .offset-by-two.column,
   .offset-by-two.columns {
     margin-left: 17.3333333333%;
   }
 
-  .offset-by-three.column,
   .offset-by-three.columns {
     margin-left: 26%;
   }
 
-  .offset-by-four.column,
   .offset-by-four.columns {
     margin-left: 34.6666666667%;
   }
 
-  .offset-by-five.column,
   .offset-by-five.columns {
     margin-left: 43.3333333333%;
   }
 
-  .offset-by-six.column,
   .offset-by-six.columns {
     margin-left: 52%;
   }
 
-  .offset-by-seven.column,
   .offset-by-seven.columns {
     margin-left: 60.6666666667%;
   }
 
-  .offset-by-eight.column,
   .offset-by-eight.columns {
     margin-left: 69.3333333333%;
   }
 
-  .offset-by-nine.column,
   .offset-by-nine.columns {
     margin-left: 78.0%;
   }
 
-  .offset-by-ten.column,
   .offset-by-ten.columns {
     margin-left: 86.6666666667%;
   }
 
-  .offset-by-eleven.column,
   .offset-by-eleven.columns {
     margin-left: 95.3333333333%;
   }
@@ -619,18 +609,51 @@ h1:last-child, h2:last-child, p:last-child {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: 1px;
 }
+@media (min-width: 750px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+.header--global h1 {
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+
+h1.header-text--global {
+  font-size: 26px;
+}
+@media (min-width: 750px) {
+  h1.header-text--global {
+    font-size: 32px;
+  }
+}
+
+h2.header-text--global {
+  font-size: 10.5px;
+}
+@media (min-width: 750px) {
+  h2.header-text--global {
+    font-size: 13px;
+  }
+}
 
 h2 {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.25;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: .6px;
+}
+@media (min-width: 750px) {
+  h2 {
+    font-size: 15px;
+  }
 }
 
 .body-copy {
@@ -646,10 +669,11 @@ h2 {
 
 .has-left-pipe {
   border-left: 1px solid;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 @media (min-width: 750px) {
   .has-left-pipe {
+    padding-left: 25px;
     position: relative;
     left: -25px;
   }
@@ -930,6 +954,18 @@ hr {
   clear: both;
 }
 
+.u-dark-green {
+  background-color: rgba(35, 53, 47, 0.9);
+}
+
+.u-mid-green {
+  background-color: rgba(58, 91, 64, 0.9);
+}
+
+.u-light-green {
+  background-color: rgba(120, 183, 137, 0.9);
+}
+
 /* Global Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header--global {
@@ -944,50 +980,96 @@ hr {
   }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .header--global .header-group {
     margin-bottom: 0;
   }
 }
 
 .header-group {
-  display: inline-block;
+  display: block;
+  text-align: center;
   margin-bottom: 30px;
+}
+@media (min-width: 750px) {
+  .header-group {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.icon-container {
+  display: inline-block;
+  margin: 0 auto;
+}
+@media (min-width: 750px) {
+  .icon-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
 }
 
 /* Global Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer--global {
-  background-color: #f9f6e4;
-  padding: 100px 0;
+  background-color: rgba(249, 246, 228, 0.5);
+  padding: 50px 0;
+}
+@media (min-width: 750px) {
+  .footer--global {
+    padding: 100px 0;
+  }
+}
+
+/* Crossing Bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bar {
+  width: 150%;
+  height: 75px;
+  position: absolute;
+  left: -10%;
+  top: 30%;
+}
+@media (min-width: 750px) {
+  .bar {
+    top: 40%;
+    height: 110px;
+  }
+}
+
+.bar--left {
+  transform: rotate(13deg);
+}
+
+.bar--right {
+  transform: rotate(-13deg);
 }
 
 /* Content Box
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .content-box {
   background-color: #fff;
+  padding: 15px;
 }
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
-  padding: 30px 0;
+  position: relative;
+  padding: 50px 0;
   width: 100%;
-  background-color: #fff;
 }
 
 .hero--color {
   color: #fff;
 }
 
-.hero--dark-green {
-  background-color: #23352f;
+.image-container {
+  padding-bottom: 50px;
 }
 
-.hero--mid-green {
-  background-color: #3a5b40;
-}
-
-.hero--light-green {
-  background-color: #78b789;
+.has-crossing-bar {
+  min-height: 350px;
 }
