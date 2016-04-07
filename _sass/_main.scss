@@ -1,134 +1,65 @@
-/*------------------------------------*\
-    #SITE-BRAND
-\*------------------------------------*/
+/* Global Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.site-voice {
+.header--global {
   background-image: url("../assets/img/banner-background.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 60px 0;
-}
+  background-size: 100% 100%;
+  padding: 30px 0;
 
-
-
-/*------------------------------------*\
-    #HEADER-GROUP
-\*------------------------------------*/
-
-.header-group {
-  padding-bottom: 15px;
-  text-transform: uppercase;
-
-  @include mq(x-large) {
-    display: inline-block;
+  @include mq(large) {
+    padding: 60px 0;
   }
 }
 
-  .header-group--contained {
-    background-color: #fff;
-    padding: 20px;
-    padding-bottom: 20px;
-  }
-
-
-
-/*------------------------------------*\
-    #HEADER-TEXT
-\*------------------------------------*/
-
-.header-text {
-  margin: 0;
-  margin-bottom: 12px;
-
-  &:last-child {
+.header--global .header-group {
+  @include mq(medium) {
     margin-bottom: 0;
   }
 }
 
-  .header-text--primary {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: .5px;
-
-    @include mq(medium) {
-      font-size: 30px;
-    }
-  }
-
-  .header-text--secondary {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1px;
-
-    @include mq(medium) {
-      font-size: 16px;
-    }
-  }
-
-
-
-/*------------------------------------*\
-    #HERO CONTAINER (FULL WIDTH)
-\*------------------------------------*/
-
-.hero {
-  background-color: #fff;
-  padding: 30px 0;
-
-  @include mq(medium) {
-    padding: 70px 0;
-  }
-}
-
-  .hero--dark {
-    color: #fff;
-  }
-
-  .hero--dark-blue {
-    background-color: #0F1629;
-  }
-
-  .hero.welcome-img {
-    padding: 0;
-    height: 300px;
-    
-    @include mq(large) {
-      height: 400px;
-    }
-
-    @include mq(x-large) {
-      height: 500px;
-    }
-  }
-
-
-
-/*------------------------------------*\
-    #CONTENT-BLOCK
-\*------------------------------------*/
-
-.content-block {
+.header-group {
   display: inline-block;
-  padding: 40px 20px 50px 20px;
+  margin-bottom: 30px;
 }
 
-  .content-block--contained {
-    background-color: #fff;
-  }
+/* Global Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-  .content-block--sm {
-    padding: 20px 0;
-  }
+.footer--global {
+  background-color: $paper;
+  padding: 100px 0;
+}
 
 
+/* Content Box
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/*------------------------------------*\
-    #SECTION HEADER (FULL BLEED)
-\*------------------------------------*/
+.content-box {
+  background-color: $white;
+}
 
-.piece {
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  padding: 30px 0;
   width: 100%;
+  background-color: $white;
+}
 
-  border-radius: 5px;
-  box-shadow: 0 0 20px #ccc;
+.hero--color {
+  color: $white;
+}
+
+.hero--dark-green {
+  background-color: $dark-green;
+}
+
+.hero--mid-green {
+  background-color: $mid-green;
+}
+
+.hero--light-green {
+  background-color: $light-green;
 }
