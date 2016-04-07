@@ -10,7 +10,7 @@ h1, h2, p {
 }
 
 h1 { 
-  font-size: 30px; 
+  font-size: 26px; 
   line-height: 1.2;  
   font-weight: bold;
   letter-spacing: 1px;
@@ -26,8 +26,6 @@ h1 {
 }
 
 h1.header-text--global {
-  font-size: 26px;
-
   @include mq(large) {
     font-size: 32px;
   }
