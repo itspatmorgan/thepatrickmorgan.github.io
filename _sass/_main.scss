@@ -1,22 +1,12 @@
 /*------------------------------------*\
-    #GRID
-\*------------------------------------*/
-
-.container {
-  max-width: 970px;
-}
-
-
-
-/*------------------------------------*\
     #SITE-BRAND
 \*------------------------------------*/
 
 .site-voice {
-  background-image: url("../assets/img/congruent_outline.png");
-  padding: 30px 0;
-  border-top: 3px solid rgb(90, 90, 90);
-  border-bottom: 3px solid rgb(90, 90, 90);
+  background-image: url("../assets/img/banner-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
 }
 
 
@@ -78,7 +68,7 @@
 
 
 /*------------------------------------*\
-    #HERO-UNIT
+    #HERO CONTAINER (FULL WIDTH)
 \*------------------------------------*/
 
 .hero {
@@ -99,40 +89,17 @@
   }
 
   .hero.welcome-img {
+    padding: 0;
     height: 300px;
     
-    @include mq(medium) {
+    @include mq(large) {
       height: 400px;
     }
 
-    @include mq(large) {
+    @include mq(x-large) {
       height: 500px;
     }
   }
-
-
-
-/*------------------------------------*\
-    #CONTENT-BLOCK
-\*------------------------------------*/
-
-.welcome-img {
-  background-image: url("../assets/img/pat-lean-back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-  @include mq(medium) {
-    background-position-y: -100px;
-  }
-
-  @include mq(large) {
-    background-position-y: -150px;
-  }
-
-  @include mq(x-large) {
-    background-position-y: -200px;
-  }
-}
 
 
 
@@ -156,7 +123,7 @@
 
 
 /*------------------------------------*\
-    #PROJECT
+    #SECTION HEADER (FULL BLEED)
 \*------------------------------------*/
 
 .piece {

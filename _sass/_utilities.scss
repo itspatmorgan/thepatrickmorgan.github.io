@@ -1,3 +1,26 @@
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; 
+}
+
+.u-pull-right {
+  float: right; 
+}
+
+.u-pull-left {
+  float: left; 
+}
+
+
+// Text Utilities
 .u-text {
   &--thin {
     font-weight: 300;
@@ -17,5 +40,21 @@
 
   &--uppercase {
     text-transform: uppercase;
+  }
+}
+
+
+// Clearfix
+.u-clearfix {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }

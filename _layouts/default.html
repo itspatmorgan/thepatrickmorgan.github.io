@@ -11,20 +11,21 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="/css/patrickmorgan.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-
   </head>
 
   <body>
+    
+    {% include header.html %}
 
     <!-- Main Content Area -->
     <main id="page-content">
       {{ content }}
     </main> 
+    
+    {% include footer.html %}
 
     <!-- JS -->
     <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/scripts.js"></script>
   </body>
 </html>

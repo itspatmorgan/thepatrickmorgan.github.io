@@ -1,18 +1,25 @@
 ---
 ---
 
-/*------------------------------------*\
-  Components from Bootstrap 4
-\*------------------------------------*/
+/* SCSS IMPORT LIST
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-// Core variables and mixins
-@import "bootstrap-3.3.6/bootstrap";
-@import "bootstrap-3.3.6/bootstrap-theme";
+// Clean the slate, set variables, establish grid
+@import "normalize";
+@import "settings";
+@import "skeleton";
 
-/*------------------------------------*\
-  My Overrides & Components
-\*------------------------------------*/
-
-@import "mixins";
+// Base HTML components
+@import "type";
+@import "rhythm";
+@import "lists";
+@import "links";
+@import "buttons";
+@import "forms";
+@import "code";
+@import "tables";
+@import "rules";
 @import "utilities";
+
+// Working file while building out new stuff
 @import "main";
