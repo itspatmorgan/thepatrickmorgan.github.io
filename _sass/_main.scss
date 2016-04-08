@@ -13,6 +13,26 @@
   background-color: $light-green;
 }
 
+.splash-photo {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px $paper;
+  
+  border-color: $paper;
+  border-style: solid;
+
+  border-width: 10px 20px 7px 20px;
+  
+  @include mq(medium) {
+    border-width: 20px 30px 14px 30px;
+  }
+
+  @include mq(large) {
+    border-width: 25px 50px 14px 50px;
+  }
+}
+
 
 
 /* Global Header
@@ -131,6 +151,7 @@
 .content-box {
   background-color: $white;
   padding: 15px;
+  box-shadow: 0 0 2px #cde;
 }
 
 
@@ -148,7 +169,7 @@
 }
 
 .image-container {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .has-crossing-bar {

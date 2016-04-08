@@ -587,9 +587,11 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
+  width: 100%;
   font-size: 1.5em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -973,6 +975,26 @@ hr {
   background-color: rgba(120, 183, 137, 0.9);
 }
 
+.splash-photo {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(249, 246, 228, 0.5);
+  border-color: rgba(249, 246, 228, 0.5);
+  border-style: solid;
+  border-width: 10px 20px 7px 20px;
+}
+@media (min-width: 550px) {
+  .splash-photo {
+    border-width: 20px 30px 14px 30px;
+  }
+}
+@media (min-width: 750px) {
+  .splash-photo {
+    border-width: 25px 50px 14px 50px;
+  }
+}
+
 /* Global Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header--global {
@@ -1077,6 +1099,7 @@ hr {
 .content-box {
   background-color: #fff;
   padding: 15px;
+  box-shadow: 0 0 2px #cde;
 }
 
 /* Hero
@@ -1092,7 +1115,7 @@ hr {
 }
 
 .image-container {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .has-crossing-bar {
