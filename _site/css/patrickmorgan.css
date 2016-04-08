@@ -734,18 +734,11 @@ li {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
+  display: inline-block;
   color: #1EAEDB;
 }
 a:hover {
   color: #0FA0CE;
-}
-
-h1 a {
-  text-decoration: underline;
-  color: #222;
-}
-h1 a:hover {
-  text-decoration: none;
 }
 
 /* Buttons
@@ -1039,8 +1032,30 @@ hr {
 .project__header {
   margin-bottom: 20px;
 }
-.project__header h1 {
+
+.project__title {
+  display: inline-block;
+  color: #222;
   font-size: 26px;
+}
+
+.header-link {
+  color: #222;
+  text-decoration: none;
+}
+
+.header-link,
+.caret__fill {
+  transform: translateZ(0);
+  transition-property: color, fill;
+  transition-duration: .3s;
+}
+
+.header-link:hover {
+  color: #0FA0CE;
+}
+.header-link:hover .caret__fill {
+  fill: #0FA0CE;
 }
 
 /* Icon Container
@@ -1102,6 +1117,12 @@ hr {
   box-shadow: 0 0 2px #cde;
 }
 
+.caret {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hero {
@@ -1120,4 +1141,16 @@ hr {
 
 .has-crossing-bar {
   min-height: 350px;
+}
+
+.art {
+  box-sizing: border-box;
+  border: 20px solid rgba(249, 246, 228, 0.5);
+  margin-bottom: 20px;
+  transform: translateZ(0);
+  transition-property: transform;
+  transition-duration: .3s;
+}
+.art:hover {
+  transform: scale(1.05);
 }

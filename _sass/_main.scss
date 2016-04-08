@@ -80,9 +80,31 @@
 
 .project__header {
   margin-bottom: 20px;
+}
 
-  h1 {
-    font-size: 26px;
+.project__title {
+  display: inline-block;
+  color: $text-color;
+  font-size: 26px;
+}
+
+.header-link {
+  color: $text-color;
+  text-decoration: none; 
+}
+
+.header-link,
+.caret__fill {
+  transform: translateZ(0);
+  transition-property: color, fill;
+  transition-duration: .3s;
+}
+
+.header-link:hover {
+  color: #0FA0CE;
+
+  .caret__fill {
+    fill: #0FA0CE;
   }
 }
 
@@ -154,6 +176,12 @@
   box-shadow: 0 0 2px #cde;
 }
 
+.caret {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
 
 
 /* Hero
@@ -174,4 +202,18 @@
 
 .has-crossing-bar {
   min-height: 350px;
+}
+
+.art {
+  box-sizing: border-box;
+  border: 20px solid $paper;
+  margin-bottom: 20px;
+
+  transform: translateZ(0);
+  transition-property: transform;
+  transition-duration: .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
