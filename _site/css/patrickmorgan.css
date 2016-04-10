@@ -1154,3 +1154,7 @@ hr {
 .art:hover {
   transform: scale(1.05);
 }
+
+img {
+  width: 100%;
+}
