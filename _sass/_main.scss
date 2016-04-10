@@ -50,9 +50,23 @@
 }
 
 .header--global .header-group {
+  display: inline-block;
+
   @include mq(large) {
     margin-bottom: 0;
   }
+}
+
+.header--global .name-col {
+  text-align: center;
+
+  @include mq(large) {
+    text-align: left;
+  }
+}
+
+.header--global .icon-col {
+  text-align: center;
 }
 
 .header-group {
@@ -88,6 +102,15 @@
   font-size: 26px;
 }
 
+.projects--broadwaze {
+  max-width: 400px;
+  margin: 0 auto;
+
+  @include mq(large) {
+    max-width: inherit;
+  }
+}
+
 .header-link {
   color: $text-color;
   text-decoration: none; 
@@ -113,7 +136,11 @@
 /* Icon Container
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.icon-container {
+.content-box.icons-group {
+  padding: 10px 15px;
+}
+
+.icons-group {
   display: inline-block;
   margin: 0 auto;
 
@@ -122,6 +149,74 @@
     right: 0;
     bottom: 0;
     margin: 0;
+  }
+}
+
+
+
+
+i.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon--linkedin {
+  background-image: url("../assets/icon--linkedin.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon--github {
+  background-image: url("../assets/icon--github.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.icon--angellist {
+  background-image: url("../assets/icon--angellist.svg");
+  width: 17px;
+  height: 24px;
+}
+
+.icon-container { 
+  display: inline-block;
+  padding-right: 15px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+.icon__link {
+  transform: translateZ(0);
+
+  &:hover {
+    animation-name: hvr-bob-float, hvr-bob;
+    animation-duration: .75s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forward;
+    animation-direction: normal, alternate;
   }
 }
 
@@ -221,3 +316,5 @@
 img {
   width: 100%;
 }
+
+

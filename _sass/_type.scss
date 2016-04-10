@@ -28,14 +28,17 @@ h1 {
 h1.header-text--global {
   @include mq(large) {
     font-size: 32px;
+    letter-spacing: 1.2px;
   }
 }
 
 h2.header-text--global {
-  font-size: 10.5px; 
+  font-size: 11px;
+  letter-spacing: .4px; 
 
   @include mq(large) {
     font-size: 13px;
+    letter-spacing: 1px;
   }
 }
 
@@ -45,10 +48,6 @@ h2 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: .6px;
-
-  @include mq(large) {
-    font-size: 15px;
-  }
 }
 
 .body-copy {
@@ -56,18 +55,28 @@ h2 {
   letter-spacing: 1px;
 
   @include mq(large) {
-    font-size: 15px;
-    letter-spacing: .6px;
+    font-size: 13px;
+    letter-spacing: .7px;
+  }
+}
+
+.note {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-style: italic;
+  text-align: center;
+
+  @include mq(large) {
+    text-align: left;
   }
 }
 
 .has-left-pipe {
-  border-left: 1px solid;
-  padding-left: 20px;
-
   @include mq(large) {
-    padding-left: 25px;
     position: relative;
     left: -25px;
+
+    border-left: 1px solid;
+    padding-left: 25px;
   }
 }
