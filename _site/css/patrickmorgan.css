@@ -979,19 +979,19 @@ hr {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(249, 246, 228, 0.5);
-  border-color: rgba(249, 246, 228, 0.5);
+  box-shadow: 0 0 3px #cde;
+  border-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
   border-width: 10px 20px 7px 20px;
 }
 @media (min-width: 550px) {
   .splash-photo {
-    border-width: 20px 30px 14px 30px;
+    border-width: 20px 30px 20px 30px;
   }
 }
 @media (min-width: 720px) {
   .splash-photo {
-    border-width: 25px 50px 14px 50px;
+    border-width: 25px 50px 25px 50px;
   }
 }
 
@@ -1212,7 +1212,7 @@ i.icon {
 .content-box {
   background-color: #fff;
   padding: 15px;
-  box-shadow: 0 0 2px #cde;
+  box-shadow: 0 0 3px #cde;
 }
 
 .caret {
@@ -1243,7 +1243,8 @@ i.icon {
 
 .art {
   box-sizing: border-box;
-  border: 20px solid rgba(249, 246, 228, 0.5);
+  border: 20px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 3px #cde;
   margin-bottom: 20px;
   transform: translateZ(0);
   transition-property: transform;
