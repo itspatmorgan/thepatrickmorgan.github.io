@@ -982,16 +982,16 @@ hr {
   box-shadow: 0 0 3px #cde;
   border-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
-  border-width: 10px 20px 7px 20px;
+  border-width: 10px 20px;
 }
 @media (min-width: 550px) {
   .splash-photo {
-    border-width: 20px 30px 20px 30px;
+    border-width: 20px 30px;
   }
 }
 @media (min-width: 720px) {
   .splash-photo {
-    border-width: 25px 50px 25px 50px;
+    border-width: 25px 50px;
   }
 }
 
@@ -1134,6 +1134,26 @@ i.icon {
   height: 24px;
 }
 
+.icon--phone {
+  background-image: url("../assets/icon--phone.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.icon--mail {
+  background-image: url("../assets/icon--mail.svg");
+  width: 22px;
+  height: 16px;
+}
+
+.contact-line {
+  margin-bottom: 10px;
+}
+
+.contact-line .icon {
+  padding-right: 15px;
+}
+
 .icon-container {
   display: inline-block;
   padding-right: 15px;
@@ -1179,7 +1199,7 @@ i.icon {
 }
 @media (min-width: 720px) {
   .footer--global {
-    padding: 100px 0;
+    padding: 70px 0;
   }
 }
 

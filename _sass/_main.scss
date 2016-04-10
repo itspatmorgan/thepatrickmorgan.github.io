@@ -22,14 +22,14 @@
   border-color: $frost;
   border-style: solid;
 
-  border-width: 10px 20px 7px 20px;
+  border-width: 10px 20px;
   
   @include mq(medium) {
-    border-width: 20px 30px 20px 30px;
+    border-width: 20px 30px;
   }
 
   @include mq(large) {
-    border-width: 25px 50px 25px 50px;
+    border-width: 25px 50px;
   }
 }
 
@@ -179,6 +179,26 @@ i.icon {
   height: 24px;
 }
 
+.icon--phone {
+  background-image: url("../assets/icon--phone.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.icon--mail {
+  background-image: url("../assets/icon--mail.svg");
+  width: 22px;
+  height: 16px;
+}
+
+.contact-line {
+  margin-bottom: 10px;
+}
+
+.contact-line .icon {
+  padding-right: 15px;
+}
+
 .icon-container { 
   display: inline-block;
   padding-right: 15px;
@@ -230,7 +250,7 @@ i.icon {
   padding: 50px 0;
 
   @include mq(large) {
-    padding: 100px 0;
+    padding: 70px 0;
   }
 }
 
