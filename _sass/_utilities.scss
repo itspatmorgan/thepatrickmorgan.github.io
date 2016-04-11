@@ -1,6 +1,21 @@
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+// Background Colors
+
+.u-dark-green {
+  background-color: $dark-green;
+}
+
+.u-mid-green {
+  background-color: $mid-green;
+}
+
+.u-light-green {
+  background-color: $light-green;
+}
+
+// Width
 .u-full-width {
   width: 100%;
   box-sizing: border-box; 
@@ -11,6 +26,7 @@
   box-sizing: border-box; 
 }
 
+// Floats
 .u-pull-right {
   float: right; 
 }
@@ -19,10 +35,10 @@
   float: left; 
 }
 
+// Vertical rhythm
 .u-rhythm-btm {
   margin-bottom: 40px;
 }
-
 
 // Clearfix
 .u-clearfix {

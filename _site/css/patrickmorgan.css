@@ -755,6 +755,13 @@ a:hover {
   color: #0FA0CE;
 }
 
+.header--global a {
+  color: #222222;
+}
+.header--global a:hover {
+  color: #222222;
+}
+
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .btn,
@@ -928,6 +935,18 @@ hr {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-dark-green {
+  background-color: rgba(35, 53, 47, 0.9);
+}
+
+.u-mid-green {
+  background-color: rgba(58, 91, 64, 0.9);
+}
+
+.u-light-green {
+  background-color: rgba(120, 183, 137, 0.9);
+}
+
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
@@ -956,20 +975,8 @@ hr {
   clear: both;
 }
 
-/* Brand Color Utilities
+/* SPLASH PHOTO
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-dark-green {
-  background-color: rgba(35, 53, 47, 0.9);
-}
-
-.u-mid-green {
-  background-color: rgba(58, 91, 64, 0.9);
-}
-
-.u-light-green {
-  background-color: rgba(120, 183, 137, 0.9);
-}
-
 .splash-photo {
   box-sizing: border-box;
   width: 100%;
@@ -1001,7 +1008,7 @@ hr {
 /* Global Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header--global {
-  background-image: url("../assets/img/banner-background.png");
+  background-image: url("../assets/img--banner.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 30px 0;
@@ -1094,25 +1101,14 @@ hr {
   fill: #0FA0CE;
 }
 
+.caret {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
 /* ICONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.content-box.icons-group {
-  padding: 10px 15px;
-}
-
-.icons-group {
-  display: inline-block;
-  margin: 0 auto;
-}
-@media (min-width: 720px) {
-  .icons-group {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-  }
-}
-
 i.icon {
   display: inline-block;
   background-repeat: no-repeat;
@@ -1149,22 +1145,21 @@ i.icon {
   height: 16px;
 }
 
-.contact-line {
-  margin-bottom: 10px;
-}
-
-.contact-line .icon {
-  padding-right: 15px;
-}
-
-.icon-container {
+.icons-group {
   display: inline-block;
-  padding-right: 15px;
+  margin: 0 auto;
 }
-.icon-container:last-child {
-  padding-right: 0;
+@media (min-width: 720px) {
+  .icons-group {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
 }
 
+/* SOCIAL LINKS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @keyframes hvr-bob-float {
   100% {
     transform: translateY(-4px);
@@ -1206,27 +1201,43 @@ i.icon {
   }
 }
 
+.contact-line {
+  margin-bottom: 10px;
+}
+
+.contact-line .icon {
+  padding-right: 14px;
+}
+
+.icon-container {
+  display: inline-block;
+  padding-right: 15px;
+}
+.icon-container:last-child {
+  padding-right: 0;
+}
+
 /* Crossing Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.bar {
+.crossing-bar {
+  position: absolute;
+  top: 150px;
+  left: -25%;
   width: 150%;
   height: 75px;
-  position: absolute;
-  left: -25%;
-  top: 150px;
 }
 @media (min-width: 720px) {
-  .bar {
+  .crossing-bar {
     top: 200px;
     height: 110px;
   }
 }
 
-.bar--left {
+.crossing-bar--left {
   transform: rotate(13deg);
 }
 
-.bar--right {
+.crossing-bar--right {
   transform: rotate(-13deg);
 }
 
@@ -1238,10 +1249,8 @@ i.icon {
   box-shadow: 0 0 3px #ccddee;
 }
 
-.caret {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
+.content-box.icons-group {
+  padding: 10px 15px;
 }
 
 /* Hero
@@ -1256,12 +1265,14 @@ i.icon {
   color: #ffffff;
 }
 
-.image-container {
-  padding-bottom: 40px;
-}
-
 .has-crossing-bar {
   min-height: 350px;
+}
+
+/* MEDIA
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+img {
+  width: 100%;
 }
 
 .art {
@@ -1275,8 +1286,4 @@ i.icon {
 }
 .art:hover {
   transform: scale(1.05);
-}
-
-img {
-  width: 100%;
 }

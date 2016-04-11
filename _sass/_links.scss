@@ -2,9 +2,17 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   display: inline-block;
-  color: #1EAEDB;
+  color: $link-color;
 
   &:hover {
-    color: #0FA0CE; 
+    color: $link-hover-color; 
+  }
+}
+
+.header--global a {
+  color: $text-color;
+
+  &:hover {
+    color: $text-color;
   }
 }
