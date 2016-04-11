@@ -18,16 +18,18 @@ title: Patrick Morgan
       <div class="project__header five columns">
         <h1>Hello!</h1>
         <h2>Thanks for stopping by</h2>
-        <a href="#">Download my resume</a>
+        <a href="../assets/patrick-morgan-resume-2016.pdf">Download my resume</a>
       </div>
 
-      <div class="seven columns has-left-pipe">
+      <div class="project__body seven columns has-left-pipe">
         <p class="body-copy">
           I’m Patrick. A front-end developer with a passion for design and technology. I’m also apparently very pensive when I drink my coffee.
         </p>
+
         <p class="body-copy">
           At Amex I've worked as a part of a product design team where I’ve grown from independently handling smaller projects to being the front-end technical lead for large new feature development. While my end deliverable is almost always the front-end code itself, I enjoy working throughout the entire design process. In a previous life I was a brand strategist at Leo Burnett (a global ad agency), so I still enjoy a healthy dose of strategy work to pair with my hours locked in on a text editor.
         </p>
+
         <p class="body-copy">
           So if you need a technologist that's at his best when he's on the edge of design and engineering, please look me up! I'm moving to Los Angeles in June 2016 and am looking for a new team to join.
         </p>
@@ -36,235 +38,8 @@ title: Patrick Morgan
   </div>
 </section>
 
-<!-- AMEX HEADER INTRO -->
-<header class="hero hero--color u-dark-green">
-  <div class="container">
+{% include amex.html %}
 
-    <div class="row">
-      <div class="nine columns">
-        <div class="header-group">
-          <h1 class="header-text--primary">American Express</h1>
-          <h2 class="header-text--secondary">Front End Development + UX Design</h2>
-        </div>
+{% include ga.html %}
 
-        <p class="body-copy has-left-pipe">
-          Over the last year, I put extra focus on researching front-end best practices and helping them find their way into our legacy code base. Tools like <a href="https://github.com/gruntjs/grunt">Grunt</a>, <a href="https://github.com/brigade/scss-lint/">SCSS-lint</a> and <a href="https://github.com/csscomb/csscomb.js">CSScomb</a> helped us automate mundane tasks and spend more time building a better experience. Better class naming strategy and abstraction patterns helped us simplify our code for better reuse over time. The goal is to drastically simplify the front-end code which will let us prototype more efficiently, deliver a more consistently excellent user experience and maintain cleaner code in production. That means less bug fixing, fewer workarounds, and more productivity all around – never a bad thing.
-        </p>
-
-        <p class="note">
-          Want a demo? I'm happy to demo any of my Amex work, but I unfortunately can't post open links or code due to confidentiality agreements.
-        </p>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- AMEX PROJECTS SECTION -->
-<section class="hero has-crossing-bar">
-  <div class="bar bar--right u-dark-green"></div>
-
-  <div class="container">
-    <div class="row image-container">
-      <div class="ten offset-by-one columns">
-        <img src="../assets/img/serve-responsive.png" alt="Serve Responsive Web Dashboard">
-      </div>
-    </div>
-    
-    <!-- PROJECT 1 -->
-    <div class="row project">
-      <div class="project__header six columns">
-        <h1 class="project__title">
-          <a href="#" class="header-link">
-            Serve Responsive Web
-            {% include caret.html %}
-          </a>
-        </h1>
-        
-        <h2>HTML, SCSS, Javascript, jQuery</h2>
-      </div>
-
-      <div class="project__blurb six columns">
-        <p class="body-copy has-left-pipe">
-          To better serve our largely mobile user base, we redesigned our financial management website to be 100% responsive and optimized for simple use across all major platforms.
-        </p>
-      </div>
-    </div>
-    
-    <!-- PROJECT 2 -->
-    <div class="project row">
-      <div class="project__header six columns">
-        <h1 class="project__title">
-          <a class="header-link" href="#">
-            Amex Offers
-            {% include caret.html %}
-          </a>
-        </h1>
-        <h2>Client side templates, API integration</h2>
-      </div>
-
-      <div class="project__blurb six columns">
-        <p class="body-copy has-left-pipe">
-          By pairing key data from an existing API with new user insights, we refreshed an established American Express perk for a new audience: prepaid card users.
-        </p>
-      </div>
-    </div>
-
-    <!-- PROJECT 3 -->
-    <div class="project row">
-      <div class="project__header six columns">
-        <h1 class="project__title">
-          <a class="header-link" href="#">
-            Walmart Cash Pickup
-            {% include caret.html %}
-          </a>
-        </h1>
-        <h2>User Testing, Logic Map, Print Stylesheet</h2>
-      </div>
-
-      <div class="project__blurb six columns">
-        <p class="body-copy has-left-pipe">
-          Amex partnered with Walmart and Ria to deliver a streamlined cash pickup and money transfer experience for Bluebird and Serve customers.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GA SECTION INTRO -->
-<header class="hero hero--color u-mid-green">
-  <div class="container">
-
-    <div class="row">
-      <div class="nine columns">
-        <div class="header-group">
-          <h1>General Assembly</h1>
-          <h2>Web Development Immersive</h2>
-        </div>
-
-        <p class="body-copy has-left-pipe">
-          After two years as a brand strategist at Leo Burnett, I realized I wasn't happy stopping my work at the point of creating the strategy; I wanted to be responsible for its execution. Web development became my path toward satisfying my fundamental need to make things. So I quit my job, moved to New York and put myself through the ringer at General Assembly before finding my niche at Amex.
-        </p>
-
-        <p class="note">
-          Please note: These are projects from my earliest days as a developer. They're fun to browse, but I've obviously learned a lot in the 2+ years since making them.
-        </p>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- GA PROJECT SECTION -->
-<section class="hero has-crossing-bar">
-  <div class="bar bar--left u-mid-green"></div>
-
-  <div class="container">
-    <div class="image-container row">
-      <div class="ten offset-by-one columns">
-        <img src="../assets/img/echonest-app.png" alt="">
-      </div>
-    </div>
-    
-    <!-- PROJECT -->
-    <div class="project row">
-      <div class="project__header six columns">
-        <h1 class="project__title">
-          <a href="#" class="header-link">
-            Echonest App
-            {% include caret.html %}
-          </a>
-        </h1>
-
-        <h2>Musician "hotness" + popularity ranking</h2>
-      </div>
-
-      <div class="six columns">
-        <p class="body-copy has-left-pipe">
-          I'm a big music fan, so for my final project at GA I developed a simple ranking app based on data from the Echonest, a super in-depth API that now powers a lot of features for Spotify. I had fun with this one and could definitely see myself building something new with the Echonest API in the future.
-        </p>
-      </div>
-    </div>
-    
-    <!-- PROJECT -->
-    <div class="project row">
-      <div class="project__header six columns">
-        <h1 class="project__title">
-          <a href="#" class="header-link">
-            Live From New York...
-            {% include caret.html %}
-          </a>
-        </h1>
-
-        <h2>NY Times Archive Search App</h2>
-      </div>
-      <div class="six columns">
-        <p class="body-copy has-left-pipe">
-          My first web app that makes simple queries to the New York Times archives API. So quaint. Is it great? Not by a long shot. But it's fun to see how far I've come in the past few years.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BROADWAZE SECTION INTRO -->
-<header class="hero hero--color u-light-green">
-  <div class="container">
-    <div class="row">
-      <div class="nine columns">
-        <div class="header-group">
-          <h1>Broadwaze</h1>
-          <h2>My ongoing music production project</h2>
-        </div>
-
-        <p class="body-copy has-left-pipe">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quo, repellendus, mollitia a, delectus temporibus nihil optio velit eveniet beatae animi ipsa non consequuntur tempora, neque perferendis inventore sit pariatur?
-        </p>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- BROADWAZE PROJECTS -->
-<section class="hero has-crossing-bar">
-  <div class="bar bar--right u-light-green"></div>
-
-  <div class="container">
-    <div class="image-container row">
-      <div class="twelve columns">
-        <img class="splash-photo" src="../assets/pic--ableton.jpg" alt="Ableton Live Mothafucka">
-      </div>
-    </div>
-
-    <div class="projects--broadwaze row">
-      <div class="project four columns">
-        <a href="https://soundcloud.com/broadwaze/nas-if-i-ruled-the-world-broadwaze-remix" target="_blank">
-          <img class="art" src="../assets/img/broadwaze-1.png" alt="Album art">
-        </a>
-
-        <p class="body-copy">
-          I heavily re-worked of the Nas classic "If I Ruled The World", sampling clips from Humphrey Bogart and his even-more-classic "Maltese Falcon".
-        </p>
-      </div>
-
-      <div class="project four columns">
-        <a href="https://soundcloud.com/broadwaze/kings-and-queens-30-seconds-to-mars-broadwaze-remix" target="_blank">
-          <img class="art" src="../assets/img/broadwaze-2.png" alt="Album art">
-        </a>
-
-        <p class="body-copy">
-          I always dug the 30 Seconds to Mars song "Kings and Queens", so I decided to remix it with a lot of influences from the currently super popular Tropical House vibe.
-        </p>
-      </div>
-
-      <div class="project four columns">
-        <a href="https://soundcloud.com/broadwaze/take-it-down-low" target="_blank">
-          <img class="art" src="../assets/img/broadwaze-3.png" alt="Album art">
-        </a>
-
-        <p class="body-copy">
-          I set out to use a wobble bass and pull in some carribean vibe a la Diplo and ended up with a solid Reggaeton-esque dance beat.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
+{% include broadwaze.html %}

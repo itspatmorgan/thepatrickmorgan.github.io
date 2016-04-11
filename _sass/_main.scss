@@ -17,7 +17,7 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  box-shadow: 0 0 3px #cde;
+  box-shadow: $box-shadow-default;
   
   border-color: $frost;
   border-style: solid;
@@ -33,6 +33,15 @@
   }
 }
 
+/* PROJECT OVERVIEW
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.project-overview {
+  background-color: $paper;
+  box-shadow: $box-shadow-default;
+
+  padding: 30px 20px;
+}
 
 
 /* Global Header
@@ -133,7 +142,7 @@
 
 
 
-/* Icon Container
+/* ICONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .content-box.icons-group {
@@ -151,9 +160,6 @@
     margin: 0;
   }
 }
-
-
-
 
 i.icon {
   display: inline-block;
@@ -288,7 +294,7 @@ i.icon {
 .content-box {
   background-color: $white;
   padding: 15px;
-  box-shadow: 0 0 3px #cde;
+  box-shadow: $box-shadow-default;
 }
 
 .caret {
@@ -322,7 +328,7 @@ i.icon {
 .art {
   box-sizing: border-box;
   border: 20px solid $frost;
-  box-shadow: 0 0 3px #cde;
+  box-shadow: $box-shadow-default;
   margin-bottom: 20px;
 
   transform: translateZ(0);

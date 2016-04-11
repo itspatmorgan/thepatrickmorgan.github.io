@@ -25,6 +25,13 @@ h1 {
   letter-spacing: .6px;
 }
 
+.project-overview .header-group {
+  @include mq(large) {
+    text-align: center;
+    display: block;
+  }
+}
+
 h1.header-text--global {
   @include mq(large) {
     font-size: 32px;

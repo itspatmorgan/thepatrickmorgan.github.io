@@ -19,28 +19,8 @@
   float: left; 
 }
 
-
-// Text Utilities
-.u-text {
-  &--thin {
-    font-weight: 300;
-  }
-
-  &--normal {
-    font-weight: 400;
-  }
-
-  &--bold {
-    font-weight: 700;
-  }
-
-  &--thick {
-    font-weight: 800;
-  }
-
-  &--uppercase {
-    text-transform: uppercase;
-  }
+.u-rhythm-btm {
+  margin-bottom: 40px;
 }
 
 
