@@ -10,8 +10,8 @@
 @import "skeleton";
 
 // Vendor components
-@import "slick-theme";
 @import "slick";
+@import "slick-theme";
 
 // Base HTML components
 @import "type";
@@ -19,6 +19,7 @@
 @import "lists";
 @import "links";
 @import "buttons";
+@import "carousel";
 @import "forms";
 @import "code";
 @import "tables";
