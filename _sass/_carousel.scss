@@ -3,15 +3,16 @@
 }
 
 .carousel-nav__item {
-  color: #ccc;
   display: inline-block;
   float: left;
   width: 33%;
-  text-align: center;
-  cursor: pointer;
-
-  padding: 10px 0;
   margin-bottom: 30px;
+  padding: 10px 0;
+
+  color: #cccccc;
+  text-align: center;
+
+  cursor: pointer;
 
   @include mq(medium) {
     width: 16.6666667%;
@@ -20,13 +21,16 @@
   &:hover {
     color: $text-color;
   }
-
+  
   &.active {
     background-color: $paper;
+
     color: $text-color;
+
     box-shadow: $box-shadow-default;
   }
 }
+
 
 .carousel-nav__item .slick-active {
   color: $text-color;

@@ -399,7 +399,9 @@ th {
   padding: 0;
 }
 
-/* Brand and Responsive Settings
+/* Brand Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NAMED MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
 * Skeleton V2.0.4
@@ -712,8 +714,8 @@ body {
   display: block;
   height: 20px;
   width: 20px;
-  line-height: 0px;
-  font-size: 0px;
+  line-height: 0;
+  font-size: 0;
   cursor: pointer;
   background: transparent;
   color: transparent;
@@ -812,8 +814,8 @@ body {
   height: 20px;
   width: 20px;
   outline: none;
-  line-height: 0px;
-  font-size: 0px;
+  line-height: 0;
+  font-size: 0;
   color: transparent;
   padding: 5px;
   cursor: pointer;
@@ -833,7 +835,7 @@ body {
   height: 20px;
   font-family: "slick";
   font-size: 6px;
-  line-height: 20px;
+  line-height: 20;
   text-align: center;
   color: black;
   opacity: 0.25;
@@ -1056,14 +1058,14 @@ button.btn-primary:focus {
 }
 
 .carousel-nav__item {
-  color: #ccc;
   display: inline-block;
   float: left;
   width: 33%;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  color: #cccccc;
   text-align: center;
   cursor: pointer;
-  padding: 10px 0;
-  margin-bottom: 30px;
 }
 @media (min-width: 550px) {
   .carousel-nav__item {
@@ -1248,16 +1250,36 @@ hr {
   clear: both;
 }
 
-/* SPLASH PHOTO
+/* MEDIA
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.splash-photo {
+img {
+  width: 100%;
+}
+
+.art {
   box-sizing: border-box;
+  border: 20px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 3px #ccddee;
+  margin-bottom: 20px;
+}
+
+.hvr-grow {
+  transform: translateZ(0);
+  transition-property: transform;
+  transition-duration: .3s;
+}
+.hvr-grow:hover {
+  transform: scale(1.05);
+}
+
+.splash-photo {
   width: 100%;
   margin: 0 auto;
-  box-shadow: 0 0 3px #ccddee;
-  border-color: rgba(255, 255, 255, 0.7);
-  border-style: solid;
   border-width: 10px 20px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 3px #ccddee;
+  box-sizing: border-box;
 }
 @media (min-width: 550px) {
   .splash-photo {
@@ -1454,7 +1476,7 @@ i.icon {
 }
 .icon__link:hover {
   animation-name: hvr-bob-float, hvr-bob;
-  animation-duration: .75s, 1.5s;
+  animation-duration: .3s, .8s;
   animation-delay: 0s, .3s;
   animation-timing-function: ease-out, ease-in-out;
   animation-iteration-count: 1, infinite;
@@ -1540,23 +1562,4 @@ i.icon {
 
 .has-crossing-bar {
   min-height: 350px;
-}
-
-/* MEDIA
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-img {
-  width: 100%;
-}
-
-.art {
-  box-sizing: border-box;
-  border: 20px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 3px #ccddee;
-  margin-bottom: 20px;
-  transform: translateZ(0);
-  transition-property: transform;
-  transition-duration: .3s;
-}
-.art:hover {
-  transform: scale(1.05);
 }

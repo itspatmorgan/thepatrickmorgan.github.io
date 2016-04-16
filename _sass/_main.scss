@@ -1,17 +1,40 @@
-/* SPLASH PHOTO
+
+/* MEDIA
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.splash-photo {
+img {
+  width: 100%;
+}
+
+.art {
   box-sizing: border-box;
+  border: 20px solid $frost;
+  box-shadow: $box-shadow-default;
+  margin-bottom: 20px;
+}
+
+.hvr-grow {
+  transform: translateZ(0);
+  transition-property: transform;
+  transition-duration: .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.splash-photo {
   width: 100%;
   margin: 0 auto;
-  box-shadow: $box-shadow-default;
-  
-  border-color: $frost;
-  border-style: solid;
 
   border-width: 10px 20px;
-  
+  border-style: solid;
+  border-color: $frost;
+
+  box-shadow: $box-shadow-default;
+
+  box-sizing: border-box;
+
   @include mq(medium) {
     border-width: 20px 30px;
   }
@@ -20,6 +43,7 @@
     border-width: 25px 50px;
   }
 }
+
 
 /* PROJECT OVERVIEW
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -216,7 +240,7 @@ i.icon {
 
   &:hover {
     animation-name: hvr-bob-float, hvr-bob;
-    animation-duration: .75s, 1.5s;
+    animation-duration: .3s, .8s;
     animation-delay: 0s, .3s;
     animation-timing-function: ease-out, ease-in-out;
     animation-iteration-count: 1, infinite;
@@ -316,27 +340,4 @@ i.icon {
 
 .has-crossing-bar {
   min-height: 350px;
-}
-
-
-/* MEDIA
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-img {
-  width: 100%;
-}
-
-.art {
-  box-sizing: border-box;
-  border: 20px solid $frost;
-  box-shadow: $box-shadow-default;
-  margin-bottom: 20px;
-
-  transform: translateZ(0);
-  transition-property: transform;
-  transition-duration: .3s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 }
