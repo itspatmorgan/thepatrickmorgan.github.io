@@ -1,19 +1,38 @@
-.carousel-arrow--prev {
+.arrow-group {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  @include mq(large) {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+.carousel-arrow {
   display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.carousel-arrow--prev {
   transform: rotate(180deg);
+  right: 5px;
+  top: -1px;
 }
 
 .carousel-arrow--next {
-  display: inline-block;
-}
-
-.arrow-group {
-  text-align: center;
+  left: 5px;
+  top: 1px;
 }
 
 .carousel-nav__text {
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
 }
+
+
 
 .carousel-nav__item {
   display: inline-block;
