@@ -9,21 +9,25 @@
 @import "settings";
 @import "skeleton";
 
-// Vendor components
-@import "slick";
-
-// Base HTML components
+// Elements
 @import "type";
 @import "rhythm";
 @import "lists";
 @import "links";
 @import "buttons";
-@import "carousel";
 @import "forms";
 @import "code";
 @import "tables";
 @import "rules";
-@import "utilities";
+@import "media";
 
-// Working file while building out new stuff
-@import "main";
+// Components
+@import "containers";
+@import "project";
+@import "footer";
+@import "header";
+@import "slick";
+@import "carousel";
+
+// Utilities and Trumps
+@import "utilities";

@@ -7,7 +7,7 @@
 * 12/29/2014
 */
 
-/* Grid
+/* GRID
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
@@ -35,7 +35,7 @@
 
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@include mq(small) {
   .container {
     width: 85%;
     padding: 0; 
@@ -104,8 +104,9 @@
 
 
 
-/* Base Styles
+/* BASE STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */

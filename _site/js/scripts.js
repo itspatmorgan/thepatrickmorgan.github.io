@@ -1,6 +1,6 @@
 var PM = {} || PM;
 
-PM.CarouselSetup = (function () {
+PM.Carousel = (function () {
 
   var elements = {
     carousel: $('.js-carousel'),
@@ -55,8 +55,8 @@ PM.CarouselSetup = (function () {
   };
 } ());
 
-PM.GoToCarousel = (function () {
-  var elements = PM.CarouselSetup.elements;
+PM.CarouselNav = (function () {
+  var elements = PM.Carousel.elements;
 
   var updateActiveSelector = function ($clicked_selector) {
     // Remove all active selectors
@@ -87,7 +87,88 @@ PM.GoToCarousel = (function () {
   };
 } ());
 
+PM.Drawer = (function () {
+
+  var constants = {
+    toggle_element: '.js-toggle',
+    container: '.js-toggle-container',
+    content: '.js-toggle-collapsible',
+    open_class: 'active',
+    should_animate: true,
+    duration: 200,
+    easing: 'swing'
+  };
+
+  var openDrawer = function($context) {
+
+    if(constants.should_animate){
+
+      var $content = $context.find(constants.content);
+      var $toggle = $context.find(constants.toggle_element);
+      
+      $content.slideDown({
+        'duration': constants.duration,
+        'easing': constants.easing
+      });
+
+      $context.addClass(constants.open_class);
+      $toggle.addClass(constants.open_class); 
+
+      return;
+    }
+    
+    $context.toggleClass(constants.open_class); 
+    $(constants.toggle_element).addClass(constants.open_class);   
+  };
+
+  var closeDrawer = function($context) {
+
+    if(constants.should_animate){
+
+      var $content = $context.find(constants.content);
+      var $toggle = $context.find(constants.toggle_element);
+
+      $content.slideUp({
+        'duration': constants.duration,
+        'easing': constants.easing
+      });
+
+      $context.removeClass(constants.open_class);
+      $toggle.removeClass(constants.open_class);
+
+      return;
+    }
+    
+    $context.toggleClass(constants.open_class);  
+    $(constants.toggle_element).toggleClass(constants.open_class);  
+  };
+
+  var init = function() {
+
+    // Set 'on click' event listener for .js-toggle that expands and collapses content
+    $(constants.toggle_element).on('click', function(e) {
+      e.preventDefault();
+
+      var $targetContext = $(this).closest($(constants.container));
+
+      if ($targetContext.hasClass(constants.open_class)) {
+        closeDrawer($targetContext);
+        return;
+      }
+
+      openDrawer($targetContext);
+    });
+  };
+
+  return {
+    init: init,
+    constants: constants,
+    openDrawer: openDrawer,
+    closeDrawer: closeDrawer
+  };
+} ());
+
 $(function () {
-  PM.CarouselSetup.init();
-  PM.GoToCarousel.init();
+  PM.Carousel.init();
+  PM.CarouselNav.init();
 });

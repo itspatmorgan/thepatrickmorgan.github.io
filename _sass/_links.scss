@@ -1,11 +1,13 @@
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 a {
   display: inline-block;
+
   color: $link-color;
 
   &:hover {
-    color: $link-hover-color; 
+    color: $link-hover-color;
   }
 }
 

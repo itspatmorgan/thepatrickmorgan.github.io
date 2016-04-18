@@ -1,0 +1,29 @@
+/* GLOBAL FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer--global {
+  padding: 50px 0;
+
+  background-color: $paper;
+
+  @include mq(large) {
+    padding: 70px 0;
+  }
+}
+
+.contact-line {
+  margin-bottom: 10px;
+}
+
+.contact-line .icon {
+  padding-right: 14px;
+}
+
+.icon-container {
+  display: inline-block;
+  padding-right: 15px;
+  
+  &:last-child {
+    padding-right: 0;
+  }
+}

@@ -1,19 +1,22 @@
-/* Typography
+/* TYPOGRAPHY
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1, h2, p {
+
+h1,
+h2,
+p {
   margin-top: 0;
   margin-bottom: 1rem;
-
+  
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-h1 { 
-  font-size: 26px; 
-  line-height: 1.2;  
+h1 {
+  font-size: 26px;
   font-weight: bold;
   letter-spacing: 1px;
+  line-height: 1.2;
 
   @include mq(large) {
     font-size: 36px;
@@ -21,14 +24,15 @@ h1 {
 }
 
 .header--global h1 {
-  text-transform: uppercase;
   letter-spacing: .6px;
+  text-transform: uppercase;
 }
 
 .project-overview .header-group {
   @include mq(large) {
-    text-align: center;
     display: block;
+
+    text-align: center;
   }
 }
 
@@ -41,7 +45,7 @@ h1.header-text--global {
 
 h2.header-text--global {
   font-size: 11px;
-  letter-spacing: .4px; 
+  letter-spacing: .4px;
 
   @include mq(large) {
     font-size: 13px;
@@ -49,12 +53,12 @@ h2.header-text--global {
   }
 }
 
-h2 { 
-  font-size: 13px; 
-  line-height: 1.25; 
-  text-transform: uppercase;
+h2 {
+  font-size: 13px;
   font-weight: 300;
   letter-spacing: .6px;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
 .body-copy {
@@ -69,8 +73,8 @@ h2 {
 
 .note {
   font-size: 12px;
-  letter-spacing: 1px;
   font-style: italic;
+  letter-spacing: 1px;
   text-align: center;
 
   @include mq(large) {
@@ -82,8 +86,8 @@ h2 {
   @include mq(large) {
     position: relative;
     left: -25px;
+    padding-left: 25px;
 
     border-left: 1px solid;
-    padding-left: 25px;
   }
 }

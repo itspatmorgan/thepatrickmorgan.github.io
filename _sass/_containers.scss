@@ -1,0 +1,58 @@
+/* HERO
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.hero--color {
+  color: $white;
+}
+
+.has-crossing-bar {
+  min-height: 350px;
+}
+
+
+
+/* CONTENT BOX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.content-box {
+  padding: 15px;
+
+  background-color: $white;
+
+  box-shadow: $box-shadow-default;
+}
+
+.content-box.icons-group {
+  padding: 10px 15px;
+}
+
+
+
+/* CROSSING BARS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.crossing-bar {
+  position: absolute;
+  top: 150px;
+  left: -25%;
+  width: 150%;
+  height: 75px;
+
+  @include mq(large) {
+    top: 200px;
+    height: 110px;
+  }
+}
+
+.crossing-bar--left {
+  transform: rotate(13deg);
+}
+
+.crossing-bar--right {
+  transform: rotate(-13deg);
+}

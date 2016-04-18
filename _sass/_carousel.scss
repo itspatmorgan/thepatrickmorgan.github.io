@@ -1,7 +1,11 @@
+/* CAROUSEL NAV – STANDARD
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .arrow-group {
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
+
+  text-align: center;
 
   @include mq(large) {
     margin-top: 20px;
@@ -12,27 +16,33 @@
 .carousel-arrow {
   display: inline-block;
   position: relative;
+
   vertical-align: middle;
 }
 
 .carousel-arrow--prev {
-  transform: rotate(180deg);
-  right: 5px;
   top: -1px;
+  right: 5px;
+
+  transform: rotate(180deg);
 }
 
 .carousel-arrow--next {
-  left: 5px;
   top: 1px;
+  left: 5px;
 }
 
 .carousel-nav__text {
   display: inline-block;
-  vertical-align: middle;
   margin-bottom: 0;
+
+  vertical-align: middle;
 }
 
 
+
+/* CAROUSEL NAV - GO TO SLIDE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .carousel-nav__item {
   display: inline-block;
@@ -62,7 +72,6 @@
     box-shadow: $box-shadow-default;
   }
 }
-
 
 .carousel-nav__item .slick-active {
   color: $text-color;
