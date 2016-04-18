@@ -4,12 +4,16 @@ PM.CarouselSetup = (function () {
 
   var elements = {
     carousel: $('.js-carousel'),
-    selectors: $(".js-carousel-control")
+    selectors: $(".js-carousel-control"),
+    prev_arrow: $('.js-carousel--prev'),
+    next_arrow: $('.js-carousel--next')
   };
 
   var default_settings = {
-    dots: true,
+    dots: false,
     arrows: true,
+    prevArrow: elements.prev_arrow,
+    nextArrow: elements.next_arrow,
     infinite: true,
     adaptiveHeight: true,
     speed: 300,

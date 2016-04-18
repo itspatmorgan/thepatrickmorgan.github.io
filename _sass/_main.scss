@@ -144,18 +144,25 @@ img {
   transition-duration: .3s;
 }
 
+.caret {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+
+  &:hover {
+    .caret__fill {
+      fill: $link-hover-color;
+    }
+  }
+}
+
 .header-link:hover {
   color: $link-hover-color;
 
   .caret__fill {
     fill: $link-hover-color;
   }
-}
-
-.caret {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
 }
 
 

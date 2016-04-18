@@ -1,5 +1,18 @@
-.carousel__item {
-  
+.carousel-arrow--prev {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.carousel-arrow--next {
+  display: inline-block;
+}
+
+.arrow-group {
+  text-align: center;
+}
+
+.carousel-nav__text {
+  display: inline;
 }
 
 .carousel-nav__item {

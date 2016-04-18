@@ -696,14 +696,14 @@ body {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
+  background: #fff url("/assets/vendor/ajax-loader.gif") center center no-repeat;
 }
 
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  src: url("/assets/vendor/fonts/slick.eot");
+  src: url("/assets/vendor/fonts/slick.eot?#iefix") format("embedded-opentype"), url("/assets/vendor/fonts/slick.woff") format("woff"), url("/assets/vendor/fonts/slick.ttf") format("truetype"), url("/assets/vendor/fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1057,6 +1057,23 @@ button.btn-primary:focus {
   border-color: #1EAEDB;
 }
 
+.carousel-arrow--prev {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.carousel-arrow--next {
+  display: inline-block;
+}
+
+.arrow-group {
+  text-align: center;
+}
+
+.carousel-nav__text {
+  display: inline;
+}
+
 .carousel-nav__item {
   display: inline-block;
   float: left;
@@ -1389,17 +1406,21 @@ img {
   transition-duration: .3s;
 }
 
+.caret {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+.caret:hover .caret__fill {
+  fill: #0FA0CE;
+}
+
 .header-link:hover {
   color: #0FA0CE;
 }
 .header-link:hover .caret__fill {
   fill: #0FA0CE;
-}
-
-.caret {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
 }
 
 /* ICONS

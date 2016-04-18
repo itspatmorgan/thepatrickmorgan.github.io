@@ -2,9 +2,9 @@
 
 // Default Variables
 
-$slick-font-path: "./fonts/" !default;
+$slick-font-path: "/assets/vendor/fonts/" !default;
+$slick-loader-path: "/assets/vendor/" !default;
 $slick-font-family: "slick" !default;
-$slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
