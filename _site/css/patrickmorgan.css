@@ -1178,7 +1178,7 @@ i.icon {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .project-overview {
   padding: 30px 20px;
-  background-color: rgba(249, 246, 228, 0.5);
+  background-color: rgba(249, 246, 228, 0.7);
   box-shadow: 0 0 3px #ccddee;
 }
 
@@ -1186,7 +1186,7 @@ i.icon {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .footer--global {
   padding: 50px 0;
-  background-color: rgba(249, 246, 228, 0.5);
+  background-color: rgba(249, 246, 228, 0.7);
 }
 @media (min-width: 720px) {
   .footer--global {
@@ -1409,7 +1409,7 @@ i.icon {
   color: #222222;
 }
 .carousel-nav__item.active {
-  background-color: rgba(249, 246, 228, 0.5);
+  background-color: rgba(249, 246, 228, 0.7);
   color: #222222;
   box-shadow: 0 0 3px #ccddee;
 }

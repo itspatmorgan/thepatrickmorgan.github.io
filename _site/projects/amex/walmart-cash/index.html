@@ -69,11 +69,7 @@
        
         <div class="content-box ten offset-by-one columns">
           <p class="body-copy">
-            Redesigning the website using responsive design was a huge undertaking involving pretty much every team in our organization at American Express. However once the redesign was in place, overall development and design time decreased significantly. We consolidated the code base. So even though it was still a large and complex code base, at least we didn't have to maintain two entirely separate sets or markup, styles and scripts for a mobile site.
-          </p>
-
-          <p class="body-copy">
-            While we embraced that ability to create a responsive design, we didn't get it perfect on day one. Day one was very much and MVP of responsive implementation that need to evolve, get leaner and cleaner over time. Below are some screens of the site and some of the key discoveries we made on our path from responsive MVP to responsive greatness.
+            Amex partnered with Walmart and Ria Money Transfer to deliver a streamlined cash pickup and transfer experience for Bluebird and Serve customers. Money transfer is, unsurprisingly, a hugely regulated service so my team met and overcame a lot of legal struggles during the design of this feature. Technically, this feature ended up being pretty straightforward for me. However, I learned a ton and really grew in my overall design contributions to the team. I worked with two designers and a design manager on this project.
           </p>
         </div>
       </section>
@@ -82,9 +78,10 @@
     <!-- Findings-->
     <div class="row">
       <div class="ten columns offset-by-one u-rhythm-btm">
-
+        
         <div class="js-carousel twelve columns">
-          <div><img src="/../../assets/img--ria-1.png" alt=""></div>
+          <div><img src="/../../assets/img--ria-3.png" alt=""></div>
+          <div><img src="/../../assets/img--ria-2.png" alt=""></div>
         </div>
 
         <div class="arrow-group twelve columns">
@@ -114,32 +111,36 @@
         </div>
 
         <div class="twelve columns">
-          <b>Understand the full journey</b>
+          <b>Design Considerations and Learnings</b>
           <p class="body-copy">
-            For <i>version control</i>, I've exclusively used Git. I was responsible for our team's code delivery into a TFS repository, but I didn't work in TFS from day to day.
+            The <i>first slide above</i> is the output of the Service Journey my team developed during the early stages of designing the cash pickup feature. I can't take any credit for how nice it looks, but I did contribute heavily to its content. Due to the complexity of the user journey and the back-end tech that processed the transactions, we needed to be especially thorough in mapping out every step of the service.
+          </p>
+          <p class="body-copy">
+            At the top, we start with the user journey phase: is the user learning about the product? experimenting with it? have they mastered it? Working our way down the page, we consider the channel by which the user is accessing the product in that moment. We then think about the user's mindset in that moment and the actions they're taking. Then at the bottom we start to map out and link up UI interactions with the server: what requests do we plan on making? what potential errors do we expect?
+          </p>
+          <p class="body-copy">
+            Collecting all this information into one cohesive visual was crucial for the success of this project. Not only was it important for our own understanding, but it was a key grounding artifact we could refer to during conversations with all the different stakeholders involved in getting this feature launched.
+          </p>
+          <p class="body-copy">
+            The <i>second slide above</i> is a photo of a logic map that I made to visually represent (at a high level) the decisions the server would make over the course of a standard user journey, including error cases. This ultimately helped inform the bottom of the Service Journey in the other slide.
           </p>
         </div>
       </div>
       
       <div class="ten columns offset-by-one u-rhythm-btm">
-        <div class="twelve columns">
-          <img class="splash-photo" src="/../../assets/img--ria-2.png" alt="">
+        <div class="twelve columns u-vrhythm-sm">
+          <img src="/../../assets/img--ria-1.png" alt="">
         </div>
         
-        <b>Prototype on the fly at user testing</b>
+        <b>Technical Considerations and Learnings</b>
         <p class="body-copy">
-          For <i>version control</i>, I've exclusively used Git. I was responsible for our team's code delivery into a TFS repository, but I didn't work in TFS from day to day.
+          One of my main takeaways from this project is that the right experience doesn't always involve the sexiest tech. Most of the web experience for cash pickup was made up of educational content supporting a series of simple form pages. Those forms were challenging content-wise, but not tech-wise.
         </p>
-      </div>
-
-      <div class="ten offset-by-one columns u-rhythm-btm">
-        <div class="twelve columns">
-          <img class="splash-photo" src="/../../assets/img--ria-3.png" alt="">
-        </div>
-
-        <b>The best experience doesn't always mean the sexiest tech</b>
         <p class="body-copy">
-          For <i>version control</i>, I've exclusively used Git. I was responsible for our team's code delivery into a TFS repository, but I didn't work in TFS from day to day.
+          Rapid prototyping was essential to the success of this project. We worked with a user testing agency to get key flows in front of users early and often. I'd sit in those sessions with the two designers, making changes to the prototype on the fly as we discovered trouble spots for our potential users.
+        </p>
+        <p class="body-copy">
+          Technically what I'm most proud of from this project is the receipt/confimation page above. Users repeatedly mentioned that they wanted to be able to print this page to take with them to the store when they went to pick up their money. However our platform didn't have existing print stylesheet support for the logged in experience, only occasional PDF generation. So, along with building this succinct receipt, I also built platform wide print stylesheet support.
         </p>
       </div>
     </div>
