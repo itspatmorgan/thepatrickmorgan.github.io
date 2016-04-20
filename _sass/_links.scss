@@ -1,0 +1,20 @@
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  display: inline-block;
+
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.header--global a {
+  color: $text-color;
+
+  &:hover {
+    color: $text-color;
+  }
+}

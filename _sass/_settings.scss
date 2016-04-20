@@ -1,0 +1,44 @@
+/* BRAND VARIABLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$paper: rgba(249,246,228,.7);
+$frost: rgba(255,255,255,.7);
+$white: #ffffff;
+
+$dark-green: rgba(35,53,47,.9);
+$mid-green: rgba(58,91,64,.9);
+$light-green: rgba(120,183,137,.9);
+
+$text-color: #222222;
+
+$box-shadow-default: 0 0 3px #ccddee;
+
+$link-color: #1EAEDB;
+$link-hover-color: #0FA0CE;
+
+
+
+/* NAMED MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@mixin mq($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: 400px) { @content; }
+  }
+  
+  @else if $breakpoint == medium {
+    @media (min-width: 550px) { @content; }
+  }
+  
+  @else if $breakpoint == large {
+    @media (min-width: 720px) { @content; }
+  }
+
+  @else if $breakpoint == x-large {
+    @media (min-width: 1000px) { @content; }
+  }
+
+  @else if $breakpoint == hd-large {
+    @media (min-width: 1200px) { @content; }
+  }
+}

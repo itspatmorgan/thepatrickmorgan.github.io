@@ -1,0 +1,74 @@
+---
+layout: default
+title: Amex Offers
+---
+
+<div class="hero has-crossing-bar">
+  <div class="crossing-bar crossing-bar--left u-dark-green"></div>
+  
+  <div class="container">
+    <!-- PROJECT OVERVIEW -->
+    <div class="row u-rhythm-btm">
+      <section class="project-overview twelve columns">
+        <div class="header-group">
+          <h1 class="header-text">Amex Offers</h1>
+        </div>
+       
+        <div class="content-box ten offset-by-one columns">
+          <p class="body-copy">
+            I worked together with a team of designers from NYC consultancy <a href="http://momentdesign.com/" target="_blank">Moment Design</a> to bring one of Amex's core perks, Merchant Offers, into the Serve platform for the first time. You know this kind of deal: "Spend $50 at Amazon.com and get $5 back". While Offers were an existing feature in Amex's core product line targeting the mass affluent market (Green, Gold, Platinum cards), we wanted to make sure that we designed an experience that felt appropriate for our different user base of Prepaid card holders.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Findings-->
+    <div class="row">
+      <div class="ten columns offset-by-one u-rhythm-btm">
+
+        <div class="js-carousel twelve columns">
+          <div><img src="/../../assets/img--offers-1.png" alt=""></div>
+          <div><img src="/../../assets/img--offers-2.png" alt=""></div>
+        </div>
+
+        <div class="arrow-group twelve columns">
+          <div class="carousel-arrow carousel-arrow--prev js-carousel--prev">
+            {% include caret.html %}
+          </div>
+          <h2 class="carousel-nav__text">Change Slide</h2>
+          <div class="carousel-arrow carousel-arrow--next js-carousel--next">
+            {% include caret.html %}
+          </div>
+        </div>
+
+        <div class="twelve columns">
+          <b>Technical Considerations and Learnings</b>
+          <p class="body-copy">
+            This project let me push my own limits as well as push the tech limits of our platform. Since the core Offers experience needed to be controlled by Javascript, I got to build a pretty robust module to handle the Offers management experience. In addition to using our typical jQuery, we brought in the <a href="http://www.dustjs.com/">Dust.js</a> templating language to allow us to more efficiently load data.
+          </p>
+          <p class="body-copy">
+            The Serve user base is largely mobile and on Android devices, meaning we needed to take extra care with the load time of this more data intensive feature. The API returned quite a bit of information for each individual offer, especially with regard to offer details, terms and conditions. Considering that there could be up to 50 offers at any given time, waiting for all the data to come in on first load seemed inefficient. However, using Javascript and Dust we were able to request detailed offer information and populate it into the appropriate template only when the user acted to see more info. That way, we were able to serve a user the core content of all available offers before having to send the detailed info over the pipes, which used more bandwidth and slowed down the load time.
+          </p>
+          <p class="body-copy">
+            One bummer about this project for me was that I never received access to the actual Offers API. Instead I was given documentation and told I could only use dummy data while prototyping. It wasn't too problematic, but it did change my approach. Most glaringly, I had to fake AJAX requests to static JSON blobs instead of getting actual data back via real AJAX request. 
+          </p>
+        </div>
+      </div>
+
+      <div class="ten offset-by-one columns u-rhythm-btm">
+        <div class="twelve columns u-vrhythm-sm">
+          <img class="splash-photo" src="/../../assets/img--stickies.jpg" alt="">
+        </div>
+
+        <b>Design Considerations and Learnings</b>
+        <p class="body-copy">
+          On this project I got to be an internal stakeholder while constantly collaborating with our supporting agency. This was an interesting dynamic and I learned a lot from getting to see both internal and external perspectives of the design and product. 
+        </p>
+        <p class="body-copy">
+          For the agency, I was their closest contact to the product. I was also the expert on our established front-end code and design patterns. I helped kickstart the process early on by breaking down the capabilites of the Offers API. Then I collaborated with Moment's designers to flesh out the visual design of the page along with its interactivity. We wanted to build from existing patterns where we could but slightly push the boundaries to make the perk feel like a fresh and special new addition to the product. I also did have to play MVP police a couple times to help hone in on functionality that we could deliver in the given timeframe for the project.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

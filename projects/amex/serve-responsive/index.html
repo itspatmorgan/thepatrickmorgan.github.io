@@ -1,0 +1,91 @@
+---
+layout: default
+title: Serve Responsive Web
+---
+
+<div class="hero has-crossing-bar">
+  <div class="crossing-bar crossing-bar--left u-dark-green"></div>
+  
+  <div class="container">
+    <!-- PROJECT OVERVIEW -->
+    <div class="row u-rhythm-btm">
+      <section class="project-overview twelve columns">
+        <div class="header-group">
+          <h1 class="header-text">Serve Responsive Web</h1>
+        </div>
+       
+        <div class="content-box ten columns offset-by-one">
+          <p class="body-copy">
+            Creating and implementing the responsive redesign of our site was a huge undertaking involving most of the teams in our organization at Amex. However once the redesign was in place, front-end development and design efficiency increased significantly. Even though the code base is still large and complex, at least it's just one code base. No more maintaining one set of markup, styles and scripts for a mobile site and another for desktop.
+          </p>
+
+          <p class="body-copy">
+            While we dove in 100% to responsive design from the start, we didn't get it perfect on day one. Our 1.0 delivery was clearly a MVP that we worked hard to make leaner and cleaner over time. Below are some screens of the site's dashboard along with some key discoveries we made on our path from responsive MVP to responsive maturity.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Findings-->
+    <div class="row">
+      <div class="ten columns offset-by-one u-rhythm-btm">
+
+        <div class="js-carousel twelve columns">
+          <div><img src="/../../assets/img--dash-serve.png" alt=""></div>
+          <div><img src="/../../assets/img--dash-bluebird.png" alt=""></div>
+          <div><img src="/../../assets/img--dash-redcard.png" alt=""></div>
+        </div>
+
+        <div class="arrow-group twelve columns">
+          <div class="carousel-arrow carousel-arrow--prev js-carousel--prev">
+            {% include caret.html %}
+          </div>
+          <h2 class="carousel-nav__text">Change Slide</h2>
+          <div class="carousel-arrow carousel-arrow--next js-carousel--next">
+            {% include caret.html %}
+          </div>
+        </div>
+
+        <div class="twelve columns">
+          <b>Design Mobile First or How to Add, Not Subtract</b>
+          <p class="body-copy">
+            If you're going to embrace responsive design, then you should without a doubt also embrace a mobile first attitude and approach to your work. The reason for this is simple: it's easier start from an environment with more constraints (mobile) and build towards an environment with fewer (desktop). You might have to make some hard decisions about what's truly important to the core experience, but I believe that additional focus is actually great for the product.
+          </p>
+          <p class="body-copy">
+            From a <i>content perspective</i>, you're likely to start with only the core content on the smallest screens and add supporting content as space permits. From a <i>design perspective</i>, starting with a visually simpler design and adding elements is usually far easier than subtracting elements from an initially complex design. Finally from a <i>technical perspective</i>, CSS is terrible at subtraction. In fact, you can't just remove a line of CSS if you don't need it at a certain breakpoint; you have to add an extra line of code to override the first declaration. So since subtracting a style actually means adding a style overwrite, it's just much cleaner to start with the minimum viable CSS to implement the design and only add or change that base styling as necessary to enhance the design.
+          </p>
+        </div>
+      </div>
+      
+      <div class="ten columns offset-by-one u-rhythm-btm">
+        <div class="six columns">
+          <img class="art" src="/../../assets/img--mq.png" alt="">
+        </div>
+
+        <div class="six columns">
+          <img class="art" src="/../../assets/img--nested-mq.png" alt="">
+        </div>
+        
+        <b>Media Query Abstractions are Your New Best Friend</b>
+        <p class="body-copy">
+          Media Query abstractions are a remarkably easy way to drastically simplify the legibility of your responsive CSS. Using SCSS' native mixin feature, you first give yourself a nicely contained, named list of media queries to be used throughout the code base (the Named Media Queries image above). Then using SCSS' nesting functionality, you nest these mixins under the original style declaration to expand on the base styles across breakpoints (the Splash Photo example above).
+        </p>
+        <p class="body-copy">
+          You might say "Pat, nesting those media queries will add a lot of unnecessary media query declarations to the stylesheet!". And you would be right. However, you're not going to take a noticeable performance hit for this convenience and I promise that it will save you development time. Not to mention you're less likely to write duplicate styles at different breakpoints if you contain all styles under one declaration. If you really want to make up for the extra lines, go clean up your assets or javascript, both of which are more likely to hurt performance time.
+        </p>
+      </div>
+
+      <div class="ten columns offset-by-one u-rhythm-btm">
+        <div class="twelve columns u-vrhythm-sm">
+          <img class="splash-photo" src="/../../assets/img--collab.png" alt="Collaboration at its finest">
+        </div>
+
+        <b>Pair up!</b>
+        <p class="body-copy">
+          Responsive design has to be a collaborative effort. No current design tool (Adobe, Sketch or otherwise) can give you a 100% accurate mock-up for responsive purposes. They can give you a great starting point for how the site should look and behave at different benchmarks, but ultimately a lot of responsive design needs to happen in the browser. So embrace the back and forth, pair up developer with designer and spend the time getting the experience right together.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

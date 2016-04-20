@@ -1,0 +1,79 @@
+
+/* PROJECT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.project {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.project__header {
+  margin-bottom: 20px;
+}
+
+.project__title {
+  display: inline-block;
+
+  color: $text-color;
+  font-size: 26px;
+}
+
+.projects--broadwaze {
+  max-width: 400px;
+  margin: 0 auto;
+
+  @include mq(large) {
+    max-width: inherit;
+  }
+}
+
+.header-link {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.header-link,
+.caret__fill {
+  transform: translateZ(0);
+
+  transition-property: color, fill;
+  transition-duration: .3s;
+}
+
+.caret {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+
+  cursor: pointer;
+
+  &:hover {
+    .caret__fill {
+      fill: $link-hover-color;
+    }
+  }
+}
+
+.header-link:hover {
+  color: $link-hover-color;
+  
+  .caret__fill {
+    fill: $link-hover-color;
+  }
+}
+
+
+
+/* PROJECT OVERVIEW
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.project-overview {
+  padding: 30px 20px;
+
+  background-color: $paper;
+
+  box-shadow: $box-shadow-default;
+}

@@ -1,0 +1,148 @@
+
+/* MEDIA
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+img {
+  width: 100%;
+}
+
+.art {
+  margin-bottom: 20px;
+
+  border: 20px solid $frost;
+
+  box-shadow: $box-shadow-default;
+
+  box-sizing: border-box;
+}
+
+.splash-photo {
+  width: 100%;
+  margin: 0 auto;
+
+  border-width: 10px 20px;
+  border-style: solid;
+  border-color: $frost;
+
+  box-shadow: $box-shadow-default;
+
+  box-sizing: border-box;
+
+  @include mq(medium) {
+    border-width: 20px 30px;
+  }
+
+  @include mq(large) {
+    border-width: 25px 50px;
+  }
+}
+
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hvr-grow {
+  transform: translateZ(0);
+
+  transition-property: transform;
+  transition-duration: .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+
+
+/* ICONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+i.icon {
+  display: inline-block;
+
+  background-repeat: no-repeat;
+
+  vertical-align: middle;
+}
+
+.icon--linkedin {
+  width: 24px;
+  height: 24px;
+
+  background-image: url('../assets/icon--linkedin.svg');
+}
+
+.icon--github {
+  width: 24px;
+  height: 24px;
+
+  background-image: url('../assets/icon--github.svg');
+}
+
+.icon--angellist {
+  width: 17px;
+  height: 24px;
+
+  background-image: url('../assets/icon--angellist.svg');
+}
+
+.icon--phone {
+  width: 22px;
+  height: 22px;
+
+  background-image: url('../assets/icon--phone.svg');
+}
+
+.icon--mail {
+  width: 22px;
+  height: 16px;
+
+  background-image: url('../assets/icon--mail.svg');
+}
+
+
+.icons-group {
+  display: inline-block;
+  margin: 0 auto;
+
+  @include mq(large) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}
+
+
+.icon__link {
+  transform: translateZ(0);
+  
+  &:hover {
+    animation-name: hvr-bob-float, hvr-bob;
+    animation-duration: .3s, .8s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forward;
+    animation-direction: normal, alternate;
+  }
+}
