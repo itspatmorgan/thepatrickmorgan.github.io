@@ -16,7 +16,7 @@ title: Amex Offers
        
         <div class="content-box ten offset-by-one columns">
           <p class="body-copy">
-            I worked together with a team of designers from NYC consultancy <a href="http://momentdesign.com/" target="_blank">Moment Design</a> to bring one of Amex's core perks, Merchant Offers, into the Serve platform for the first time. You know this kind of deal: "Spend $50 at Amazon.com and get $5 back". While Offers were an existing feature in Amex's core product line targeting the mass affluent market (Green, Gold, Platinum cards), we wanted to make sure that we designed an experience that felt appropriate for our different user base of Prepaid card holders.
+            I worked together with a team of designers from NYC consultancy <a href="http://momentdesign.com/" target="_blank">Moment Design</a> to bring one of Amex's core perks, Merchant Offers, into the Serve platform for the first time. You know this kind of deal: "Spend $50 at Amazon.com and get $5 back". While Offers were an existing feature in Amex's core product line targeting the mass affluent market (Green, Gold and Platinum cards), we wanted to make sure that we designed an experience that felt appropriate for our distinct, prepaid card holder user base.
           </p>
         </div>
       </section>
@@ -44,13 +44,13 @@ title: Amex Offers
         <div class="twelve columns">
           <b>Technical Considerations and Learnings</b>
           <p class="body-copy">
-            This project let me push my own limits as well as push the tech limits of our platform. Since the core Offers experience needed to be controlled by Javascript, I got to build a pretty robust module to handle the Offers management experience. In addition to using our typical jQuery, we brought in the <a href="http://www.dustjs.com/">Dust.js</a> templating language to allow us to more efficiently load data.
+            This project let me push my own limits as well as push the tech limits of our platform. Since the core Offers experience needed to functional like a single page app, I got to build a pretty robust Javascript module to handle the Offers management experience. In addition to using our typical jQuery, we brought in the <a href="http://www.dustjs.com/">Dust.js</a> templating language to allow us to more efficiently load and display data from the API.
           </p>
           <p class="body-copy">
-            The Serve user base is largely mobile and on Android devices, meaning we needed to take extra care with the load time of this more data intensive feature. The API returned quite a bit of information for each individual offer, especially with regard to offer details, terms and conditions. Considering that there could be up to 50 offers at any given time, waiting for all the data to come in on first load seemed inefficient. However, using Javascript and Dust we were able to request detailed offer information and populate it into the appropriate template only when the user acted to see more info. That way, we were able to serve a user the core content of all available offers before having to send the detailed info over the pipes, which used more bandwidth and slowed down the load time.
+            The Serve user base is largely mobile and on Android devices, meaning we needed to take extra care with the load time of this more data intensive feature. The API returned quite a bit of information for each individual offer, especially with regard to offer details, terms and conditions. Considering that there could be up to 50 offers at any given time, waiting for all the data to come in on first load seemed inefficient. However, using Javascript and Dust we were able to request detailed offer information and populate it into the appropriate template only when the user acted to see more information. That way, we were able to serve a user the core content of all available offers before having to send the detailed info over the pipes, which used more bandwidth and increased the load time.
           </p>
           <p class="body-copy">
-            One bummer about this project for me was that I never received access to the actual Offers API. Instead I was given documentation and told I could only use dummy data while prototyping. It wasn't too problematic, but it did change my approach. Most glaringly, I had to fake AJAX requests to static JSON blobs instead of getting actual data back via real AJAX request. 
+            One bummer about this project for me was that I never received access to the actual Offers API. Instead I was given documentation and told I could only use dummy data while prototyping the front-end. It wasn't too problematic, but it did change my approach. Most significantly, I had to fake AJAX requests to static JSON blobs instead of getting actual data back via real AJAX request. 
           </p>
         </div>
       </div>
@@ -65,7 +65,7 @@ title: Amex Offers
           On this project I got to be an internal stakeholder while constantly collaborating with our supporting agency. This was an interesting dynamic and I learned a lot from getting to see both internal and external perspectives of the design and product. 
         </p>
         <p class="body-copy">
-          For the agency, I was their closest contact to the product. I was also the expert on our established front-end code and design patterns. I helped kickstart the process early on by breaking down the capabilites of the Offers API. Then I collaborated with Moment's designers to flesh out the visual design of the page along with its interactivity. We wanted to build from existing patterns where we could but slightly push the boundaries to make the perk feel like a fresh and special new addition to the product. I also did have to play MVP police a couple times to help hone in on functionality that we could deliver in the given timeframe for the project.
+          For the agency, I was their closest contact to the product. I was also the expert on our established front-end code and design patterns. I helped kickstart the process early on by breaking down the capabilites of the Offers API. Then I collaborated with Moment's designers to flesh out the visual design of the page along with its interactivity. We wanted to build from existing patterns where we could but slightly push the boundaries to make Offers feel like a fresh and special addition to the product. I also did have to play MVP cop a couple times to help us hone in our design to something we could deliver on the given project timeline.
         </p>
       </div>
     </div>
