@@ -87,4 +87,8 @@ gulp.task('default', ['clean'], function() {
     gulp.start('styles', 'scripts', 'browser-sync', 'watch');
 });
 
+gulp.task('only-build', ['clean'], function() {
+    gulp.start('styles', 'scripts', 'jekyll-build');
+});
+
 

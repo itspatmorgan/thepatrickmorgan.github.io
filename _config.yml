@@ -6,9 +6,10 @@ baseurl: ""
 url: "http://patrickmorgan.me"
 
 # Build Settings
-source: src
-destination: _site
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 sass:
   style: expanded
+
+# Excludes
+exclude: ["gulpfile.js", "package.json", "README.md", "node_modules", "CNAME"]
