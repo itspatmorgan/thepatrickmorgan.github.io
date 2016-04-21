@@ -1,0 +1,26 @@
+{
+  "name": "patrickmorgan.me",
+  "version": "0.0.1",
+  "description": "Portfolio Site",
+  "author": "Patrick Morgan <pamorgan12@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickmmorgan/patrickmmorgan.github.io"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.4",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.2"
+  }
+}

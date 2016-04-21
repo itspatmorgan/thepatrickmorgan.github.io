@@ -6,6 +6,8 @@ baseurl: ""
 url: "http://patrickmorgan.me"
 
 # Build Settings
+source: src
+destination: _site
 markdown: redcarpet
 highlighter: rouge
 sass:
