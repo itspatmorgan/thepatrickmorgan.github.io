@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 gulp.task('styles', function() {
   return gulp.src('_sass/site.scss')
     .pipe(sass())
-    .pipe(autoprefixer())
+    .pipe(autoprefixer('last 2 versions', '>1%'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('css'))
@@ -74,9 +74,9 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
  */
 gulp.task('watch', function() {
   // Watch .sass files
-  gulp.watch('_sass/*.scss', ['styles']);
+  gulp.watch('_sass/*.scss', ['styles', 'jekyll-rebuild']);
   // Watch .js files
-  gulp.watch('_js/*.js', ['scripts']);
+  gulp.watch('_js/*.js', ['scripts', 'jekyll-rebuild']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html'], ['jekyll-rebuild']);
 });
 

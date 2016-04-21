@@ -141,7 +141,7 @@ i.icon {
     animation-duration: .3s, .8s;
     animation-delay: 0s, .3s;
     animation-timing-function: ease-out, ease-in-out;
-    animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, 3;
     animation-fill-mode: forward;
     animation-direction: normal, alternate;
   }
