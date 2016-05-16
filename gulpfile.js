@@ -2,7 +2,6 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-clean-css'),
-    jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     clean = require('gulp-clean'),
@@ -26,8 +25,6 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
   return gulp.src('_js/*.js')
-    //.pipe(jshint('.jshintrc'))
-    //.pipe(jshint.reporter('default'))
     .pipe(concat('site.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
@@ -77,7 +74,7 @@ gulp.task('watch', function() {
   gulp.watch('_sass/*.scss', ['styles', 'jekyll-rebuild']);
   // Watch .js files
   gulp.watch('_js/*.js', ['scripts', 'jekyll-rebuild']);
-  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html'], ['jekyll-rebuild']);
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*.md'], ['jekyll-rebuild']);
 });
 
 /**

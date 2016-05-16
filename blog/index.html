@@ -1,0 +1,42 @@
+---
+title: Initial Post
+layout: default
+---
+
+<div class="hero">
+  <div class="container">
+    <!-- INTRO-->
+    <div class="row u-rhythm-btm">
+      <section class="project-overview twelve columns">
+        <div class="header-group">
+          <h1 class="header-text">Blog Posts</h1>
+        </div>
+       
+        <div class="content-box ten offset-by-one columns">
+          <p class="body-copy">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id excepturi architecto qui temporibus quam adipisci quidem, quisquam ullam ut voluptas iusto ducimus neque dicta sequi voluptate sint nemo perspiciatis atque.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    {% for post in site.posts %}
+    <div class="project row">
+      <div class="project__header six columns">
+        <h1 class="project__title">
+          <a href="{{ post.url }}" class="header-link">
+            {{ post.title }}
+            {% include caret.html %}
+          </a>
+        </h1>
+        
+        <h2>{{ post.sub-title }}</h2>
+      </div>
+
+      <div class="project__body six columns">
+        {{ post.excerpt }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
