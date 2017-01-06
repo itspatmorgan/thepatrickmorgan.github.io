@@ -9,6 +9,11 @@ $dark-green: rgba(35,53,47,.9);
 $mid-green: rgba(58,91,64,.9);
 $light-green: rgba(120,183,137,.9);
 
+$blue-grey-800: #37474F;
+$blue-grey-700: #455A64;
+$blue-grey-500: #607D8B;
+$blue-grey-100: #CFD8DC;
+
 $text-color: #222222;
 
 $box-shadow-default: 0 0 3px #ccddee;
@@ -16,9 +21,10 @@ $box-shadow-default: 0 0 3px #ccddee;
 $link-color: #1EAEDB;
 $link-hover-color: #0FA0CE;
 
-$brand-primary: $dark-green;
-$brand-secondary: $mid-green;
-$brand-tertiary: $light-green;
+$brand-color-1: $blue-grey-800;
+$brand-color-2: $blue-grey-700;
+$brand-color-3: $blue-grey-500;
+$brand-color-4: $blue-grey-100;
 
 
 /* NAMED MEDIA QUERIES

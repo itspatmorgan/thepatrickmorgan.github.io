@@ -4,9 +4,7 @@
 .header--global {
   padding: 30px 0;
 
-  background-image: url('../assets/img--banner.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: url('../assets/sayagata-400px.png');
 
   @include mq(large) {
     padding: 60px 0;

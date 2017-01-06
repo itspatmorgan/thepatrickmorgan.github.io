@@ -4,7 +4,7 @@
 .footer--global {
   padding: 50px 0;
 
-  background-color: $paper;
+  background-image: url('../assets/sayagata-400px.png');
 
   @include mq(large) {
     padding: 70px 0;
