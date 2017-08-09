@@ -9,11 +9,11 @@ title: Design Process
     <div class="row">
       <div class="ten columns offset-by-one">
         <div class="header-group">
-          <h1 class="header-text--primary">Amex Offers</h1>
+          <h1 class="header-text--primary">Design Process & Tools</h1>
         </div>
 
         <p class="body-copy has-left-pipe">
-           I worked together with a team of designers from NYC consultancy <a href="http://momentdesign.com/" target="_blank">Moment Design</a> to bring one of Amex's core perks, Merchant Offers, into the Serve platform for the first time. You know this kind of deal: "Spend $50 at Amazon.com and get $5 back". While Offers were an existing feature in Amex's core product line targeting the mass affluent market (Green, Gold and Platinum cards), we wanted to make sure that we designed an experience that felt appropriate for our distinct, prepaid card holder user base.
+           I’m the only designer at Vroozi against 30+ developers. We’re constantly developing new features, integrating third party tools, fixing bugs and generally moving at breakneck speed to keep the platform expanding to meet the needs of our existing enterprise customers (NBC Universal, Northrup Grumman) as well as sign new deals.
         </p>
       </div>
     </div>
@@ -29,9 +29,38 @@ title: Design Process
     <div class="row">
       <div class="ten columns offset-by-one u-rhythm-btm">
 
+        <div class="twelve columns u-vrhythm-sm">
+          <img class="splash-photo" src="/../../assets/img--invision.png" alt="Everything lives in InVision">
+        </div>
+
+        <div class="twelve columns u-rhythm-btm">
+          <b>From static comps to prototypes</b>
+          <p class="body-copy">
+            If I accomplish anything at Vroozi, I hope it’s this: make the company realize that the era of static photoshop comps is over. They’re usually ineffective at capturing the level of depth necessary to convey the design intent of complex web applications. While in my ideal world the design team would prototype in front-end code (like my previous team at American Express), I’ve found using InVision very useful in capturing my design ideas at a level of fidelity that ensures quality feedback from product stakeholders and quality build from the engineers.
+          </p>
+        </div>
+
+        <div class="twelve columns u-vrhythm-sm">
+          <img class="splash-photo" src="/../../assets/img--trello.png" alt="Adjustable timelines mean Kanban board">
+        </div>
+
+        <div class="twelve columns u-rhythm-btm">
+          <b>Creating Design Cadence & Communication</b>
+          <p class="body-copy">
+            I lead a few meetings to create a regular design cadence at the company:
+
+            1. A weekly design planning meeting where I meet with all the product owners to review, discuss and prioritize the design support their respective teams need.
+            2. A weekly check-in with front-end development leads to make sure design intent is being captured in the front-end code. Also to learn from them what design patterns are working, not working, what they’d like to see fixed etc… They’re on the front lines and working in our design tech every day, so they truly feel which patterns are strong and which need work.
+            3. A biweekly check-in with marketing and sales. I’m focused on our product design, but we need to make sure that our design approach is as seamless as possible between external facing properties and our internal product itself.
+
+            I settled on using a Kanban-esque workflow, where I take a couple stories off the top of the backlog and work on them until I have bandwidth to take on something else. As this size company, longer term projects are hard to plan. Priorities change too frequently and inevitably throw off our ability to plan a weeks-long or months-long project. Working on a two week sprint cycle also didn’t work, as the asks from the product team change in scope too much once we get going.
+          </p>
+        </div>
+
         <div class="js-carousel twelve columns">
-          <div><img src="/../../assets/img--offers-1.png" alt=""></div>
-          <div><img src="/../../assets/img--offers-2.png" alt=""></div>
+          <div><img src="/../../assets/img--icon-set.png" alt=""></div>
+          <div><img src="/../../assets/img--email-templates.png" alt=""></div>
+          <div><img src="/../../assets/img--report-templates.png" alt=""></div>
         </div>
 
         <div class="arrow-group twelve columns">
@@ -45,31 +74,17 @@ title: Design Process
         </div>
 
         <div class="twelve columns">
-          <b>Technical Considerations and Learnings</b>
+          <b>"Make Your Own Bootstrap</b>
           <p class="body-copy">
-            This project let me push my own limits as well as push the tech limits of our platform. Since the core Offers experience needed to functional like a single page app, I got to build a pretty robust Javascript module to handle the Offers management experience. In addition to using our typical jQuery, we brought in the <a href="http://www.dustjs.com/">Dust.js</a> templating language to allow us to more efficiently load and display data from the API.
-          </p>
-          <p class="body-copy">
-            The Serve user base is largely mobile and on Android devices, meaning we needed to take extra care with the load time of this more data intensive feature. The API returned quite a bit of information for each individual offer, especially with regard to offer details, terms and conditions. Considering that there could be up to 50 offers at any given time, waiting for all the data to come in on first load seemed inefficient. However, using Javascript and Dust we were able to request detailed offer information and populate it into the appropriate template only when the user acted to see more information. That way, we were able to serve a user the core content of all available offers before having to send the detailed info over the pipes, which used more bandwidth and increased the load time.
-          </p>
-          <p class="body-copy">
-            One bummer about this project for me was that I never received access to the actual Offers API. Instead I was given documentation and told I could only use dummy data while prototyping the front-end. It wasn't too problematic, but it did change my approach. Most significantly, I had to fake AJAX requests to static JSON blobs instead of getting actual data back via real AJAX request. 
+            I lead a few meetings to create a regular design cadence at the company:
+
+            1. A weekly design planning meeting where I meet with all the product owners to review, discuss and prioritize the design support their respective teams need.
+            2. A weekly check-in with front-end development leads to make sure design intent is being captured in the front-end code. Also to learn from them what design patterns are working, not working, what they’d like to see fixed etc… They’re on the front lines and working in our design tech every day, so they truly feel which patterns are strong and which need work.
+            3. A biweekly check-in with marketing and sales. I’m focused on our product design, but we need to make sure that our design approach is as seamless as possible between external facing properties and our internal product itself.
+
+            I settled on using a Kanban-esque workflow, where I take a couple stories off the top of the backlog and work on them until I have bandwidth to take on something else. As this size company, longer term projects are hard to plan. Priorities change too frequently and inevitably throw off our ability to plan a weeks-long or months-long project. Working on a two week sprint cycle also didn’t work, as the asks from the product team change in scope too much once we get going.
           </p>
         </div>
-      </div>
-
-      <div class="ten offset-by-one columns u-rhythm-btm">
-        <div class="twelve columns u-vrhythm-sm">
-          <img class="splash-photo" src="/../../assets/img--stickies.jpg" alt="Design === Stickies">
-        </div>
-
-        <b>Design Considerations and Learnings</b>
-        <p class="body-copy">
-          On this project I got to be an internal stakeholder while constantly collaborating with our supporting agency. This was an interesting dynamic and I learned a lot from getting to see both internal and external perspectives of the design and product. 
-        </p>
-        <p class="body-copy">
-          For the agency, I was their closest contact to the product. I was also the expert on our established front-end code and design patterns. I helped kickstart the process early on by breaking down the capabilites of the Offers API. Then I collaborated with Moment's designers to flesh out the visual design of the page along with its interactivity. We wanted to build from existing patterns where we could but slightly push the boundaries to make Offers feel like a fresh and special addition to the product. I also did have to play MVP cop a couple times to help us hone in our design to something we could deliver on the given project timeline.
-        </p>
       </div>
     </div>
 

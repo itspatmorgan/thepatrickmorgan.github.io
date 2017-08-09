@@ -48,13 +48,13 @@ h2.header-text--global {
   letter-spacing: .4px;
 
   @include mq(large) {
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 1px;
   }
 }
 
 h2 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: .6px;
   line-height: 1.25;
@@ -66,8 +66,8 @@ h2 {
   letter-spacing: 1px;
 
   @include mq(large) {
-    font-size: 13px;
-    letter-spacing: .7px;
+    font-size: 14px;
+    letter-spacing: .8px;
   }
 }
 
